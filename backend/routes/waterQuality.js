@@ -3,6 +3,49 @@ const router = express.Router();
 const PDFDocument = require("pdfkit");
 const fs = require("fs");
 const WaterQuality = require("../models/WaterQuality");
+const MLR = require("ml-regression").SimpleLinearRegression;
+
+// Forecast next 3 days
+router.get("/forecast/:location/:parameter", async (req, res) => {
+  try {
+    const { location, parameter } = req.params;
+
+    // Fetch last 10 days of historical data
+    const data = await WaterQuality.find({ location })
+      .sort({ date: -1 })
+      .limit(10);
+
+    if (!data || data.length === 0) {
+      return res
+        .status(404)
+        .json({ message: "No data found for this location" });
+    }
+
+    // Prepare data for regression
+    // x = day index, y = parameter value
+    const x = data.map((d, i) => i + 1); // 1,2,...10
+    const y = data.map((d) => d.parameters[parameter]);
+
+    // Create regression model
+    const regression = new MLR(x, y);
+
+    // Predict next 3 days
+    const forecast = [];
+    for (let i = 11; i <= 13; i++) {
+      forecast.push({ day: i, predicted: regression.predict(i) });
+    }
+
+    res.json({
+      location,
+      parameter,
+      forecast,
+      lastData: data.reverse(),
+    });
+  } catch (err) {
+    console.error(err);
+    res.status(500).send("Server Error");
+  }
+});
 
 // Export PDF endpoint
 router.get("/export/:location", async (req, res) => {
