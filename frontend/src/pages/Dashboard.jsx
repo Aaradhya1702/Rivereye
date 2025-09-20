@@ -7,6 +7,7 @@ import ParameterCards from '../components/ParameterCard';
 import Heatmap from '../components/Heatmap';
 import { Select } from 'antd';
 import ExportButton from '../components/Export';
+import ForecastPanel from '../components/ForecastPanel';
 
 const { Option } = Select;
 
@@ -66,6 +67,10 @@ function Dashboard() {
           <ChartView data={data} parameter={parameter} onParameterChange={setParameter} />
         </div>
       </div>
+      <div style={{ flex: 1, minWidth: '400px', background: '#f1f1f1', borderRadius: '10px',margin:"20px 0", padding: '10px' }}>
+          <h3 style={{ textAlign: 'center' }}>Forecast</h3>
+          <ForecastPanel location={selectedCity} parameter={parameter} />
+        </div>
         <div style={{ flex: 1, minWidth: '400px', background: '#f1f1f1', borderRadius: '10px', padding: '10px' }}>
           <h3 style={{ textAlign: 'center' }}>Heatmap</h3>
           <Heatmap data={data} />
