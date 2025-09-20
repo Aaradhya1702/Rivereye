@@ -1,6 +1,7 @@
 import svg1 from "./images/svg-1.svg";
 import svg2 from "./images/svg-2.svg";
-import profile from "./images/profile.jpg";
+import profile from "./images/ganga.jpg";
+// import profile from "./images/profile.jpg";
 import svg3 from "./images/svg-3.svg";
 
 export const homeObjOne = {
