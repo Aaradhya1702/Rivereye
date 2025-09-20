@@ -34,32 +34,93 @@ function ChartView({ data, parameter, onParameterChange }) {
       {
         label: `${parameter} (Actual)`,
         data: values,
-        borderColor: "blue",
-        tension: 0.2,
+        borderColor: "#2563eb", // Tailwind blue-600
+        backgroundColor: "rgba(37, 99, 235, 0.1)",
+        tension: 0.3,
+        pointRadius: 4,
       },
       {
         label: `${parameter} (Forecast)`,
         data: forecast,
-        borderColor: "red",
-        borderDash: [5, 5],
-        tension: 0.2,
+        borderColor: "#dc2626", // Tailwind red-600
+        borderDash: [6, 6],
+        tension: 0.3,
+        pointRadius: 4,
       },
     ],
   };
 
+  const options = {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      legend: {
+        position: "top",
+        labels: {
+          font: { size: 12 },
+        },
+      },
+      title: {
+        display: true,
+        text: `Water Quality Trend – ${parameter}`,
+        font: { size: 16, weight: "bold" },
+      },
+    },
+    scales: {
+      x: {
+        title: {
+          display: true,
+          text: "Date",
+        },
+      },
+      y: {
+        title: {
+          display: true,
+          text: `${parameter} Level`,
+        },
+      },
+    },
+  };
+
   return (
-    <div>
-      <select
-        value={parameter}
-        onChange={(e) => onParameterChange(e.target.value)}
-      >
-        {Object.keys(data[0].parameters).map((p) => (
-          <option key={p} value={p}>
-            {p}
-          </option>
-        ))}
-      </select>
-      <Line data={chartData} />
+    <div
+      style={{
+        background: "#fff",
+        borderRadius: "12px",
+        boxShadow: "0 2px 8px rgba(0,0,0,0.1)",
+        padding: "20px",
+        margin: "20px auto",
+        maxWidth: "800px",
+      }}
+    >
+      <div style={{ marginBottom: "15px" }}>
+        <label
+          htmlFor="parameter"
+          style={{ fontWeight: "600", marginRight: "10px" }}
+        >
+          Select Parameter:
+        </label>
+        <select
+          id="parameter"
+          value={parameter}
+          onChange={(e) => onParameterChange(e.target.value)}
+          style={{
+            padding: "8px 12px",
+            borderRadius: "6px",
+            border: "1px solid #ccc",
+          }}
+        >
+          {Object.keys(data[0].parameters).map((p) => (
+            <option key={p} value={p}>
+              {p}
+            </option>
+          ))}
+        </select>
+      </div>
+
+      <div style={{ height: "400px" }}>
+        <Line data={chartData} options={options} />
+      </div>
     </div>
   );
 }

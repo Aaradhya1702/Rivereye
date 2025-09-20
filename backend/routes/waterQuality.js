@@ -30,7 +30,7 @@ router.get("/:location", async (req, res) => {
 });
 
 // 3. GET alerts if any parameter crosses thresholds
-// Route: /api/water/alerts
+// /api/water/alerts
 router.get("/alerts", async (req, res) => {
   try {
     const threshold = {
@@ -39,14 +39,25 @@ router.get("/alerts", async (req, res) => {
       Nitrate: 10,
       FecalColiform: 500,
     };
-    const alerts = await WaterQuality.find({
-      $or: [
-        { "parameters.DO": { $lt: threshold.DO } },
-        { "parameters.BOD": { $gt: threshold.BOD } },
-        { "parameters.Nitrate": { $gt: threshold.Nitrate } },
-        { "parameters.FecalColiform": { $gt: threshold.FecalColiform } },
-      ],
-    }).sort({ date: -1 });
+
+    // get latest 50 records (enough to test)
+    const records = await WaterQuality.find().sort({ date: -1 }).limit(50);
+
+    // filter manually in JS
+    const alerts = records.filter((r) => {
+      const DO = Number(r.parameters.DO);
+      const BOD = Number(r.parameters.BOD);
+      const Nitrate = Number(r.parameters.Nitrate);
+      const FecalColiform = Number(r.parameters.FecalColiform);
+
+      return (
+        DO < threshold.DO ||
+        BOD > threshold.BOD ||
+        Nitrate > threshold.Nitrate ||
+        FecalColiform > threshold.FecalColiform
+      );
+    });
+
     res.json(alerts);
   } catch (err) {
     console.error(err.message);
