@@ -9,32 +9,32 @@ export const homeObjOne = {
   lightTopLine: true,
   lightText: true,
   lightTextDesc: true,
-  topLine: "Marketing Agency",
-  headline: "Lead Generation Specialist for Online Businesses",
+  topLine: "Real-time Monitoring",
+  headline: "Track Ganga River Water Quality with Live Updates",
   description:
-    "We help business owners increase their revenue. Our team of unique specialist can help you achieve your business goals.",
-  buttonLabel: "Get Started",
+    "Our platform provides real-time insights into water quality parameters like DO, BOD, nitrate, and coliform levels across key river locations.",
+  buttonLabel: "View Dashboard",
   imgStart: "",
   img: svg1,
-  alt: "Credit Card",
+  alt: "River Monitoring",
   start: "",
 };
 
 export const homeObjTwo = {
   primary: true,
-  lightBg: false,
+  lightBg: true,
   lightTopLine: true,
-  lightText: true,
-  lightTextDesc: true,
-  topLine: "Instant Setup",
-  headline: "Extremely quick onboarding process",
+  lightText: false,
+  lightTextDesc: false,
+  topLine: "Forecasting",
+  headline: "3-Day Forecast for Pollution Trends",
   description:
-    "Once you've joined, our team of specialist will reach out to you and get you set up in minutes.",
-  buttonLabel: "Learn More",
-  imgStart: "",
+    "Stay ahead with short-term forecasts that predict water quality changes and help authorities take preventive action.",
+  buttonLabel: "Explore Forecast",
+  imgStart: "start",
   img: svg2,
-  alt: "Vault",
-  start: "",
+  alt: "Forecast Chart",
+  start: "true",
 };
 
 export const homeObjThree = {
@@ -43,16 +43,15 @@ export const homeObjThree = {
   lightTopLine: false,
   lightText: false,
   lightTextDesc: false,
-  topLine: "Sarah Jeni",
-  headline:
-    "Ultra helped me increase my revenue by over 3X in less than 3 months!",
+  topLine: "Community Impact",
+  headline: "Empowering Citizens and Authorities with Actionable Insights",
   description:
-    "Their team is wonderful! I can't believe I didn't start working with them earlier.",
-  buttonLabel: "View Case Study",
-  imgStart: "start",
-  img: profile,
-  alt: "Vault",
-  start: "true",
+    "Our system ensures the public, NGOs, and policymakers can access reliable water data to promote sustainable river management.",
+  buttonLabel: "Learn More",
+  imgStart: "",
+  img: svg3,
+  alt: "Community Engagement",
+  start: "",
 };
 
 export const homeObjFour = {
@@ -61,13 +60,13 @@ export const homeObjFour = {
   lightTopLine: true,
   lightText: true,
   lightTextDesc: true,
-  topLine: "Secure Database",
-  headline: "All your data is stored on our secure server",
+  topLine: "Smart Alerts",
+  headline: "Get Notified When Pollution Levels Rise",
   description:
-    "You will never have to worry about your information getting leaked. Our team of security experts will ensure your records are kept safe.",
-  buttonLabel: "Sign Up Now",
+    "Receive instant alerts when critical water quality thresholds are crossed, ensuring rapid response to environmental risks.",
+  buttonLabel: "Get Alerts",
   imgStart: "start",
-  img: svg3,
-  alt: "Vault",
+  img: profile,
+  alt: "Alert Notification",
   start: "true",
 };
