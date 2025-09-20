@@ -10,12 +10,22 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@ant-design/icons": "^6.0.2",
     "axios": "^1.12.2",
+    "chart.js": "^4.5.0",
+    "leaflet": "^1.9.4",
     "react": "^19.1.1",
+    "react-awesome-reveal": "^3.8.1",
+    "antd": "^4.24.14",
+    "i18next": "^19.9.2",
+    "i18next-browser-languagedetector": "^6.1.8",
+    "i18next-xhr-backend": "^3.2.2",
     "react-chartjs-2": "^5.3.0",
     "react-dom": "^19.1.1",
+    "react-i18next": "^15.7.3",
     "react-leaflet": "^5.0.0",
-    "react-router-dom": "^7.9.1"
+    "react-router-dom": "^7.9.1",
+    "styled-components": "^5.3.11"
   },
   "devDependencies": {
     "@eslint/js": "^9.35.0",
