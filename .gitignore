@@ -1,41 +1,75 @@
-# Frontend (React)
-frontend/node_modules/
-frontend/build/
-frontend/dist/
-frontend/.env
-frontend/.env.*
-frontend/.next/
-frontend/yarn-error.log
-frontend/npm-debug.log*
+# ========================
+# Node / Frontend / Backend
+# ========================
+# Node modules
+node_modules/
+**/node_modules/
 
-# Backend (FastAPI)
-backend/__pycache__/
-backend/*.py[cod]
-backend/*.pyo
-backend/ratify-e2f8a-firebase-adminsdk-fbsvc-b48c454983.json
-backend/*.pyd
-backend/*.egg-info/
-backend/*.egg/
-backend/build/
-backend/dist/
-backend/venv/
-backend/env/
-backend/ENV/
-backend/.venv/
-backend/.env
-backend/.env.*
-backend/*.db
-backend/*.sqlite3
+# Logs
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
 
-# IDE/OS files
+# Build output
+build/
+dist/
+.next/
+out/
+coverage/
+
+# Env files
+.env
+.env.*
+
+
+# ========================
+# Python / Backend
+# ========================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Python packaging
+*.egg-info/
+*.egg
+dist/
+build/
+
+# Database files
+*.db
+*.sqlite3
+
+# Firebase / credentials
+ratify-e2f8a-firebase-adminsdk-*.json
+
+
+# ========================
+# OS / IDE files
+# ========================
+# VSCode
 .vscode/
+
+# JetBrains / PyCharm
 .idea/
+
+# macOS
 .DS_Store
+
+# Windows
 Thumbs.db
 
+
+# ========================
 # Logs and coverage
+# ========================
 *.log
-coverage/
 *.cover
 *.coverage
 .coverage.*
