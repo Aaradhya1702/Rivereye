@@ -8,7 +8,7 @@ const Landing = () => {
       <InfoSection {...homeObjOne} />
       <InfoSection {...homeObjThree} />
       <InfoSection {...homeObjTwo} />
-      <Pricing />
+      {/* <Pricing /> */}
       <InfoSection {...homeObjFour} />
     </>
   )
