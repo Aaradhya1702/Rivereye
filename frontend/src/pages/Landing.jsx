@@ -1,6 +1,8 @@
 import { homeObjOne, homeObjThree, homeObjTwo, homeObjFour } from "../Data"
-import { Footer, InfoSection, Pricing } from '../components';
+import {  InfoSection } from '../components';
 import FAQ from "../components/faq";
+import Footer from "../components/footer";
+
 import GlobalStyles from "../globalStyles";
 
 
