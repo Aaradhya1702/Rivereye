@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 const FAQ = () => {
   const faqs = [
@@ -13,12 +13,14 @@ const FAQ = () => {
         "We currently monitor Dissolved Oxygen (DO), Biological Oxygen Demand (BOD), Nitrate, and Fecal Coliform levels.",
     },
     {
-      question:" WHY REAL-TIME DATA?",
-      answer:"Real-time monitoring of parameters like DO, BOD, nitrate, and fecal coliform helps detect pollution early and supports better decision-making."
+      question: "WHY REAL-TIME DATA?",
+      answer:
+        "Real-time monitoring of parameters like DO, BOD, nitrate, and fecal coliform helps detect pollution early and supports better decision-making.",
     },
-      {
-      question:" WHY FORECASTING?",
-      answer:"With a 3-day forecast, authorities and citizens can take preventive steps before water quality deteriorates further."
+    {
+      question: "WHY FORECASTING?",
+      answer:
+        "With a 3-day forecast, authorities and citizens can take preventive steps before water quality deteriorates further.",
     },
     {
       question: "How often is the data updated?",
@@ -37,6 +39,16 @@ const FAQ = () => {
     },
   ];
 
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const toggleFAQ = (index) => {
+    if (openIndex === index) {
+      setOpenIndex(null);
+    } else {
+      setOpenIndex(index);
+    }
+  };
+
   return (
     <section style={{ padding: "40px", backgroundColor: "#f9f9f9" }}>
       <h2 style={{ textAlign: "center", marginBottom: "20px" }}>
@@ -47,17 +59,40 @@ const FAQ = () => {
           <div
             key={idx}
             style={{
-              marginBottom: "20px",
-              padding: "15px",
+              marginBottom: "10px",
               borderRadius: "8px",
               background: "#fff",
               boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
+              cursor: "pointer",
+              overflow: "hidden",
+              transition: "all 0.3s ease",
             }}
           >
-            <h4 style={{ marginBottom: "8px", color: "#1c2237" }}>
+            <div
+              onClick={() => toggleFAQ(idx)}
+              style={{
+                padding: "15px",
+                color: "#1c2237",
+                fontWeight: "600",
+                display: "flex",
+                justifyContent: "space-between",
+                alignItems: "center",
+              }}
+            >
               {faq.question}
-            </h4>
-            <p style={{ margin: 0, color: "#555" }}>{faq.answer}</p>
+              <span>{openIndex === idx ? "−" : "+"}</span>
+            </div>
+            {openIndex === idx && (
+              <div
+                style={{
+                  padding: "0 15px 15px 15px",
+                  color: "#555",
+                  background: "#fefefe",
+                }}
+              >
+                {faq.answer}
+              </div>
+            )}
           </div>
         ))}
       </div>
