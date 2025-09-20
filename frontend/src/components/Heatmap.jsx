@@ -20,14 +20,14 @@ const Heatmap = ({ data }) => {
           <tr>
             <th>Date</th>
             {parameters.map((p) => (
-              <th key={p}>{new Date(p).toLocaleDateString()}</th>
+              <th key={p}>{p}</th>
             ))}
           </tr>
         </thead>
         <tbody>
           {data.map((d) => (
             <tr key={d.date}>
-              <td>{d.date}</td>
+              <td>{new Date(d.date).toLocaleString()}</td>
               {parameters.map((p) => {
                 const value = d.parameters[p];
                 const safe = p === "DO" ? value >= thresholds[p] : value <= thresholds[p];
