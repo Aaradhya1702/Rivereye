@@ -9,3 +9,11 @@ export const getLocations = () => axios.get(`${API_URL}/water/locations`);
 export const getLocationData = (location) =>
   axios.get(`${API_URL}/water/${location}`);
 export const getAlerts = () => axios.get(`${API_URL}/water/alerts`);
+
+export const getLatestStatus = async () => {
+  return axios.get(`${API_URL}/latest`);
+};
+
+export const getAlertCounts = async () => {
+  return axios.get(`${API_URL}/alerts-count`);
+};

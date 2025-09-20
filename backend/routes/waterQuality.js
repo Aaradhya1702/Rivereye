@@ -65,4 +65,45 @@ router.get("/alerts", async (req, res) => {
   }
 });
 
+router.get("/latest", async (req, res) => {
+  try {
+    const locations = await WaterQuality.distinct("location");
+    const result = await Promise.all(
+      locations.map(async (loc) => {
+        const latest = await WaterQuality.find({ location: loc })
+          .sort({ date: -1 })
+          .limit(1);
+        return latest[0];
+      })
+    );
+    res.json(result);
+  } catch (err) {
+    console.error(err);
+    res.status(500).send("Server Error");
+  }
+});
+
+// Route: /api/water/alerts-count
+router.get("/alerts-count", async (req, res) => {
+  try {
+    const threshold = { DO: 5, BOD: 3, Nitrate: 10, FecalColiform: 500 };
+    const alerts = await WaterQuality.find({
+      $or: [
+        { "parameters.DO": { $lt: threshold.DO } },
+        { "parameters.BOD": { $gt: threshold.BOD } },
+        { "parameters.Nitrate": { $gt: threshold.Nitrate } },
+        { "parameters.FecalColiform": { $gt: threshold.FecalColiform } },
+      ],
+    });
+    const counts = alerts.reduce((acc, alert) => {
+      acc[alert.location] = (acc[alert.location] || 0) + 1;
+      return acc;
+    }, {});
+    res.json(counts);
+  } catch (err) {
+    console.error(err);
+    res.status(500).send("Server Error");
+  }
+});
+
 module.exports = router;
