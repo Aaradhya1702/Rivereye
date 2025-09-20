@@ -5,6 +5,7 @@ import profile from "./images/ganga.jpg";
 import svg3 from "./images/svg-3.svg";
 
 export const homeObjOne = {
+  index: 1,
   primary: true,
   lightBg: false,
   lightTopLine: true,
@@ -22,6 +23,7 @@ export const homeObjOne = {
 };
 
 export const homeObjTwo = {
+  index: 2,
   primary: true,
   lightBg: true,
   lightTopLine: true,
@@ -39,6 +41,7 @@ export const homeObjTwo = {
 };
 
 export const homeObjThree = {
+  index: 3,
   primary: false,
   lightBg: true,
   lightTopLine: false,
@@ -56,6 +59,7 @@ export const homeObjThree = {
 };
 
 export const homeObjFour = {
+  index: 4,
   primary: true,
   lightBg: false,
   lightTopLine: true,

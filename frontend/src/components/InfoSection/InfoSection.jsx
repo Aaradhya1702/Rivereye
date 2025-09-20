@@ -12,6 +12,7 @@ import { Link } from 'react-router-dom'
     lightText,
     lightTextDesc,
     headline,
+    index,
     description,
     buttonLabel,
     img,
@@ -29,11 +30,11 @@ import { Link } from 'react-router-dom'
                             <TopLine lightTopLine={lightTopLine}>{topLine}</TopLine>
                             <Heading lightText={lightText}>{headline}</Heading>
                             <Subtitle lightTextDesc={lightTextDesc}>{description}</Subtitle>
-                            <Link to='/dashboard'>
+                            {index===1 && <Link to='/dashboard'>
                             <Button big fontBig primary={primary}>
                                 {buttonLabel}
                             </Button>
-                            </Link>
+                            </Link>}
                             </TextWrapper>
                         </InfoColumn>
                         <InfoColumn>
