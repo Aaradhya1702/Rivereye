@@ -24,7 +24,7 @@ ChartJS.register(
 function ChartView({ data, parameter, onParameterChange }) {
   if (!data || data.length === 0) return null;
 
-  const labels = data.map((d) => d.date);
+  const labels = data.map((d) => new Date(d.date).toLocaleDateString());
   const values = data.map((d) => d.parameters[parameter]);
   const forecast = data.map((d) => d.forecast[parameter]);
 

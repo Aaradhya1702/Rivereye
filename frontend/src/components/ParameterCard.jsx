@@ -37,9 +37,8 @@ const ParameterCards = ({ location }) => {
               textAlign: "center",
             }}
           >
-            <h4>{key}</h4>
+            <h4>{key} ({safe ? "Safe" : "Alert"})</h4>
             <p style={{ fontSize: "20px", margin: "10px 0" }}>{value}</p>
-            <p>{safe ? "Safe" : "Alert"}</p>
           </div>
         );
       })}
