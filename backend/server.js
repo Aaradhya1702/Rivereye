@@ -4,7 +4,7 @@ const dotenv = require("dotenv");
 const connectDB = require("./config/db");
 
 const waterQualityRoutes = require("./routes/waterQuality");
-const authRoutes = require("./routes/auth"); // new
+const authRoutes = require("./routes/auth");
 
 dotenv.config();
 connectDB();
