@@ -13,6 +13,14 @@ const FAQ = () => {
         "We currently monitor Dissolved Oxygen (DO), Biological Oxygen Demand (BOD), Nitrate, and Fecal Coliform levels.",
     },
     {
+      question:" WHY REAL-TIME DATA?",
+      answer:"Real-time monitoring of parameters like DO, BOD, nitrate, and fecal coliform helps detect pollution early and supports better decision-making."
+    },
+      {
+      question:" WHY FORECASTING?",
+      answer:"With a 3-day forecast, authorities and citizens can take preventive steps before water quality deteriorates further."
+    },
+    {
       question: "How often is the data updated?",
       answer:
         "The system fetches the last 10 days of recorded data along with a 3-day forecast for each monitored location.",
