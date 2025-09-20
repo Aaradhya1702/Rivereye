@@ -68,12 +68,14 @@ const ForecastPanel = ({ location, parameter }) => {
   };
 
   return (
-    <div style={{ background: "#f1f1f1", padding: "15px", borderRadius: "10px", marginBottom: "20px" }}>
+    <div style={{ background: "#f1f1f1", display:'flex', alignItems:'center', flexDirection:"column", padding: "15px", borderRadius: "10px", marginBottom: "20px" }}>
       <h3 style={{ textAlign: "center" }}>
         {parameter} Forecast for {location}
       </h3>
-      <Line data={chartData} />
-      <div style={{ display: "flex", justifyContent: "space-around", marginTop: "15px" }}>
+      <div style={{ height: "400px" }}>
+        <Line  data={chartData} />
+      </div>
+      <div style={{ display: "flex", gap:"15px", justifyContent: "space-around", marginTop: "15px" }}>
         <div style={{ padding: "10px", background: "#fff", borderRadius: "8px", boxShadow: "0 1px 4px rgba(0,0,0,0.1)" }}>
           <strong>Min Predicted:</strong> {Math.min(...forecast.map((f) => f.predicted)).toFixed(2)}
         </div>
