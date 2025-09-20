@@ -14,7 +14,7 @@ const Navbar = ({ locations = [], selected, onChange }) => {
       color: 'white'
     }}>
       <div style={{ fontWeight: 'bold', fontSize: '20px' }}>
-        Ganga Water Monitor
+        <img src="/logo.jpg" alt="Logo" style={{ height: '40px' }} />
       </div>
 
       {/* Only show dropdown on Dashboard */}

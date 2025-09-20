@@ -1,5 +1,6 @@
 import { homeObjOne, homeObjThree, homeObjTwo, homeObjFour } from "../Data"
-import { InfoSection, Pricing } from '../components';
+import { Footer, InfoSection, Pricing } from '../components';
+import FAQ from "../components/faq";
 import GlobalStyles from "../globalStyles";
 
 
@@ -12,6 +13,8 @@ const Landing = () => {
       <InfoSection {...homeObjTwo} />
       {/* <Pricing /> */}
       <InfoSection {...homeObjFour} />
+      <FAQ />
+      <Footer />
     </>
   )
 }
