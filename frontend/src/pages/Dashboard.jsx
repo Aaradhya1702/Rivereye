@@ -6,6 +6,7 @@ import AlertsPanel from '../components/AlertsPanel';
 import ParameterCards from '../components/ParameterCard';
 import Heatmap from '../components/Heatmap';
 import { Select } from 'antd';
+import ExportButton from '../components/Export';
 
 const { Option } = Select;
 
@@ -29,6 +30,8 @@ function Dashboard() {
       {/* City Selector */}
       <div style={{ marginBottom: '20px', width:"100%", alignItems:"center", display: 'flex', justifyContent: 'space-between' }}>
         <h4>Water Quality Dashboard</h4>
+        <div style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
+          <ExportButton city={selectedCity} />
         <select
           value={selectedCity}
           onChange={e => setSelectedCity(e.target.value)}
@@ -46,6 +49,7 @@ function Dashboard() {
             </option>
           ))}
         </select>
+        </div>
       </div>
 
       {/* Parameter Summary Cards */}

@@ -1,6 +1,46 @@
 const express = require("express");
 const router = express.Router();
+const PDFDocument = require("pdfkit");
+const fs = require("fs");
 const WaterQuality = require("../models/WaterQuality");
+
+// Export PDF endpoint
+router.get("/export/:location", async (req, res) => {
+  const { location } = req.params;
+
+  const records = await WaterQuality.find({ location }).sort({ date: -1 });
+  if (!records.length) return res.status(404).send("No data found");
+
+  // Set headers
+  res.setHeader(
+    "Content-Disposition",
+    `attachment; filename=${location}-report.pdf`
+  );
+  res.setHeader("Content-Type", "application/pdf");
+
+  const doc = new PDFDocument({ margin: 30, size: "A4" });
+  doc.pipe(res);
+
+  doc.fontSize(22).text(`Water Quality Report - ${location}`, {
+    align: "center",
+  });
+  doc.moveDown();
+
+  records.forEach((r) => {
+    doc
+      .fontSize(12)
+      .text(
+        `${r.date.toISOString().slice(0, 10)} | DO: ${r.parameters.DO} | BOD: ${
+          r.parameters.BOD
+        } | Nitrate: ${r.parameters.Nitrate} | Fecal Coliform: ${
+          r.parameters.FecalColiform
+        }`
+      );
+    doc.moveDown(0.5);
+  });
+
+  doc.end();
+});
 
 // 1. GET all monitored locations
 // Route: /api/water/locations
