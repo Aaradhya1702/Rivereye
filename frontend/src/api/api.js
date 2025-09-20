@@ -14,6 +14,9 @@ export const getLatestStatus = async () => {
   return axios.get(`${API_URL}/latest`);
 };
 
+export const getSummary = (location) =>
+  axios.get(`${API_URL}/water/summary/${location}`);
+
 export const getAlertCounts = async () => {
   return axios.get(`${API_URL}/alerts-count`);
 };

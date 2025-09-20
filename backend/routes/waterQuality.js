@@ -106,4 +106,23 @@ router.get("/alerts-count", async (req, res) => {
   }
 });
 
+// 4. GET latest parameter summary for selected location
+router.get("/summary/:location", async (req, res) => {
+  try {
+    const { location } = req.params;
+    const latest = await WaterQuality.find({ location })
+      .sort({ date: -1 })
+      .limit(1);
+
+    if (!latest || latest.length === 0) {
+      return res.json({ message: "No data" });
+    }
+
+    res.json(latest[0]);
+  } catch (err) {
+    console.error(err.message);
+    res.status(500).send("Server Error");
+  }
+});
+
 module.exports = router;

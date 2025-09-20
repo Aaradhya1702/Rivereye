@@ -4,6 +4,8 @@ import MapView from '../components/MapView';
 import ChartView from '../components/ChartView';
 import AlertsPanel from '../components/AlertsPanel';
 import StatusCards from '../components/StatusCard';
+import ParameterCards from '../components/ParameterCard';
+import Heatmap from '../components/Heatmap';
 import { Select } from 'antd';
 
 const { Option } = Select;
@@ -50,15 +52,21 @@ function Dashboard() {
       {/* Status Cards */}
       <StatusCards data={data} />
 
+      {/* Parameter Summary Cards */}
+      <ParameterCards location={selectedLocation} />
+
       {/* Map and Charts */}
-      <div style={{ display: 'flex', gap: '20px', flexWrap: 'wrap', marginBottom: '20px' }}>
-        <div style={{ flex: 1, minWidth: '400px', height: '400px', background: '#f1f1f1', borderRadius: '10px', padding: '10px' }}>
+      <div style={{ display: 'flex', gap: 20, flexWrap: 'wrap',  marginBottom: '20px' }}>
+        <div style={{ flex: 1, minWidth: '400px',  background: '#f1f1f1', borderRadius: '10px', padding: '10px' }}>
           <h3 style={{ textAlign: 'center' }}>Water Quality Map</h3>
           <MapView data={data} />
         </div>
-        <div style={{ flex: 1, minWidth: '400px', height: '400px', background: '#f1f1f1', borderRadius: '10px', padding: '10px' }}>
+        <div style={{ flex: 1, minWidth: '400px',  background: '#f1f1f1', borderRadius: '10px', padding: '10px' }}>
           <h3 style={{ textAlign: 'center' }}>Parameter Trends</h3>
           <ChartView data={data} parameter={parameter} onParameterChange={setParameter} />
+        </div>
+        <div style={{ flex: 1, minWidth: '400px',  background: '#f1f1f1', borderRadius: '10px', padding: '10px' }}>
+        <Heatmap data={data} />
         </div>
       </div>
 
