@@ -10,6 +10,10 @@ const UserSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  city: {
+    type: String,
+    required: true
+  },
   createdAt: {
     type: Date,
     default: Date.now,
@@ -17,3 +21,4 @@ const UserSchema = new mongoose.Schema({
 });
 
 module.exports = mongoose.model("User", UserSchema);
+

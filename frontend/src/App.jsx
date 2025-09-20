@@ -5,6 +5,7 @@ import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Dashboard from './pages/Dashboard';
 
+
 function App() {
   return (
     <div style={{ width: '100vw', minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
@@ -19,6 +20,7 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
             <Route path="/dashboard" element={<Dashboard />} />
+
           </Routes>
         </div>
       </Router>

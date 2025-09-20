@@ -2,11 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { getLocations, getLocationData, getAlerts } from '../api/api';
 import MapView from '../components/MapView';
 import ChartView from '../components/ChartView';
-import AlertsPanel from '../components/AlertsPanel';
 import StatusCards from '../components/StatusCard';
 import ParameterCards from '../components/ParameterCard';
 import Heatmap from '../components/Heatmap';
 import { Select } from 'antd';
+import Alert from "../components/Alert.jsx";
 
 const { Option } = Select;
 
@@ -72,8 +72,8 @@ function Dashboard() {
 
       {/* Alerts Panel */}
       <div style={{ background: '#fff3f3', padding: '15px', borderRadius: '10px', boxShadow: '0 2px 6px rgba(0,0,0,0.1)' }}>
-        <h3 style={{ color: 'red', marginBottom: '10px' }}>Alerts</h3>
-        <AlertsPanel alerts={alerts} />
+
+       <Alert/>
       </div>
     </div>
   );
