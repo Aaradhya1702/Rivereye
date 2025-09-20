@@ -6,15 +6,21 @@ const Navbar = ({ locations = [], selected, onChange }) => {
 
   return (
     <nav style={{
+      position: 'fixed', // Make navbar fixed
+      top: 0,
+      left: 0,
+      width: '100%',
+      zIndex: 1000,
       display: 'flex',
       justifyContent: 'space-between',
       alignItems: 'center',
       padding: '10px 20px',
-      backgroundColor: '#0077b6',
-      color: 'white'
+      backgroundColor: '#e3f2fd',
+      color: '#000',
+      boxSizing: 'border-box'
     }}>
       <div style={{ fontWeight: 'bold', fontSize: '20px' }}>
-        <img src="/logo.jpg" alt="Logo" style={{ height: '40px' }} />
+        <img src="/logo.png" alt="Logo" style={{ height: '60px' }} />
       </div>
 
       {/* Only show dropdown on Dashboard */}
@@ -31,17 +37,16 @@ const Navbar = ({ locations = [], selected, onChange }) => {
       )}
 
       <div>
-        <Link to="/" style={linkStyle}>Home</Link>
-        <Link to="/login" style={linkStyle}>Login</Link>
-        <Link to="/signup" style={linkStyle}>Sign Up</Link>
-        <Link to="/dashboard" style={linkStyle}>Dashboard</Link>
+        <Link  to="/" style={linkStyle}>Home</Link>
+        <Link  to="/login" style={linkStyle}>Login</Link>
+        <Link  to="/dashboard" style={linkStyle}>Dashboard</Link>
       </div>
     </nav>
   );
 };
 
 const linkStyle = {
-  color: 'white',
+  color: '#000',
   marginLeft: '15px',
   textDecoration: 'none',
   fontWeight: '500'
