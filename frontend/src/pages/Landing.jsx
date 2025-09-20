@@ -1,4 +1,5 @@
 import { homeObjOne, homeObjThree, homeObjTwo, homeObjFour } from "../Data"
+import { InfoSection, Pricing } from '../components';
 
 
 const Landing = () => {

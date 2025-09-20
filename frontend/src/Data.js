@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 export const homeObjOne = {
   primary: true,
   lightBg: false,
@@ -11,7 +10,7 @@ export const homeObjOne = {
     "We help business owners increase their revenue. Our team of unique specialist can help you achieve your business goals.",
   buttonLabel: "Get Started",
   imgStart: "",
-  img: require("../../images/svg-1.svg"),
+  img: "../../images/svg-1.svg",
   alt: "Credit Card",
   start: "",
 };
@@ -28,7 +27,7 @@ export const homeObjTwo = {
     "Once you've joined, our team of specialist will reach out to you and get you set up in minutes.",
   buttonLabel: "Learn More",
   imgStart: "",
-  img: require("../../images/svg-2.svg"),
+  img: "../../images/svg-2.svg",
   alt: "Vault",
   start: "",
 };
@@ -46,7 +45,7 @@ export const homeObjThree = {
     "Their team is wonderful! I can't believe I didn't start working with them earlier.",
   buttonLabel: "View Case Study",
   imgStart: "start",
-  img: require("../../images/profile.jpg"),
+  img: "../../images/profile.jpg",
   alt: "Vault",
   start: "true",
 };
@@ -63,7 +62,7 @@ export const homeObjFour = {
     "You will never have to worry about your information getting leaked. Our team of security experts will ensure your records are kept safe.",
   buttonLabel: "Sign Up Now",
   imgStart: "start",
-  img: require("../../images/svg-3.svg"),
+  img: "../../images/svg-3.svg",
   alt: "Vault",
   start: "true",
 };
