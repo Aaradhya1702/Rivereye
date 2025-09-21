@@ -189,162 +189,264 @@ const Small = styled.small`
 
 // ---------------- Mock Data & Helpers ----------------
 const mockStationData = [
-  { id: 'S1', name: 'Varanasi', lat: 25.3176, lon: 82.9739, do: 6.9, bod: 2.8, ph: 7.1, x: '78%', y: '42%', risk: 'medium' },
-  { id: 'S2', name: 'Kanpur', lat: 26.4499, lon: 80.3319, do: 4.1, bod: 6.2, ph: 6.8, x: '60%', y: '68%', risk: 'high' },
-  { id: 'S3', name: 'Allahabad', lat: 25.4358, lon: 81.8463, do: 7.5, bod: 1.9, ph: 7.4, x: '42%', y: '58%', risk: 'good' }
+    { id: 'S1', name: 'Varanasi', lat: 25.3176, lon: 82.9739, do: 6.9, bod: 2.8, ph: 7.1, x: '78%', y: '42%', risk: 'medium' },
+    { id: 'S2', name: 'Kanpur', lat: 26.4499, lon: 80.3319, do: 4.1, bod: 6.2, ph: 6.8, x: '60%', y: '68%', risk: 'high' },
+    { id: 'S3', name: 'Allahabad', lat: 25.4358, lon: 81.8463, do: 7.5, bod: 1.9, ph: 7.4, x: '42%', y: '58%', risk: 'good' }
 ];
 
-function riskToColor(risk){
-  if(risk === 'high') return '#ff3b30';
-  if(risk === 'medium') return '#ffb020';
-  return '#00e5b4';
+function riskToColor(risk) {
+    if (risk === 'high') return '#ff3b30';
+    if (risk === 'medium') return '#ffb020';
+    return '#00e5b4';
 }
 
 // ---------------- Main Component ----------------
-export default function RiverEyeLanding(){
-  const [stations, setStations] = useState(mockStationData);
-  const [ticker, setTicker] = useState({ do: 7.5, bod: 3.1, ph: 7.2 });
+export default function RiverEyeLanding() {
+    const [stations, setStations] = useState(mockStationData);
+    const [ticker, setTicker] = useState({ do: 7.5, bod: 3.1, ph: 7.2 });
 
-  // simulate live updates
-  useEffect(()=>{
-    const t = setInterval(()=>{
-      // random minor jitter for demo
-      setTicker(prev => ({
-        do: +(prev.do + (Math.random()-0.5)*0.2).toFixed(2),
-        bod: +(prev.bod + (Math.random()-0.5)*0.15).toFixed(2),
-        ph: +(prev.ph + (Math.random()-0.5)*0.03).toFixed(2)
-      }))
+    // simulate live updates
+    useEffect(() => {
+        const t = setInterval(() => {
+            // random minor jitter for demo
+            setTicker(prev => ({
+                do: +(prev.do + (Math.random() - 0.5) * 0.2).toFixed(2),
+                bod: +(prev.bod + (Math.random() - 0.5) * 0.15).toFixed(2),
+                ph: +(prev.ph + (Math.random() - 0.5) * 0.03).toFixed(2)
+            }))
 
-      // also randomly change one station
-      setStations(prev => prev.map(s => {
-        if(Math.random() > 0.8){
-          const newDo = +(s.do + (Math.random()-0.5)*0.9).toFixed(2);
-          const newBod = +(s.bod + (Math.random()-0.5)*0.8).toFixed(2);
-          const risk = newBod > 5 ? 'high' : newDo < 5 ? 'high' : (newBod > 3 ? 'medium' : 'good');
-          return {...s, do: newDo, bod: newBod, risk };
-        }
-        return s;
-      }))
-    }, 2500);
+            // also randomly change one station
+            setStations(prev => prev.map(s => {
+                if (Math.random() > 0.8) {
+                    const newDo = +(s.do + (Math.random() - 0.5) * 0.9).toFixed(2);
+                    const newBod = +(s.bod + (Math.random() - 0.5) * 0.8).toFixed(2);
+                    const risk = newBod > 5 ? 'high' : newDo < 5 ? 'high' : (newBod > 3 ? 'medium' : 'good');
+                    return { ...s, do: newDo, bod: newBod, risk };
+                }
+                return s;
+            }))
+        }, 2500);
 
-    return ()=> clearInterval(t);
-  },[])
+        return () => clearInterval(t);
+    }, [])
 
-  return (
-    <Page>
-      <Hero>
-        <Left>
-          <motion.div initial={{opacity:0, y:12}} animate={{opacity:1, y:0}} transition={{duration:0.6}}>
-            <Ticker>Live • <strong style={{marginLeft:6}}>{new Date().toLocaleTimeString()}</strong> • Auto refresh</Ticker>
-            <Title>See the Ganga’s Pulse. Live. Anytime.</Title>
-            <Tagline>RiverEye provides real-time quality metrics, hyperlocal forecasts and instant alerts so communities and authorities can act faster.</Tagline>
+    return (
+        <Page>
+            <Hero>
+                <Left>
+                    <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
+                        <Ticker>Live • <strong style={{ marginLeft: 6 }}>{new Date().toLocaleTimeString()}</strong> • Auto refresh</Ticker>
+                        <Title>See the Ganga’s Pulse. Live. Anytime.</Title>
+                        <Tagline>RiverEye provides real-time quality metrics, hyperlocal forecasts and instant alerts so communities and authorities can act faster.</Tagline>
 
-            <CTAGroup>
+                        {/* <CTAGroup>
               <Button primary href="#dashboard">View Live Dashboard</Button>
               <Button href="#alerts">Get Alerts</Button>
-            </CTAGroup>
-          </motion.div>
+            </CTAGroup> */}
+                    </motion.div>
 
-          <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{amount:0.2}} style={{marginTop:22}}>
-            <Small>Collected datapoints: <strong>254,312</strong> — Stations: <strong>{stations.length}</strong></Small>
-          </motion.div>
-        </Left>
+                    <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ amount: 0.2 }} style={{ marginTop: 22 }}>
+                        <Small>Collected datapoints: <strong>254,312</strong> — Stations: <strong>{stations.length}</strong></Small>
+                    </motion.div>
+                </Left>
 
-        <Right>
-          <MapFrame>
-            <RiverSvg viewBox="0 0 1200 600" preserveAspectRatio="none">
-              <defs>
-                <linearGradient id="riverGrad" x1="0" x2="1">
-                  <stop offset="0%" stopColor="#0077b6" stopOpacity="1"/>
-                  <stop offset="100%" stopColor="#48cae4" stopOpacity="1"/>
-                </linearGradient>
-                <filter id="blurMe" x="-20%" y="-20%" width="140%" height="140%">
-                  <feGaussianBlur stdDeviation="18" />
-                </filter>
-              </defs>
+                <Right>
+                    <MapFrame>
+                        <RiverSvg viewBox="0 0 1200 600" preserveAspectRatio="none">
+                            <defs>
+                                <linearGradient id="riverGrad" x1="0" x2="1">
+                                    <stop offset="0%" stopColor="#0077b6" stopOpacity="1" />
+                                    <stop offset="100%" stopColor="#48cae4" stopOpacity="1" />
+                                </linearGradient>
+                                <filter id="blurMe" x="-20%" y="-20%" width="140%" height="140%">
+                                    <feGaussianBlur stdDeviation="18" />
+                                </filter>
+                            </defs>
 
-              {/* Background subtle pattern */}
-              <rect x="0" y="0" width="1200" height="600" fill="url(#riverGrad)" opacity="0.06" />
+                            {/* Background subtle pattern */}
+                            <rect x="0" y="0" width="1200" height="600" fill="url(#riverGrad)" opacity="0.06" />
 
-              {/* stylized river path */}
-              <path d="M0 260 C 240 220, 360 300, 520 270 C 680 240, 720 320, 900 300 C 1060 280, 1200 320, 1200 320 L1200 600 L0 600 Z"
-                fill="url(#riverGrad)" opacity="0.95"/>
+                            {/* stylized river path */}
+                            <path d="M0 260 C 240 220, 360 300, 520 270 C 680 240, 720 320, 900 300 C 1060 280, 1200 320, 1200 320 L1200 600 L0 600 Z"
+                                fill="url(#riverGrad)" opacity="0.95" />
 
-              {/* wave overlay for movement illusion */}
-              <g opacity="0.24">
-                <path d="M0 260 C 240 260, 360 280, 520 270 C 680 260, 720 280, 900 270 C 1060 260, 1200 300, 1200 300" fill="none" stroke="#ffffff" strokeOpacity="0.06" strokeWidth="22" filter="url(#blurMe)"/>
-              </g>
+                            {/* wave overlay for movement illusion */}
+                            <g opacity="0.24">
+                                <path d="M0 260 C 240 260, 360 280, 520 270 C 680 260, 720 280, 900 270 C 1060 260, 1200 300, 1200 300" fill="none" stroke="#ffffff" strokeOpacity="0.06" strokeWidth="22" filter="url(#blurMe)" />
+                            </g>
 
-            </RiverSvg>
+                        </RiverSvg>
 
-            {/* station markers positioned absolutely */}
-            {stations.map(s => (
-              <Station key={s.id} style={{ left: s.x, top: s.y }} title={`${s.name} • DO:${s.do} • BOD:${s.bod}`}>
-                <div style={{ position:'relative' }}>
-                  <Pulse color={riskToColor(s.risk)} />
-                  <StationDot color={riskToColor(s.risk)} />
+                        {/* station markers positioned absolutely */}
+                        {stations.map(s => (
+                            <Station key={s.id} style={{ left: s.x, top: s.y }} title={`${s.name} • DO:${s.do} • BOD:${s.bod}`}>
+                                <div style={{ position: 'relative' }}>
+                                    <Pulse color={riskToColor(s.risk)} />
+                                    <StationDot color={riskToColor(s.risk)} />
+                                </div>
+                                <div style={{ fontSize: 12, color: '#d7fbff', background: 'rgba(0,0,0,0.14)', padding: '6px 8px', borderRadius: 8, marginTop: 6 }}>{s.name}</div>
+                            </Station>
+                        ))}
+
+                        <DataPanel initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}>
+                            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 8 }}>
+                                <div style={{ fontWeight: 800 }}>Live Snapshot</div>
+                                <div style={{ fontSize: 12, opacity: 0.9 }}>Updated just now</div>
+                            </div>
+
+                            <MetricRow>
+                                <div>DO (mg/L)</div>
+                                <div style={{ fontWeight: 800 }}>{ticker.do}</div>
+                            </MetricRow>
+                            <MetricRow>
+                                <div>BOD (mg/L)</div>
+                                <div style={{ fontWeight: 800 }}>{ticker.bod}</div>
+                            </MetricRow>
+                            <MetricRow>
+                                <div>pH</div>
+                                <div style={{ fontWeight: 800 }}>{ticker.ph}</div>
+                            </MetricRow>
+
+                            <div style={{ height: 8, background: 'rgba(255,255,255,0.04)', borderRadius: 8, marginTop: 12 }}>
+                                <div style={{ width: `${Math.min(90, (10 - (ticker.bod || 3)) * 9)}%`, height: '100%', background: 'linear-gradient(90deg,#00e5b4,#48cae4)', borderRadius: 8 }} />
+                            </div>
+
+                        </DataPanel>
+
+                    </MapFrame>
+                </Right>
+            </Hero>
+
+            {/* Secondary section with animated cards */}
+            <section style={{ padding: '36px 80px 48px' }}>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 20 }}>
+                    {[
+                        { title: 'Forecast', desc: '3-day trend with modeled risk levels', cta: 'View Forecast' },
+                        { title: 'Alerts', desc: 'Instant SMS/Email/push when thresholds hit', cta: 'Set Alerts' },
+                        { title: 'Community', desc: 'Share clean-up requests & reports', cta: 'Get Involved' }
+                    ].map((c) => (
+                        <motion.div key={c.title} whileHover={{ y: -6 }} style={{ background: '#fff', borderRadius: 12, padding: 18, boxShadow: '0 10px 30px rgba(10,30,40,0.04)' }}>
+                            <div style={{ fontSize: 14, fontWeight: 800, color: '#00607f' }}>{c.title}</div>
+                            <div style={{ marginTop: 8, color: '#164b56' }}>{c.desc}</div>
+                            <div style={{ marginTop: 12 }}><Button href="#" style={{ padding: '8px 12px', fontSize: 13 }}>{c.cta}</Button></div>
+                        </motion.div>
+                    ))}
                 </div>
-                <div style={{ fontSize:12, color:'#d7fbff', background:'rgba(0,0,0,0.14)', padding:'6px 8px', borderRadius:8, marginTop:6 }}>{s.name}</div>
-              </Station>
-            ))}
+            </section>
 
-            <DataPanel initial={{opacity:0, y:12}} animate={{opacity:1, y:0}} transition={{delay:0.2}}>
-              <div style={{display:'flex', justifyContent:'space-between', alignItems:'center', marginBottom:8}}>
-                <div style={{fontWeight:800}}>Live Snapshot</div>
-                <div style={{fontSize:12, opacity:0.9}}>Updated just now</div>
-              </div>
+            {/* SUPER CLASSY NEW SECTION */}
+            <section className="relative py-24 px-6 md:px-20 bg-gradient-to-r from-indigo-900 via-purple-900 to-indigo-900 overflow-hidden">
+                <motion.h2
+                    className="text-4xl md:text-6xl font-extrabold text-center mb-16 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-pink-400"
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.8 }}
+                >
+                    Tomorrow’s River. Today.
+                </motion.h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    {/* Futuristic glass card */}
+                    <motion.div
+                        className="p-10 rounded-3xl backdrop-blur-xl bg-white/10 border border-white/20 shadow-2xl"
+                        initial={{ opacity: 0, x: -40 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.8 }}
+                    >
+                        <h3 className="text-2xl font-bold mb-4 text-blue-300">Forecast & Alerts</h3>
+                        <p className="mb-6 text-gray-200">
+                            Advanced AI models predict water quality trends for the next 7 days,
+                            alerting you before a crisis emerges.
+                        </p>
+                        <ul className="space-y-3">
+                            <li className="flex items-center gap-3">
+                                <span className="w-3 h-3 rounded-full bg-green-400"></span>
+                                Safe oxygen levels expected in Varanasi.
+                            </li>
+                            <li className="flex items-center gap-3">
+                                <span className="w-3 h-3 rounded-full bg-yellow-400"></span>
+                                Rising BOD detected in Kanpur region.
+                            </li>
+                            <li className="flex items-center gap-3">
+                                <span className="w-3 h-3 rounded-full bg-red-500"></span>
+                                Critical pH imbalance forecasted in Haridwar.
+                            </li>
+                        </ul>
+                    </motion.div>
 
-              <MetricRow>
-                <div>DO (mg/L)</div>
-                <div style={{fontWeight:800}}>{ticker.do}</div>
-              </MetricRow>
-              <MetricRow>
-                <div>BOD (mg/L)</div>
-                <div style={{fontWeight:800}}>{ticker.bod}</div>
-              </MetricRow>
-              <MetricRow>
-                <div>pH</div>
-                <div style={{fontWeight:800}}>{ticker.ph}</div>
-              </MetricRow>
+                    {/* Animated Illustration */}
+                    <motion.div
+                        className="relative flex justify-center"
+                        initial={{ opacity: 0, x: 40 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.8 }}
+                    >
+                        <svg
+                            width="300"
+                            height="300"
+                            viewBox="0 0 300 300"
+                            className="drop-shadow-2xl"
+                        >
+                            <defs>
+                                <radialGradient id="pulse" cx="50%" cy="50%" r="50%">
+                                    <stop offset="0%" stopColor="#60A5FA" stopOpacity="0.9" />
+                                    <stop offset="100%" stopColor="#60A5FA" stopOpacity="0" />
+                                </radialGradient>
+                            </defs>
+                            <circle
+                                cx="150"
+                                cy="150"
+                                r="40"
+                                fill="url(#pulse)"
+                            >
+                                <animate
+                                    attributeName="r"
+                                    from="40"
+                                    to="120"
+                                    dur="2s"
+                                    repeatCount="indefinite"
+                                />
+                                <animate
+                                    attributeName="opacity"
+                                    from="1"
+                                    to="0"
+                                    dur="2s"
+                                    repeatCount="indefinite"
+                                />
+                            </circle>
+                            <circle cx="150" cy="150" r="20" fill="#3B82F6" />
+                        </svg>
+                    </motion.div>
+                </div>
+            </section>
 
-              <div style={{height:8, background:'rgba(255,255,255,0.04)', borderRadius:8, marginTop:12}}>
-                <div style={{ width: `${Math.min(90, (10 - (ticker.bod||3))*9)}%`, height:'100%', background:'linear-gradient(90deg,#00e5b4,#48cae4)', borderRadius:8 }} />
-              </div>
+            <FAQ />
 
-            </DataPanel>
+            {/* CLOSING CTA */}
+            <section className="py-20 text-center bg-gradient-to-b from-sky-900 to-sky-800 text-white">
+                <h2 className="text-4xl font-bold mb-6">Be the First to Know</h2>
+                <p className="mb-8 text-gray-400 max-w-xl mx-auto">
+                    Join RiverEye beta and experience the future of environmental
+                    monitoring.
+                </p>
+                <button className="bg-blue-600 px-8 py-4 rounded-full font-semibold hover:bg-blue-500 transition">
+                    Join Beta Access
+                </button>
+            </section>
 
-          </MapFrame>
-        </Right>
-      </Hero>
+            <Footer>
+                <Logo>
+                    <svg width="34" height="34" viewBox="0 0 24 24" fill="none"><rect width="24" height="24" rx="6" fill="#00a7d1" /><path d="M6 14c12-6 6 6 12 0" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
+                    RiverEye
+                </Logo>
+                <div style={{ display: 'flex', gap: 12, alignItems: 'center' }}>
+                    <Small>© {new Date().getFullYear()} RiverEye</Small>
+                    <Small style={{ opacity: 0.6 }}>Privacy • Terms</Small>
+                </div>
+            </Footer>
 
-      {/* Secondary section with animated cards */}
-      <section style={{padding:'36px 80px 48px'}}>
-        <div style={{display:'grid', gridTemplateColumns:'repeat(3,1fr)', gap:20}}>
-          {[
-            {title:'Forecast', desc:'3-day trend with modeled risk levels', cta:'View Forecast'},
-            {title:'Alerts', desc:'Instant SMS/Email/push when thresholds hit', cta:'Set Alerts'},
-            {title:'Community', desc:'Share clean-up requests & reports', cta:'Get Involved'}
-          ].map((c)=> (
-            <motion.div key={c.title} whileHover={{y:-6}} style={{background:'#fff', borderRadius:12, padding:18, boxShadow:'0 10px 30px rgba(10,30,40,0.04)'}}>
-              <div style={{fontSize:14, fontWeight:800, color:'#00607f'}}>{c.title}</div>
-              <div style={{marginTop:8, color:'#164b56'}}>{c.desc}</div>
-              <div style={{marginTop:12}}><Button href="#" style={{padding:'8px 12px', fontSize:13}}>{c.cta}</Button></div>
-            </motion.div>
-          ))}
-        </div>
-      </section>
-      <FAQ />
-      <Footer>
-        <Logo>
-          <svg width="34" height="34" viewBox="0 0 24 24" fill="none"><rect width="24" height="24" rx="6" fill="#00a7d1"/><path d="M6 14c12-6 6 6 12 0" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
-          RiverEye
-        </Logo>
-        <div style={{display:'flex', gap:12, alignItems:'center'}}>
-          <Small>© {new Date().getFullYear()} RiverEye</Small>
-          <Small style={{opacity:0.6}}>Privacy • Terms</Small>
-        </div>
-      </Footer>
-
-    </Page>
-  );
+        </Page>
+    );
 }
