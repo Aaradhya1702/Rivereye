@@ -1,1602 +1,4882 @@
 [
   {
     "location": "Varanasi",
-    "date": "2025-08-31",
-    "parameters": {
-      "DO": 7.79,
-      "BOD": 4.32,
-      "Nitrate": 8.85,
-      "FecalColiform": 430.62
-    },
-    "forecast": {
-      "DO": 7.69,
-      "BOD": 4.47,
-      "Nitrate": 8.4,
-      "FecalColiform": 445.38
-    }
-  },
-  {
-    "location": "Varanasi",
-    "date": "2025-09-01",
-    "parameters": {
-      "DO": 6.29,
-      "BOD": 3.11,
-      "Nitrate": 10.35,
-      "FecalColiform": 336.81
-    },
-    "forecast": {
-      "DO": 6.29,
-      "BOD": 3.25,
-      "Nitrate": 10.3,
-      "FecalColiform": 361.76
-    }
-  },
-  {
-    "location": "Varanasi",
-    "date": "2025-09-02",
+    "date": "2025-07-01",
     "parameters": {
       "DO": 5.82,
-      "BOD": 4.02,
-      "Nitrate": 6.81,
-      "FecalColiform": 473.07
+      "BOD": 2.48,
+      "Nitrate": 13.03,
+      "FecalColiform": 278.62
     },
     "forecast": {
-      "DO": 5.32,
-      "BOD": 4.13,
-      "Nitrate": 6.89,
-      "FecalColiform": 437.13
+      "DO": 5.76,
+      "BOD": 2.5,
+      "Nitrate": 12.95,
+      "FecalColiform": 269.05
     }
   },
   {
     "location": "Varanasi",
-    "date": "2025-09-03",
+    "date": "2025-07-02",
     "parameters": {
-      "DO": 7.28,
-      "BOD": 2.17,
-      "Nitrate": 8.23,
-      "FecalColiform": 101.91
+      "DO": 6.39,
+      "BOD": 3.2,
+      "Nitrate": 3.8,
+      "FecalColiform": 585.17
     },
     "forecast": {
-      "DO": 7.36,
-      "BOD": 2.24,
-      "Nitrate": 8.08,
-      "FecalColiform": 96.09
+      "DO": 6.66,
+      "BOD": 3.22,
+      "Nitrate": 3.65,
+      "FecalColiform": 582.7
     }
   },
   {
     "location": "Varanasi",
-    "date": "2025-09-04",
+    "date": "2025-07-03",
     "parameters": {
-      "DO": 5.48,
-      "BOD": 4.35,
-      "Nitrate": 7.21,
-      "FecalColiform": 116.89
-    },
-    "forecast": {
-      "DO": 5.71,
-      "BOD": 4.52,
-      "Nitrate": 7.11,
-      "FecalColiform": 68.86
-    }
-  },
-  {
-    "location": "Varanasi",
-    "date": "2025-09-05",
-    "parameters": {
-      "DO": 8.0,
-      "BOD": 2.27,
-      "Nitrate": 6.56,
-      "FecalColiform": 227.3
-    },
-    "forecast": {
-      "DO": 7.57,
-      "BOD": 2.4,
-      "Nitrate": 6.94,
-      "FecalColiform": 246.8
-    }
-  },
-  {
-    "location": "Varanasi",
-    "date": "2025-09-06",
-    "parameters": {
-      "DO": 6.91,
-      "BOD": 2.71,
-      "Nitrate": 7.78,
-      "FecalColiform": 115.87
-    },
-    "forecast": {
-      "DO": 7.18,
-      "BOD": 2.67,
-      "Nitrate": 7.96,
-      "FecalColiform": 133.27
-    }
-  },
-  {
-    "location": "Varanasi",
-    "date": "2025-09-07",
-    "parameters": {
-      "DO": 7.59,
-      "BOD": 2.06,
-      "Nitrate": 5.33,
-      "FecalColiform": 304.05
-    },
-    "forecast": {
-      "DO": 7.76,
-      "BOD": 1.97,
-      "Nitrate": 5.53,
-      "FecalColiform": 307.5
-    }
-  },
-  {
-    "location": "Varanasi",
-    "date": "2025-09-08",
-    "parameters": {
-      "DO": 5.48,
-      "BOD": 4.8,
-      "Nitrate": 11.6,
-      "FecalColiform": 197.26
-    },
-    "forecast": {
-      "DO": 5.14,
-      "BOD": 4.89,
-      "Nitrate": 11.75,
-      "FecalColiform": 180.68
-    }
-  },
-  {
-    "location": "Varanasi",
-    "date": "2025-09-09",
-    "parameters": {
-      "DO": 6.93,
-      "BOD": 3.56,
-      "Nitrate": 10.09,
-      "FecalColiform": 193.71
+      "DO": 7.03,
+      "BOD": 1.51,
+      "Nitrate": 13.46,
+      "FecalColiform": 126.45
     },
     "forecast": {
       "DO": 7.35,
-      "BOD": 3.38,
-      "Nitrate": 10.22,
-      "FecalColiform": 184.87
+      "BOD": 1.44,
+      "Nitrate": 13.1,
+      "FecalColiform": 125.61
     }
   },
   {
     "location": "Varanasi",
-    "date": "2025-09-10",
+    "date": "2025-07-04",
     "parameters": {
+      "DO": 6.43,
+      "BOD": 1.63,
+      "Nitrate": 6.09,
+      "FecalColiform": 509.65
+    },
+    "forecast": {
+      "DO": 6.59,
+      "BOD": 1.58,
+      "Nitrate": 6.12,
+      "FecalColiform": 491.33
+    }
+  },
+  {
+    "location": "Varanasi",
+    "date": "2025-07-05",
+    "parameters": {
+      "DO": 8.29,
+      "BOD": 1.48,
+      "Nitrate": 7.81,
+      "FecalColiform": 174.69
+    },
+    "forecast": {
+      "DO": 8.67,
+      "BOD": 1.42,
+      "Nitrate": 7.67,
+      "FecalColiform": 181.36
+    }
+  },
+  {
+    "location": "Varanasi",
+    "date": "2025-07-06",
+    "parameters": {
+      "DO": 4.98,
+      "BOD": 1.77,
+      "Nitrate": 7.91,
+      "FecalColiform": 138.77
+    },
+    "forecast": {
       "DO": 5.09,
-      "BOD": 3.4,
-      "Nitrate": 7.37,
-      "FecalColiform": 132.92
-    },
-    "forecast": {
-      "DO": 5.35,
-      "BOD": 3.44,
-      "Nitrate": 7.23,
-      "FecalColiform": 136.34
+      "BOD": 1.76,
+      "Nitrate": 8.26,
+      "FecalColiform": 144.54
     }
   },
   {
     "location": "Varanasi",
-    "date": "2025-09-11",
+    "date": "2025-07-07",
     "parameters": {
-      "DO": 7.95,
-      "BOD": 3.68,
-      "Nitrate": 9.34,
-      "FecalColiform": 578.83
+      "DO": 4.88,
+      "BOD": 3.98,
+      "Nitrate": 7.57,
+      "FecalColiform": 587.93
     },
     "forecast": {
-      "DO": 8.31,
-      "BOD": 3.67,
-      "Nitrate": 8.9,
-      "FecalColiform": 564.78
+      "DO": 5.02,
+      "BOD": 3.9,
+      "Nitrate": 7.56,
+      "FecalColiform": 567.77
     }
   },
   {
     "location": "Varanasi",
-    "date": "2025-09-12",
+    "date": "2025-07-08",
     "parameters": {
-      "DO": 7.23,
+      "DO": 7.91,
+      "BOD": 2.0,
+      "Nitrate": 14.99,
+      "FecalColiform": 451.58
+    },
+    "forecast": {
+      "DO": 8.15,
+      "BOD": 2.02,
+      "Nitrate": 14.4,
+      "FecalColiform": 460.01
+    }
+  },
+  {
+    "location": "Varanasi",
+    "date": "2025-07-09",
+    "parameters": {
+      "DO": 4.87,
+      "BOD": 1.51,
+      "Nitrate": 11.03,
+      "FecalColiform": 579.49
+    },
+    "forecast": {
+      "DO": 5.05,
+      "BOD": 1.44,
+      "Nitrate": 10.5,
+      "FecalColiform": 588.48
+    }
+  },
+  {
+    "location": "Varanasi",
+    "date": "2025-07-10",
+    "parameters": {
+      "DO": 7.3,
+      "BOD": 1.05,
+      "Nitrate": 11.94,
+      "FecalColiform": 181.8
+    },
+    "forecast": {
+      "DO": 7.61,
+      "BOD": 1.06,
+      "Nitrate": 12.4,
+      "FecalColiform": 177.14
+    }
+  },
+  {
+    "location": "Varanasi",
+    "date": "2025-07-11",
+    "parameters": {
+      "DO": 8.67,
+      "BOD": 1.85,
+      "Nitrate": 9.2,
+      "FecalColiform": 433.99
+    },
+    "forecast": {
+      "DO": 8.78,
+      "BOD": 1.89,
+      "Nitrate": 8.86,
+      "FecalColiform": 423.18
+    }
+  },
+  {
+    "location": "Varanasi",
+    "date": "2025-07-12",
+    "parameters": {
+      "DO": 4.26,
+      "BOD": 5.81,
+      "Nitrate": 13.09,
+      "FecalColiform": 493.31
+    },
+    "forecast": {
+      "DO": 4.05,
+      "BOD": 6.06,
+      "Nitrate": 12.66,
+      "FecalColiform": 499.64
+    }
+  },
+  {
+    "location": "Varanasi",
+    "date": "2025-07-13",
+    "parameters": {
+      "DO": 7.81,
+      "BOD": 1.7,
+      "Nitrate": 11.81,
+      "FecalColiform": 525.86
+    },
+    "forecast": {
+      "DO": 8.11,
+      "BOD": 1.62,
+      "Nitrate": 11.43,
+      "FecalColiform": 516.68
+    }
+  },
+  {
+    "location": "Varanasi",
+    "date": "2025-07-14",
+    "parameters": {
+      "DO": 4.44,
+      "BOD": 5.68,
+      "Nitrate": 6.48,
+      "FecalColiform": 526.63
+    },
+    "forecast": {
+      "DO": 4.43,
+      "BOD": 5.47,
+      "Nitrate": 6.76,
+      "FecalColiform": 524.12
+    }
+  },
+  {
+    "location": "Varanasi",
+    "date": "2025-07-15",
+    "parameters": {
+      "DO": 7.32,
+      "BOD": 2.59,
+      "Nitrate": 6.91,
+      "FecalColiform": 214.31
+    },
+    "forecast": {
+      "DO": 7.34,
+      "BOD": 2.66,
+      "Nitrate": 7.1,
+      "FecalColiform": 205.25
+    }
+  },
+  {
+    "location": "Varanasi",
+    "date": "2025-07-16",
+    "parameters": {
+      "DO": 5.47,
+      "BOD": 3.26,
+      "Nitrate": 4.44,
+      "FecalColiform": 109.67
+    },
+    "forecast": {
+      "DO": 5.48,
+      "BOD": 3.33,
+      "Nitrate": 4.48,
+      "FecalColiform": 114.9
+    }
+  },
+  {
+    "location": "Varanasi",
+    "date": "2025-07-17",
+    "parameters": {
+      "DO": 6.51,
       "BOD": 4.79,
-      "Nitrate": 9.24,
-      "FecalColiform": 472.67
+      "Nitrate": 8.9,
+      "FecalColiform": 161.01
     },
     "forecast": {
-      "DO": 6.95,
-      "BOD": 4.67,
-      "Nitrate": 8.89,
-      "FecalColiform": 460.85
+      "DO": 6.71,
+      "BOD": 4.88,
+      "Nitrate": 8.68,
+      "FecalColiform": 163.97
     }
   },
   {
     "location": "Varanasi",
-    "date": "2025-09-13",
+    "date": "2025-07-18",
     "parameters": {
-      "DO": 7.28,
-      "BOD": 3.59,
-      "Nitrate": 11.22,
-      "FecalColiform": 481.94
+      "DO": 7.45,
+      "BOD": 3.03,
+      "Nitrate": 11.66,
+      "FecalColiform": 517.34
     },
     "forecast": {
-      "DO": 6.96,
-      "BOD": 3.5,
-      "Nitrate": 11.31,
-      "FecalColiform": 516.18
+      "DO": 7.71,
+      "BOD": 2.94,
+      "Nitrate": 11.36,
+      "FecalColiform": 521.59
     }
   },
   {
     "location": "Varanasi",
-    "date": "2025-09-14",
+    "date": "2025-07-19",
     "parameters": {
-      "DO": 7.43,
-      "BOD": 2.62,
-      "Nitrate": 10.44,
-      "FecalColiform": 495.2
+      "DO": 8.21,
+      "BOD": 4.49,
+      "Nitrate": 5.75,
+      "FecalColiform": 316.89
     },
     "forecast": {
-      "DO": 7.46,
-      "BOD": 2.55,
-      "Nitrate": 10.51,
-      "FecalColiform": 455.56
+      "DO": 8.2,
+      "BOD": 4.58,
+      "Nitrate": 5.79,
+      "FecalColiform": 312.97
     }
   },
   {
     "location": "Varanasi",
-    "date": "2025-09-15",
+    "date": "2025-07-20",
     "parameters": {
-      "DO": 5.61,
-      "BOD": 2.2,
-      "Nitrate": 11.73,
-      "FecalColiform": 177.45
-    },
-    "forecast": {
-      "DO": 5.5,
+      "DO": 6.71,
       "BOD": 2.38,
-      "Nitrate": 12.12,
-      "FecalColiform": 188.34
+      "Nitrate": 11.97,
+      "FecalColiform": 433.38
+    },
+    "forecast": {
+      "DO": 6.94,
+      "BOD": 2.47,
+      "Nitrate": 11.72,
+      "FecalColiform": 453.13
     }
   },
   {
     "location": "Varanasi",
-    "date": "2025-09-16",
+    "date": "2025-07-21",
     "parameters": {
-      "DO": 5.07,
-      "BOD": 3.91,
-      "Nitrate": 7.29,
-      "FecalColiform": 343.63
+      "DO": 6.72,
+      "BOD": 4.18,
+      "Nitrate": 11.9,
+      "FecalColiform": 513.93
     },
     "forecast": {
-      "DO": 4.59,
-      "BOD": 3.91,
-      "Nitrate": 7.71,
-      "FecalColiform": 333.34
+      "DO": 6.67,
+      "BOD": 4.11,
+      "Nitrate": 11.36,
+      "FecalColiform": 532.9
     }
   },
   {
     "location": "Varanasi",
-    "date": "2025-09-17",
+    "date": "2025-07-22",
     "parameters": {
-      "DO": 6.77,
-      "BOD": 4.6,
-      "Nitrate": 10.62,
-      "FecalColiform": 491.57
+      "DO": 4.07,
+      "BOD": 4.31,
+      "Nitrate": 12.35,
+      "FecalColiform": 88.58
     },
     "forecast": {
-      "DO": 6.39,
-      "BOD": 4.72,
-      "Nitrate": 10.55,
-      "FecalColiform": 456.4
+      "DO": 4.25,
+      "BOD": 4.3,
+      "Nitrate": 12.14,
+      "FecalColiform": 92.05
     }
   },
   {
     "location": "Varanasi",
-    "date": "2025-09-18",
+    "date": "2025-07-23",
     "parameters": {
-      "DO": 7.37,
-      "BOD": 2.65,
-      "Nitrate": 10.8,
-      "FecalColiform": 214.08
+      "DO": 8.94,
+      "BOD": 4.92,
+      "Nitrate": 10.44,
+      "FecalColiform": 459.64
     },
     "forecast": {
-      "DO": 7.63,
-      "BOD": 2.81,
-      "Nitrate": 11.25,
-      "FecalColiform": 253.78
+      "DO": 8.8,
+      "BOD": 5.03,
+      "Nitrate": 10.47,
+      "FecalColiform": 450.82
     }
   },
   {
     "location": "Varanasi",
-    "date": "2025-09-19",
+    "date": "2025-07-24",
     "parameters": {
-      "DO": 7.7,
-      "BOD": 3.53,
-      "Nitrate": 6.37,
-      "FecalColiform": 564.43
+      "DO": 7.2,
+      "BOD": 3.76,
+      "Nitrate": 3.27,
+      "FecalColiform": 344.26
     },
     "forecast": {
-      "DO": 7.67,
-      "BOD": 3.69,
-      "Nitrate": 6.44,
-      "FecalColiform": 534.04
+      "DO": 7.03,
+      "BOD": 3.8,
+      "Nitrate": 3.23,
+      "FecalColiform": 359.19
     }
   },
   {
-    "location": "Haridwar",
-    "date": "2025-08-31",
+    "location": "Varanasi",
+    "date": "2025-07-25",
+    "parameters": {
+      "DO": 8.19,
+      "BOD": 5.81,
+      "Nitrate": 12.02,
+      "FecalColiform": 219.4
+    },
+    "forecast": {
+      "DO": 7.95,
+      "BOD": 5.85,
+      "Nitrate": 12.29,
+      "FecalColiform": 222.56
+    }
+  },
+  {
+    "location": "Varanasi",
+    "date": "2025-07-26",
+    "parameters": {
+      "DO": 4.12,
+      "BOD": 4.66,
+      "Nitrate": 7.21,
+      "FecalColiform": 219.09
+    },
+    "forecast": {
+      "DO": 4.05,
+      "BOD": 4.87,
+      "Nitrate": 7.39,
+      "FecalColiform": 212.02
+    }
+  },
+  {
+    "location": "Varanasi",
+    "date": "2025-07-27",
+    "parameters": {
+      "DO": 6.27,
+      "BOD": 4.01,
+      "Nitrate": 10.22,
+      "FecalColiform": 168.27
+    },
+    "forecast": {
+      "DO": 6.31,
+      "BOD": 3.95,
+      "Nitrate": 10.48,
+      "FecalColiform": 175.57
+    }
+  },
+  {
+    "location": "Varanasi",
+    "date": "2025-07-28",
+    "parameters": {
+      "DO": 5.68,
+      "BOD": 5.93,
+      "Nitrate": 5.63,
+      "FecalColiform": 185.71
+    },
+    "forecast": {
+      "DO": 5.77,
+      "BOD": 5.68,
+      "Nitrate": 5.39,
+      "FecalColiform": 187.1
+    }
+  },
+  {
+    "location": "Varanasi",
+    "date": "2025-07-29",
+    "parameters": {
+      "DO": 8.4,
+      "BOD": 4.56,
+      "Nitrate": 14.95,
+      "FecalColiform": 195.82
+    },
+    "forecast": {
+      "DO": 8.21,
+      "BOD": 4.39,
+      "Nitrate": 15.41,
+      "FecalColiform": 204.99
+    }
+  },
+  {
+    "location": "Varanasi",
+    "date": "2025-07-30",
+    "parameters": {
+      "DO": 4.29,
+      "BOD": 1.36,
+      "Nitrate": 3.18,
+      "FecalColiform": 53.77
+    },
+    "forecast": {
+      "DO": 4.31,
+      "BOD": 1.34,
+      "Nitrate": 3.12,
+      "FecalColiform": 53.75
+    }
+  },
+  {
+    "location": "Varanasi",
+    "date": "2025-07-31",
+    "parameters": {
+      "DO": 8.03,
+      "BOD": 5.81,
+      "Nitrate": 12.61,
+      "FecalColiform": 502.97
+    },
+    "forecast": {
+      "DO": 8.21,
+      "BOD": 5.87,
+      "Nitrate": 12.33,
+      "FecalColiform": 499.5
+    }
+  },
+  {
+    "location": "Varanasi",
+    "date": "2025-08-01",
+    "parameters": {
+      "DO": 6.61,
+      "BOD": 1.41,
+      "Nitrate": 14.58,
+      "FecalColiform": 300.32
+    },
+    "forecast": {
+      "DO": 6.35,
+      "BOD": 1.37,
+      "Nitrate": 15.16,
+      "FecalColiform": 303.84
+    }
+  },
+  {
+    "location": "Varanasi",
+    "date": "2025-08-02",
+    "parameters": {
+      "DO": 6.73,
+      "BOD": 2.99,
+      "Nitrate": 5.99,
+      "FecalColiform": 367.99
+    },
+    "forecast": {
+      "DO": 6.84,
+      "BOD": 2.97,
+      "Nitrate": 5.75,
+      "FecalColiform": 371.54
+    }
+  },
+  {
+    "location": "Varanasi",
+    "date": "2025-08-03",
+    "parameters": {
+      "DO": 8.24,
+      "BOD": 2.0,
+      "Nitrate": 6.7,
+      "FecalColiform": 119.35
+    },
+    "forecast": {
+      "DO": 8.46,
+      "BOD": 1.95,
+      "Nitrate": 6.61,
+      "FecalColiform": 123.52
+    }
+  },
+  {
+    "location": "Varanasi",
+    "date": "2025-08-04",
+    "parameters": {
+      "DO": 6.11,
+      "BOD": 1.04,
+      "Nitrate": 5.18,
+      "FecalColiform": 420.5
+    },
+    "forecast": {
+      "DO": 6.19,
+      "BOD": 1.0,
+      "Nitrate": 5.28,
+      "FecalColiform": 434.48
+    }
+  },
+  {
+    "location": "Varanasi",
+    "date": "2025-08-05",
+    "parameters": {
+      "DO": 5.03,
+      "BOD": 4.19,
+      "Nitrate": 6.07,
+      "FecalColiform": 408.38
+    },
+    "forecast": {
+      "DO": 5.17,
+      "BOD": 4.32,
+      "Nitrate": 6.08,
+      "FecalColiform": 390.61
+    }
+  },
+  {
+    "location": "Varanasi",
+    "date": "2025-08-06",
+    "parameters": {
+      "DO": 7.86,
+      "BOD": 4.36,
+      "Nitrate": 10.9,
+      "FecalColiform": 268.52
+    },
+    "forecast": {
+      "DO": 7.48,
+      "BOD": 4.19,
+      "Nitrate": 10.56,
+      "FecalColiform": 265.47
+    }
+  },
+  {
+    "location": "Varanasi",
+    "date": "2025-08-07",
     "parameters": {
       "DO": 6.03,
-      "BOD": 4.04,
-      "Nitrate": 7.09,
-      "FecalColiform": 309.06
+      "BOD": 3.16,
+      "Nitrate": 12.84,
+      "FecalColiform": 127.73
+    },
+    "forecast": {
+      "DO": 5.89,
+      "BOD": 3.17,
+      "Nitrate": 12.61,
+      "FecalColiform": 131.17
+    }
+  },
+  {
+    "location": "Varanasi",
+    "date": "2025-08-08",
+    "parameters": {
+      "DO": 4.02,
+      "BOD": 2.2,
+      "Nitrate": 12.77,
+      "FecalColiform": 404.06
+    },
+    "forecast": {
+      "DO": 4.03,
+      "BOD": 2.21,
+      "Nitrate": 12.77,
+      "FecalColiform": 418.16
+    }
+  },
+  {
+    "location": "Varanasi",
+    "date": "2025-08-09",
+    "parameters": {
+      "DO": 6.07,
+      "BOD": 2.86,
+      "Nitrate": 10.25,
+      "FecalColiform": 505.95
+    },
+    "forecast": {
+      "DO": 6.22,
+      "BOD": 2.76,
+      "Nitrate": 9.81,
+      "FecalColiform": 510.94
+    }
+  },
+  {
+    "location": "Varanasi",
+    "date": "2025-08-10",
+    "parameters": {
+      "DO": 4.5,
+      "BOD": 3.15,
+      "Nitrate": 8.26,
+      "FecalColiform": 158.33
+    },
+    "forecast": {
+      "DO": 4.5,
+      "BOD": 3.2,
+      "Nitrate": 8.25,
+      "FecalColiform": 157.67
+    }
+  },
+  {
+    "location": "Varanasi",
+    "date": "2025-08-11",
+    "parameters": {
+      "DO": 4.84,
+      "BOD": 5.19,
+      "Nitrate": 3.24,
+      "FecalColiform": 336.91
+    },
+    "forecast": {
+      "DO": 4.75,
+      "BOD": 5.35,
+      "Nitrate": 3.27,
+      "FecalColiform": 330.74
+    }
+  },
+  {
+    "location": "Varanasi",
+    "date": "2025-08-12",
+    "parameters": {
+      "DO": 7.17,
+      "BOD": 5.37,
+      "Nitrate": 8.25,
+      "FecalColiform": 587.83
+    },
+    "forecast": {
+      "DO": 7.39,
+      "BOD": 5.18,
+      "Nitrate": 8.26,
+      "FecalColiform": 578.47
+    }
+  },
+  {
+    "location": "Varanasi",
+    "date": "2025-08-13",
+    "parameters": {
+      "DO": 6.81,
+      "BOD": 5.59,
+      "Nitrate": 13.27,
+      "FecalColiform": 390.78
+    },
+    "forecast": {
+      "DO": 7.04,
+      "BOD": 5.38,
+      "Nitrate": 13.43,
+      "FecalColiform": 402.43
+    }
+  },
+  {
+    "location": "Varanasi",
+    "date": "2025-08-14",
+    "parameters": {
+      "DO": 5.79,
+      "BOD": 1.92,
+      "Nitrate": 3.16,
+      "FecalColiform": 128.33
+    },
+    "forecast": {
+      "DO": 5.67,
+      "BOD": 1.84,
+      "Nitrate": 3.27,
+      "FecalColiform": 131.98
+    }
+  },
+  {
+    "location": "Varanasi",
+    "date": "2025-08-15",
+    "parameters": {
+      "DO": 4.71,
+      "BOD": 5.08,
+      "Nitrate": 13.98,
+      "FecalColiform": 132.56
+    },
+    "forecast": {
+      "DO": 4.81,
+      "BOD": 5.14,
+      "Nitrate": 14.44,
+      "FecalColiform": 132.97
+    }
+  },
+  {
+    "location": "Varanasi",
+    "date": "2025-08-16",
+    "parameters": {
+      "DO": 7.63,
+      "BOD": 5.45,
+      "Nitrate": 8.82,
+      "FecalColiform": 476.01
+    },
+    "forecast": {
+      "DO": 7.73,
+      "BOD": 5.7,
+      "Nitrate": 8.84,
+      "FecalColiform": 496.62
+    }
+  },
+  {
+    "location": "Varanasi",
+    "date": "2025-08-17",
+    "parameters": {
+      "DO": 4.77,
+      "BOD": 1.54,
+      "Nitrate": 6.79,
+      "FecalColiform": 362.68
+    },
+    "forecast": {
+      "DO": 4.86,
+      "BOD": 1.47,
+      "Nitrate": 7.03,
+      "FecalColiform": 371.15
+    }
+  },
+  {
+    "location": "Varanasi",
+    "date": "2025-08-18",
+    "parameters": {
+      "DO": 8.02,
+      "BOD": 5.09,
+      "Nitrate": 12.37,
+      "FecalColiform": 184.25
+    },
+    "forecast": {
+      "DO": 7.74,
+      "BOD": 5.03,
+      "Nitrate": 11.93,
+      "FecalColiform": 178.33
+    }
+  },
+  {
+    "location": "Varanasi",
+    "date": "2025-08-19",
+    "parameters": {
+      "DO": 5.03,
+      "BOD": 2.11,
+      "Nitrate": 13.55,
+      "FecalColiform": 439.12
+    },
+    "forecast": {
+      "DO": 4.88,
+      "BOD": 2.01,
+      "Nitrate": 13.1,
+      "FecalColiform": 452.61
+    }
+  },
+  {
+    "location": "Varanasi",
+    "date": "2025-08-20",
+    "parameters": {
+      "DO": 7.23,
+      "BOD": 2.37,
+      "Nitrate": 14.98,
+      "FecalColiform": 155.68
+    },
+    "forecast": {
+      "DO": 7.35,
+      "BOD": 2.28,
+      "Nitrate": 14.89,
+      "FecalColiform": 162.37
+    }
+  },
+  {
+    "location": "Varanasi",
+    "date": "2025-08-21",
+    "parameters": {
+      "DO": 8.28,
+      "BOD": 2.15,
+      "Nitrate": 3.62,
+      "FecalColiform": 537.99
+    },
+    "forecast": {
+      "DO": 8.21,
+      "BOD": 2.05,
+      "Nitrate": 3.73,
+      "FecalColiform": 551.48
+    }
+  },
+  {
+    "location": "Varanasi",
+    "date": "2025-08-22",
+    "parameters": {
+      "DO": 5.11,
+      "BOD": 3.36,
+      "Nitrate": 11.72,
+      "FecalColiform": 486.02
+    },
+    "forecast": {
+      "DO": 5.24,
+      "BOD": 3.41,
+      "Nitrate": 12.05,
+      "FecalColiform": 488.15
+    }
+  },
+  {
+    "location": "Varanasi",
+    "date": "2025-08-23",
+    "parameters": {
+      "DO": 4.43,
+      "BOD": 4.8,
+      "Nitrate": 6.8,
+      "FecalColiform": 392.77
+    },
+    "forecast": {
+      "DO": 4.58,
+      "BOD": 4.83,
+      "Nitrate": 6.59,
+      "FecalColiform": 390.02
+    }
+  },
+  {
+    "location": "Varanasi",
+    "date": "2025-08-24",
+    "parameters": {
+      "DO": 6.94,
+      "BOD": 1.78,
+      "Nitrate": 3.32,
+      "FecalColiform": 208.34
+    },
+    "forecast": {
+      "DO": 6.66,
+      "BOD": 1.86,
+      "Nitrate": 3.45,
+      "FecalColiform": 218.75
+    }
+  },
+  {
+    "location": "Varanasi",
+    "date": "2025-08-25",
+    "parameters": {
+      "DO": 6.59,
+      "BOD": 1.66,
+      "Nitrate": 9.67,
+      "FecalColiform": 450.01
     },
     "forecast": {
       "DO": 6.28,
-      "BOD": 3.98,
-      "Nitrate": 7.12,
-      "FecalColiform": 293.67
+      "BOD": 1.68,
+      "Nitrate": 9.55,
+      "FecalColiform": 429.19
+    }
+  },
+  {
+    "location": "Varanasi",
+    "date": "2025-08-26",
+    "parameters": {
+      "DO": 4.74,
+      "BOD": 2.29,
+      "Nitrate": 2.08,
+      "FecalColiform": 182.56
+    },
+    "forecast": {
+      "DO": 4.87,
+      "BOD": 2.18,
+      "Nitrate": 2.06,
+      "FecalColiform": 181.27
+    }
+  },
+  {
+    "location": "Varanasi",
+    "date": "2025-08-27",
+    "parameters": {
+      "DO": 6.19,
+      "BOD": 4.99,
+      "Nitrate": 14.07,
+      "FecalColiform": 413.15
+    },
+    "forecast": {
+      "DO": 6.21,
+      "BOD": 5.17,
+      "Nitrate": 14.27,
+      "FecalColiform": 403.23
+    }
+  },
+  {
+    "location": "Varanasi",
+    "date": "2025-08-28",
+    "parameters": {
+      "DO": 5.58,
+      "BOD": 4.44,
+      "Nitrate": 13.96,
+      "FecalColiform": 114.88
+    },
+    "forecast": {
+      "DO": 5.76,
+      "BOD": 4.57,
+      "Nitrate": 14.27,
+      "FecalColiform": 114.76
+    }
+  },
+  {
+    "location": "Varanasi",
+    "date": "2025-08-29",
+    "parameters": {
+      "DO": 5.43,
+      "BOD": 3.2,
+      "Nitrate": 9.51,
+      "FecalColiform": 518.64
+    },
+    "forecast": {
+      "DO": 5.42,
+      "BOD": 3.36,
+      "Nitrate": 9.7,
+      "FecalColiform": 494.85
+    }
+  },
+  {
+    "location": "Varanasi",
+    "date": "2025-08-30",
+    "parameters": {
+      "DO": 7.28,
+      "BOD": 4.1,
+      "Nitrate": 4.57,
+      "FecalColiform": 489.3
+    },
+    "forecast": {
+      "DO": 7.29,
+      "BOD": 4.14,
+      "Nitrate": 4.42,
+      "FecalColiform": 472.21
     }
   },
   {
     "location": "Haridwar",
-    "date": "2025-09-01",
+    "date": "2025-07-01",
     "parameters": {
-      "DO": 5.63,
-      "BOD": 3.82,
-      "Nitrate": 5.28,
-      "FecalColiform": 357.02
+      "DO": 4.65,
+      "BOD": 5.89,
+      "Nitrate": 14.5,
+      "FecalColiform": 153.9
     },
     "forecast": {
-      "DO": 5.3,
-      "BOD": 3.74,
-      "Nitrate": 5.12,
-      "FecalColiform": 309.72
+      "DO": 4.43,
+      "BOD": 6.06,
+      "Nitrate": 15.03,
+      "FecalColiform": 151.94
     }
   },
   {
     "location": "Haridwar",
-    "date": "2025-09-02",
+    "date": "2025-07-02",
     "parameters": {
-      "DO": 6.78,
-      "BOD": 3.3,
-      "Nitrate": 11.53,
-      "FecalColiform": 579.92
+      "DO": 6.92,
+      "BOD": 2.73,
+      "Nitrate": 11.49,
+      "FecalColiform": 123.08
     },
     "forecast": {
-      "DO": 7.19,
-      "BOD": 3.18,
-      "Nitrate": 11.65,
-      "FecalColiform": 595.66
+      "DO": 7.02,
+      "BOD": 2.8,
+      "Nitrate": 11.74,
+      "FecalColiform": 128.43
     }
   },
   {
     "location": "Haridwar",
-    "date": "2025-09-03",
+    "date": "2025-07-03",
     "parameters": {
-      "DO": 7.06,
-      "BOD": 4.79,
-      "Nitrate": 10.91,
-      "FecalColiform": 398.25
+      "DO": 4.72,
+      "BOD": 4.98,
+      "Nitrate": 9.26,
+      "FecalColiform": 441.86
     },
     "forecast": {
-      "DO": 6.85,
+      "DO": 4.75,
       "BOD": 4.94,
-      "Nitrate": 10.56,
-      "FecalColiform": 361.74
+      "Nitrate": 9.49,
+      "FecalColiform": 462.4
     }
   },
   {
     "location": "Haridwar",
-    "date": "2025-09-04",
+    "date": "2025-07-04",
     "parameters": {
-      "DO": 7.21,
-      "BOD": 4.71,
-      "Nitrate": 10.38,
-      "FecalColiform": 248.52
+      "DO": 5.24,
+      "BOD": 5.18,
+      "Nitrate": 10.17,
+      "FecalColiform": 145.13
     },
     "forecast": {
-      "DO": 7.46,
-      "BOD": 4.78,
-      "Nitrate": 10.14,
-      "FecalColiform": 225.69
+      "DO": 5.2,
+      "BOD": 5.02,
+      "Nitrate": 10.02,
+      "FecalColiform": 144.38
     }
   },
   {
     "location": "Haridwar",
-    "date": "2025-09-05",
+    "date": "2025-07-05",
     "parameters": {
-      "DO": 6.18,
-      "BOD": 3.0,
-      "Nitrate": 10.27,
-      "FecalColiform": 276.2
+      "DO": 7.05,
+      "BOD": 4.43,
+      "Nitrate": 5.56,
+      "FecalColiform": 207.35
+    },
+    "forecast": {
+      "DO": 7.31,
+      "BOD": 4.39,
+      "Nitrate": 5.8,
+      "FecalColiform": 204.32
+    }
+  },
+  {
+    "location": "Haridwar",
+    "date": "2025-07-06",
+    "parameters": {
+      "DO": 6.09,
+      "BOD": 2.35,
+      "Nitrate": 6.53,
+      "FecalColiform": 522.71
+    },
+    "forecast": {
+      "DO": 5.94,
+      "BOD": 2.42,
+      "Nitrate": 6.23,
+      "FecalColiform": 524.68
+    }
+  },
+  {
+    "location": "Haridwar",
+    "date": "2025-07-07",
+    "parameters": {
+      "DO": 4.17,
+      "BOD": 3.96,
+      "Nitrate": 14.89,
+      "FecalColiform": 210.5
+    },
+    "forecast": {
+      "DO": 4.37,
+      "BOD": 3.88,
+      "Nitrate": 14.52,
+      "FecalColiform": 205.64
+    }
+  },
+  {
+    "location": "Haridwar",
+    "date": "2025-07-08",
+    "parameters": {
+      "DO": 4.5,
+      "BOD": 2.62,
+      "Nitrate": 14.36,
+      "FecalColiform": 97.25
+    },
+    "forecast": {
+      "DO": 4.39,
+      "BOD": 2.62,
+      "Nitrate": 14.29,
+      "FecalColiform": 95.99
+    }
+  },
+  {
+    "location": "Haridwar",
+    "date": "2025-07-09",
+    "parameters": {
+      "DO": 6.28,
+      "BOD": 5.08,
+      "Nitrate": 13.94,
+      "FecalColiform": 442.1
     },
     "forecast": {
       "DO": 6.49,
-      "BOD": 3.07,
-      "Nitrate": 10.55,
-      "FecalColiform": 253.03
+      "BOD": 5.12,
+      "Nitrate": 13.92,
+      "FecalColiform": 433.63
     }
   },
   {
     "location": "Haridwar",
-    "date": "2025-09-06",
-    "parameters": {
-      "DO": 5.16,
-      "BOD": 3.58,
-      "Nitrate": 6.45,
-      "FecalColiform": 448.83
-    },
-    "forecast": {
-      "DO": 4.9,
-      "BOD": 3.52,
-      "Nitrate": 6.65,
-      "FecalColiform": 417.95
-    }
-  },
-  {
-    "location": "Haridwar",
-    "date": "2025-09-07",
-    "parameters": {
-      "DO": 5.18,
-      "BOD": 3.85,
-      "Nitrate": 9.67,
-      "FecalColiform": 232.19
-    },
-    "forecast": {
-      "DO": 4.85,
-      "BOD": 3.97,
-      "Nitrate": 9.32,
-      "FecalColiform": 244.74
-    }
-  },
-  {
-    "location": "Haridwar",
-    "date": "2025-09-08",
-    "parameters": {
-      "DO": 6.24,
-      "BOD": 4.38,
-      "Nitrate": 6.32,
-      "FecalColiform": 254.29
-    },
-    "forecast": {
-      "DO": 5.82,
-      "BOD": 4.41,
-      "Nitrate": 5.86,
-      "FecalColiform": 288.12
-    }
-  },
-  {
-    "location": "Haridwar",
-    "date": "2025-09-09",
+    "date": "2025-07-10",
     "parameters": {
       "DO": 5.17,
-      "BOD": 2.75,
-      "Nitrate": 7.83,
-      "FecalColiform": 194.24
+      "BOD": 5.14,
+      "Nitrate": 2.22,
+      "FecalColiform": 572.99
     },
     "forecast": {
-      "DO": 4.9,
-      "BOD": 2.59,
-      "Nitrate": 8.2,
-      "FecalColiform": 173.55
+      "DO": 5.31,
+      "BOD": 4.9,
+      "Nitrate": 2.32,
+      "FecalColiform": 561.74
     }
   },
   {
     "location": "Haridwar",
-    "date": "2025-09-10",
+    "date": "2025-07-11",
     "parameters": {
-      "DO": 5.06,
-      "BOD": 2.47,
-      "Nitrate": 10.85,
-      "FecalColiform": 344.99
+      "DO": 4.5,
+      "BOD": 5.1,
+      "Nitrate": 7.23,
+      "FecalColiform": 110.25
     },
     "forecast": {
-      "DO": 4.65,
-      "BOD": 2.44,
-      "Nitrate": 10.59,
-      "FecalColiform": 333.3
+      "DO": 4.49,
+      "BOD": 5.28,
+      "Nitrate": 7.38,
+      "FecalColiform": 109.2
     }
   },
   {
     "location": "Haridwar",
-    "date": "2025-09-11",
+    "date": "2025-07-12",
     "parameters": {
-      "DO": 6.62,
-      "BOD": 4.78,
-      "Nitrate": 8.74,
-      "FecalColiform": 210.74
+      "DO": 4.37,
+      "BOD": 1.11,
+      "Nitrate": 8.88,
+      "FecalColiform": 216.48
     },
     "forecast": {
-      "DO": 6.58,
-      "BOD": 4.98,
-      "Nitrate": 9.07,
-      "FecalColiform": 254.41
-    }
-  },
-  {
-    "location": "Haridwar",
-    "date": "2025-09-12",
-    "parameters": {
-      "DO": 6.28,
-      "BOD": 3.03,
-      "Nitrate": 9.72,
-      "FecalColiform": 324.25
-    },
-    "forecast": {
-      "DO": 5.98,
-      "BOD": 3.11,
+      "DO": 4.58,
+      "BOD": 1.06,
       "Nitrate": 9.23,
-      "FecalColiform": 330.24
+      "FecalColiform": 207.41
     }
   },
   {
     "location": "Haridwar",
-    "date": "2025-09-13",
+    "date": "2025-07-13",
     "parameters": {
-      "DO": 7.71,
-      "BOD": 4.04,
-      "Nitrate": 11.71,
-      "FecalColiform": 225.34
+      "DO": 5.14,
+      "BOD": 4.7,
+      "Nitrate": 13.9,
+      "FecalColiform": 242.09
     },
     "forecast": {
-      "DO": 7.25,
-      "BOD": 4.18,
-      "Nitrate": 11.78,
-      "FecalColiform": 220.83
+      "DO": 5.22,
+      "BOD": 4.51,
+      "Nitrate": 13.4,
+      "FecalColiform": 238.61
     }
   },
   {
     "location": "Haridwar",
-    "date": "2025-09-14",
+    "date": "2025-07-14",
     "parameters": {
-      "DO": 6.66,
-      "BOD": 2.93,
-      "Nitrate": 11.11,
-      "FecalColiform": 301.33
+      "DO": 4.95,
+      "BOD": 1.11,
+      "Nitrate": 8.69,
+      "FecalColiform": 244.96
     },
     "forecast": {
-      "DO": 6.69,
-      "BOD": 3.06,
-      "Nitrate": 11.31,
-      "FecalColiform": 295.22
+      "DO": 5.12,
+      "BOD": 1.14,
+      "Nitrate": 9.06,
+      "FecalColiform": 239.92
     }
   },
   {
     "location": "Haridwar",
-    "date": "2025-09-15",
+    "date": "2025-07-15",
     "parameters": {
-      "DO": 7.03,
-      "BOD": 4.88,
-      "Nitrate": 11.6,
-      "FecalColiform": 234.3
+      "DO": 8.4,
+      "BOD": 4.99,
+      "Nitrate": 8.54,
+      "FecalColiform": 316.09
     },
     "forecast": {
-      "DO": 7.21,
-      "BOD": 4.8,
-      "Nitrate": 12.04,
-      "FecalColiform": 261.55
-    }
-  },
-  {
-    "location": "Haridwar",
-    "date": "2025-09-16",
-    "parameters": {
-      "DO": 7.51,
-      "BOD": 3.8,
-      "Nitrate": 8.79,
-      "FecalColiform": 221.56
-    },
-    "forecast": {
-      "DO": 7.22,
-      "BOD": 3.78,
-      "Nitrate": 9.2,
-      "FecalColiform": 271.16
-    }
-  },
-  {
-    "location": "Haridwar",
-    "date": "2025-09-17",
-    "parameters": {
-      "DO": 7.31,
-      "BOD": 2.5,
-      "Nitrate": 9.29,
-      "FecalColiform": 147.71
-    },
-    "forecast": {
-      "DO": 7.62,
-      "BOD": 2.5,
-      "Nitrate": 8.84,
-      "FecalColiform": 123.41
-    }
-  },
-  {
-    "location": "Haridwar",
-    "date": "2025-09-18",
-    "parameters": {
-      "DO": 6.1,
-      "BOD": 3.47,
-      "Nitrate": 7.0,
-      "FecalColiform": 530.76
-    },
-    "forecast": {
-      "DO": 6.2,
-      "BOD": 3.5,
-      "Nitrate": 7.43,
-      "FecalColiform": 494.31
-    }
-  },
-  {
-    "location": "Haridwar",
-    "date": "2025-09-19",
-    "parameters": {
-      "DO": 7.23,
-      "BOD": 3.37,
-      "Nitrate": 11.39,
-      "FecalColiform": 227.7
-    },
-    "forecast": {
-      "DO": 7.13,
-      "BOD": 3.36,
-      "Nitrate": 11.33,
-      "FecalColiform": 236.36
-    }
-  },
-  {
-    "location": "Kanpur",
-    "date": "2025-08-31",
-    "parameters": {
-      "DO": 7.85,
-      "BOD": 3.28,
-      "Nitrate": 11.63,
-      "FecalColiform": 255.45
-    },
-    "forecast": {
-      "DO": 7.71,
-      "BOD": 3.45,
-      "Nitrate": 11.38,
-      "FecalColiform": 302.84
-    }
-  },
-  {
-    "location": "Kanpur",
-    "date": "2025-09-01",
-    "parameters": {
-      "DO": 5.59,
-      "BOD": 4.35,
-      "Nitrate": 5.64,
-      "FecalColiform": 389.48
-    },
-    "forecast": {
-      "DO": 5.69,
-      "BOD": 4.28,
-      "Nitrate": 5.45,
-      "FecalColiform": 350.97
-    }
-  },
-  {
-    "location": "Kanpur",
-    "date": "2025-09-02",
-    "parameters": {
-      "DO": 6.06,
-      "BOD": 3.39,
-      "Nitrate": 8.91,
-      "FecalColiform": 106.99
-    },
-    "forecast": {
-      "DO": 6.3,
-      "BOD": 3.5,
-      "Nitrate": 8.58,
-      "FecalColiform": 122.2
-    }
-  },
-  {
-    "location": "Kanpur",
-    "date": "2025-09-03",
-    "parameters": {
-      "DO": 5.53,
-      "BOD": 4.17,
-      "Nitrate": 7.8,
-      "FecalColiform": 143.57
-    },
-    "forecast": {
-      "DO": 5.65,
-      "BOD": 4.01,
-      "Nitrate": 7.87,
-      "FecalColiform": 142.39
-    }
-  },
-  {
-    "location": "Kanpur",
-    "date": "2025-09-04",
-    "parameters": {
-      "DO": 5.97,
-      "BOD": 4.45,
-      "Nitrate": 6.08,
-      "FecalColiform": 483.73
-    },
-    "forecast": {
-      "DO": 5.95,
-      "BOD": 4.36,
-      "Nitrate": 6.29,
-      "FecalColiform": 474.37
-    }
-  },
-  {
-    "location": "Kanpur",
-    "date": "2025-09-05",
-    "parameters": {
-      "DO": 7.5,
-      "BOD": 2.17,
-      "Nitrate": 6.06,
-      "FecalColiform": 316.18
-    },
-    "forecast": {
-      "DO": 7.9,
-      "BOD": 2.36,
-      "Nitrate": 6.17,
-      "FecalColiform": 324.61
-    }
-  },
-  {
-    "location": "Kanpur",
-    "date": "2025-09-06",
-    "parameters": {
-      "DO": 6.82,
+      "DO": 8.69,
       "BOD": 4.95,
-      "Nitrate": 7.85,
-      "FecalColiform": 317.54
-    },
-    "forecast": {
-      "DO": 6.99,
-      "BOD": 5.02,
-      "Nitrate": 8.13,
-      "FecalColiform": 324.12
+      "Nitrate": 8.2,
+      "FecalColiform": 323.79
     }
   },
   {
-    "location": "Kanpur",
-    "date": "2025-09-07",
+    "location": "Haridwar",
+    "date": "2025-07-16",
     "parameters": {
-      "DO": 7.28,
-      "BOD": 2.73,
-      "Nitrate": 10.55,
-      "FecalColiform": 226.99
+      "DO": 5.18,
+      "BOD": 1.83,
+      "Nitrate": 11.54,
+      "FecalColiform": 371.85
     },
     "forecast": {
-      "DO": 7.76,
-      "BOD": 2.78,
-      "Nitrate": 10.93,
-      "FecalColiform": 229.5
+      "DO": 4.93,
+      "BOD": 1.75,
+      "Nitrate": 11.99,
+      "FecalColiform": 360.92
     }
   },
   {
-    "location": "Kanpur",
-    "date": "2025-09-08",
+    "location": "Haridwar",
+    "date": "2025-07-17",
     "parameters": {
-      "DO": 5.07,
-      "BOD": 4.02,
-      "Nitrate": 8.6,
-      "FecalColiform": 200.5
+      "DO": 6.75,
+      "BOD": 3.11,
+      "Nitrate": 12.61,
+      "FecalColiform": 238.26
     },
     "forecast": {
-      "DO": 5.56,
-      "BOD": 4.07,
-      "Nitrate": 8.36,
-      "FecalColiform": 249.3
+      "DO": 6.44,
+      "BOD": 3.23,
+      "Nitrate": 12.43,
+      "FecalColiform": 247.15
     }
   },
   {
-    "location": "Kanpur",
-    "date": "2025-09-09",
+    "location": "Haridwar",
+    "date": "2025-07-18",
     "parameters": {
-      "DO": 6.22,
-      "BOD": 2.66,
-      "Nitrate": 5.38,
-      "FecalColiform": 447.18
+      "DO": 4.08,
+      "BOD": 3.54,
+      "Nitrate": 10.64,
+      "FecalColiform": 105.81
     },
     "forecast": {
-      "DO": 6.63,
-      "BOD": 2.77,
-      "Nitrate": 5.59,
-      "FecalColiform": 442.34
+      "DO": 4.12,
+      "BOD": 3.62,
+      "Nitrate": 11.12,
+      "FecalColiform": 105.26
     }
   },
   {
-    "location": "Kanpur",
-    "date": "2025-09-10",
+    "location": "Haridwar",
+    "date": "2025-07-19",
     "parameters": {
-      "DO": 6.45,
-      "BOD": 4.86,
-      "Nitrate": 8.83,
-      "FecalColiform": 457.83
+      "DO": 6.74,
+      "BOD": 1.43,
+      "Nitrate": 11.64,
+      "FecalColiform": 139.03
     },
     "forecast": {
-      "DO": 6.88,
-      "BOD": 4.74,
-      "Nitrate": 8.95,
-      "FecalColiform": 435.46
+      "DO": 6.68,
+      "BOD": 1.49,
+      "Nitrate": 11.99,
+      "FecalColiform": 143.53
     }
   },
   {
-    "location": "Kanpur",
-    "date": "2025-09-11",
+    "location": "Haridwar",
+    "date": "2025-07-20",
     "parameters": {
-      "DO": 6.41,
-      "BOD": 4.8,
-      "Nitrate": 11.0,
-      "FecalColiform": 384.21
+      "DO": 7.2,
+      "BOD": 5.68,
+      "Nitrate": 7.48,
+      "FecalColiform": 341.27
     },
     "forecast": {
-      "DO": 6.2,
-      "BOD": 4.98,
-      "Nitrate": 10.92,
-      "FecalColiform": 374.64
+      "DO": 7.3,
+      "BOD": 5.51,
+      "Nitrate": 7.17,
+      "FecalColiform": 346.34
     }
   },
   {
-    "location": "Kanpur",
-    "date": "2025-09-12",
+    "location": "Haridwar",
+    "date": "2025-07-21",
     "parameters": {
-      "DO": 5.65,
-      "BOD": 3.73,
-      "Nitrate": 5.76,
-      "FecalColiform": 486.53
+      "DO": 7.2,
+      "BOD": 1.32,
+      "Nitrate": 8.11,
+      "FecalColiform": 193.6
+    },
+    "forecast": {
+      "DO": 7.14,
+      "BOD": 1.34,
+      "Nitrate": 7.73,
+      "FecalColiform": 201.34
+    }
+  },
+  {
+    "location": "Haridwar",
+    "date": "2025-07-22",
+    "parameters": {
+      "DO": 4.56,
+      "BOD": 1.64,
+      "Nitrate": 8.73,
+      "FecalColiform": 189.67
+    },
+    "forecast": {
+      "DO": 4.45,
+      "BOD": 1.7,
+      "Nitrate": 9.11,
+      "FecalColiform": 187.66
+    }
+  },
+  {
+    "location": "Haridwar",
+    "date": "2025-07-23",
+    "parameters": {
+      "DO": 4.54,
+      "BOD": 1.37,
+      "Nitrate": 9.96,
+      "FecalColiform": 220.74
+    },
+    "forecast": {
+      "DO": 4.43,
+      "BOD": 1.32,
+      "Nitrate": 9.99,
+      "FecalColiform": 225.78
+    }
+  },
+  {
+    "location": "Haridwar",
+    "date": "2025-07-24",
+    "parameters": {
+      "DO": 5.21,
+      "BOD": 5.75,
+      "Nitrate": 13.13,
+      "FecalColiform": 509.27
+    },
+    "forecast": {
+      "DO": 5.02,
+      "BOD": 6.0,
+      "Nitrate": 12.97,
+      "FecalColiform": 483.86
+    }
+  },
+  {
+    "location": "Haridwar",
+    "date": "2025-07-25",
+    "parameters": {
+      "DO": 5.6,
+      "BOD": 4.44,
+      "Nitrate": 5.49,
+      "FecalColiform": 72.52
     },
     "forecast": {
       "DO": 5.47,
-      "BOD": 3.89,
-      "Nitrate": 5.88,
-      "FecalColiform": 482.42
-    }
-  },
-  {
-    "location": "Kanpur",
-    "date": "2025-09-13",
-    "parameters": {
-      "DO": 6.83,
-      "BOD": 3.47,
-      "Nitrate": 11.18,
-      "FecalColiform": 141.16
-    },
-    "forecast": {
-      "DO": 6.4,
-      "BOD": 3.51,
-      "Nitrate": 10.75,
-      "FecalColiform": 130.61
-    }
-  },
-  {
-    "location": "Kanpur",
-    "date": "2025-09-14",
-    "parameters": {
-      "DO": 6.32,
-      "BOD": 3.51,
-      "Nitrate": 9.66,
-      "FecalColiform": 440.84
-    },
-    "forecast": {
-      "DO": 5.93,
-      "BOD": 3.39,
-      "Nitrate": 10.04,
-      "FecalColiform": 447.36
-    }
-  },
-  {
-    "location": "Kanpur",
-    "date": "2025-09-15",
-    "parameters": {
-      "DO": 5.11,
       "BOD": 4.32,
-      "Nitrate": 7.88,
-      "FecalColiform": 454.11
-    },
-    "forecast": {
-      "DO": 5.46,
-      "BOD": 4.3,
-      "Nitrate": 8.02,
-      "FecalColiform": 469.85
+      "Nitrate": 5.32,
+      "FecalColiform": 70.12
     }
   },
   {
-    "location": "Kanpur",
-    "date": "2025-09-16",
+    "location": "Haridwar",
+    "date": "2025-07-26",
     "parameters": {
-      "DO": 6.74,
-      "BOD": 4.21,
-      "Nitrate": 7.94,
-      "FecalColiform": 158.88
+      "DO": 7.15,
+      "BOD": 2.69,
+      "Nitrate": 4.79,
+      "FecalColiform": 236.37
     },
     "forecast": {
-      "DO": 6.9,
-      "BOD": 4.38,
-      "Nitrate": 7.73,
-      "FecalColiform": 184.88
-    }
-  },
-  {
-    "location": "Kanpur",
-    "date": "2025-09-17",
-    "parameters": {
-      "DO": 7.59,
-      "BOD": 4.82,
-      "Nitrate": 7.33,
-      "FecalColiform": 221.89
-    },
-    "forecast": {
-      "DO": 7.92,
-      "BOD": 4.65,
-      "Nitrate": 7.33,
-      "FecalColiform": 199.96
-    }
-  },
-  {
-    "location": "Kanpur",
-    "date": "2025-09-18",
-    "parameters": {
-      "DO": 5.13,
+      "DO": 6.95,
       "BOD": 2.74,
+      "Nitrate": 4.86,
+      "FecalColiform": 229.04
+    }
+  },
+  {
+    "location": "Haridwar",
+    "date": "2025-07-27",
+    "parameters": {
+      "DO": 5.95,
+      "BOD": 4.91,
+      "Nitrate": 10.38,
+      "FecalColiform": 477.52
+    },
+    "forecast": {
+      "DO": 6.16,
+      "BOD": 5.02,
+      "Nitrate": 10.18,
+      "FecalColiform": 457.41
+    }
+  },
+  {
+    "location": "Haridwar",
+    "date": "2025-07-28",
+    "parameters": {
+      "DO": 9.0,
+      "BOD": 2.43,
+      "Nitrate": 7.0,
+      "FecalColiform": 528.24
+    },
+    "forecast": {
+      "DO": 9.35,
+      "BOD": 2.41,
+      "Nitrate": 6.93,
+      "FecalColiform": 531.28
+    }
+  },
+  {
+    "location": "Haridwar",
+    "date": "2025-07-29",
+    "parameters": {
+      "DO": 5.83,
+      "BOD": 1.99,
+      "Nitrate": 6.98,
+      "FecalColiform": 344.46
+    },
+    "forecast": {
+      "DO": 5.9,
+      "BOD": 2.01,
+      "Nitrate": 6.9,
+      "FecalColiform": 355.56
+    }
+  },
+  {
+    "location": "Haridwar",
+    "date": "2025-07-30",
+    "parameters": {
+      "DO": 8.34,
+      "BOD": 4.23,
+      "Nitrate": 5.02,
+      "FecalColiform": 350.67
+    },
+    "forecast": {
+      "DO": 8.5,
+      "BOD": 4.2,
+      "Nitrate": 5.02,
+      "FecalColiform": 359.92
+    }
+  },
+  {
+    "location": "Haridwar",
+    "date": "2025-07-31",
+    "parameters": {
+      "DO": 8.32,
+      "BOD": 5.11,
+      "Nitrate": 10.44,
+      "FecalColiform": 485.07
+    },
+    "forecast": {
+      "DO": 8.72,
+      "BOD": 4.89,
+      "Nitrate": 10.89,
+      "FecalColiform": 494.24
+    }
+  },
+  {
+    "location": "Haridwar",
+    "date": "2025-08-01",
+    "parameters": {
+      "DO": 4.09,
+      "BOD": 1.73,
+      "Nitrate": 9.09,
+      "FecalColiform": 441.91
+    },
+    "forecast": {
+      "DO": 4.04,
+      "BOD": 1.76,
+      "Nitrate": 9.14,
+      "FecalColiform": 421.88
+    }
+  },
+  {
+    "location": "Haridwar",
+    "date": "2025-08-02",
+    "parameters": {
+      "DO": 6.02,
+      "BOD": 2.7,
+      "Nitrate": 13.6,
+      "FecalColiform": 71.54
+    },
+    "forecast": {
+      "DO": 5.99,
+      "BOD": 2.8,
+      "Nitrate": 13.56,
+      "FecalColiform": 71.75
+    }
+  },
+  {
+    "location": "Haridwar",
+    "date": "2025-08-03",
+    "parameters": {
+      "DO": 4.66,
+      "BOD": 2.2,
+      "Nitrate": 9.31,
+      "FecalColiform": 270.8
+    },
+    "forecast": {
+      "DO": 4.81,
+      "BOD": 2.22,
+      "Nitrate": 9.07,
+      "FecalColiform": 267.67
+    }
+  },
+  {
+    "location": "Haridwar",
+    "date": "2025-08-04",
+    "parameters": {
+      "DO": 6.88,
+      "BOD": 1.72,
+      "Nitrate": 10.71,
+      "FecalColiform": 372.69
+    },
+    "forecast": {
+      "DO": 6.68,
+      "BOD": 1.65,
+      "Nitrate": 10.88,
+      "FecalColiform": 356.7
+    }
+  },
+  {
+    "location": "Haridwar",
+    "date": "2025-08-05",
+    "parameters": {
+      "DO": 6.41,
+      "BOD": 4.42,
+      "Nitrate": 12.74,
+      "FecalColiform": 212.53
+    },
+    "forecast": {
+      "DO": 6.13,
+      "BOD": 4.36,
+      "Nitrate": 12.47,
+      "FecalColiform": 221.21
+    }
+  },
+  {
+    "location": "Haridwar",
+    "date": "2025-08-06",
+    "parameters": {
+      "DO": 4.51,
+      "BOD": 4.6,
+      "Nitrate": 5.71,
+      "FecalColiform": 390.65
+    },
+    "forecast": {
+      "DO": 4.3,
+      "BOD": 4.39,
+      "Nitrate": 5.88,
+      "FecalColiform": 390.43
+    }
+  },
+  {
+    "location": "Haridwar",
+    "date": "2025-08-07",
+    "parameters": {
+      "DO": 8.75,
+      "BOD": 2.03,
+      "Nitrate": 4.38,
+      "FecalColiform": 153.7
+    },
+    "forecast": {
+      "DO": 8.96,
+      "BOD": 2.12,
+      "Nitrate": 4.45,
+      "FecalColiform": 158.47
+    }
+  },
+  {
+    "location": "Haridwar",
+    "date": "2025-08-08",
+    "parameters": {
+      "DO": 5.2,
+      "BOD": 4.4,
+      "Nitrate": 5.13,
+      "FecalColiform": 387.77
+    },
+    "forecast": {
+      "DO": 5.16,
+      "BOD": 4.25,
+      "Nitrate": 5.36,
+      "FecalColiform": 398.97
+    }
+  },
+  {
+    "location": "Haridwar",
+    "date": "2025-08-09",
+    "parameters": {
+      "DO": 7.79,
+      "BOD": 2.28,
+      "Nitrate": 12.79,
+      "FecalColiform": 121.47
+    },
+    "forecast": {
+      "DO": 7.58,
+      "BOD": 2.25,
+      "Nitrate": 12.55,
+      "FecalColiform": 126.62
+    }
+  },
+  {
+    "location": "Haridwar",
+    "date": "2025-08-10",
+    "parameters": {
+      "DO": 4.27,
+      "BOD": 1.5,
+      "Nitrate": 4.31,
+      "FecalColiform": 450.44
+    },
+    "forecast": {
+      "DO": 4.32,
+      "BOD": 1.48,
+      "Nitrate": 4.25,
+      "FecalColiform": 458.23
+    }
+  },
+  {
+    "location": "Haridwar",
+    "date": "2025-08-11",
+    "parameters": {
+      "DO": 7.8,
+      "BOD": 3.92,
+      "Nitrate": 14.37,
+      "FecalColiform": 186.45
+    },
+    "forecast": {
+      "DO": 7.99,
+      "BOD": 3.75,
+      "Nitrate": 13.97,
+      "FecalColiform": 185.2
+    }
+  },
+  {
+    "location": "Haridwar",
+    "date": "2025-08-12",
+    "parameters": {
+      "DO": 8.11,
+      "BOD": 4.95,
+      "Nitrate": 7.89,
+      "FecalColiform": 130.25
+    },
+    "forecast": {
+      "DO": 8.26,
+      "BOD": 5.09,
+      "Nitrate": 7.57,
+      "FecalColiform": 125.75
+    }
+  },
+  {
+    "location": "Haridwar",
+    "date": "2025-08-13",
+    "parameters": {
+      "DO": 8.51,
+      "BOD": 3.81,
+      "Nitrate": 6.89,
+      "FecalColiform": 466.51
+    },
+    "forecast": {
+      "DO": 8.76,
+      "BOD": 3.99,
+      "Nitrate": 7.2,
+      "FecalColiform": 479.54
+    }
+  },
+  {
+    "location": "Haridwar",
+    "date": "2025-08-14",
+    "parameters": {
+      "DO": 4.51,
+      "BOD": 2.44,
+      "Nitrate": 6.14,
+      "FecalColiform": 395.44
+    },
+    "forecast": {
+      "DO": 4.38,
+      "BOD": 2.52,
+      "Nitrate": 6.07,
+      "FecalColiform": 404.77
+    }
+  },
+  {
+    "location": "Haridwar",
+    "date": "2025-08-15",
+    "parameters": {
+      "DO": 7.97,
+      "BOD": 5.19,
+      "Nitrate": 12.37,
+      "FecalColiform": 545.13
+    },
+    "forecast": {
+      "DO": 8.11,
+      "BOD": 5.37,
+      "Nitrate": 11.78,
+      "FecalColiform": 542.03
+    }
+  },
+  {
+    "location": "Haridwar",
+    "date": "2025-08-16",
+    "parameters": {
+      "DO": 8.84,
+      "BOD": 4.93,
+      "Nitrate": 6.73,
+      "FecalColiform": 69.04
+    },
+    "forecast": {
+      "DO": 8.99,
+      "BOD": 5.04,
+      "Nitrate": 6.71,
+      "FecalColiform": 65.86
+    }
+  },
+  {
+    "location": "Haridwar",
+    "date": "2025-08-17",
+    "parameters": {
+      "DO": 5.21,
+      "BOD": 3.9,
+      "Nitrate": 2.21,
+      "FecalColiform": 229.26
+    },
+    "forecast": {
+      "DO": 5.43,
+      "BOD": 3.71,
+      "Nitrate": 2.25,
+      "FecalColiform": 236.2
+    }
+  },
+  {
+    "location": "Haridwar",
+    "date": "2025-08-18",
+    "parameters": {
+      "DO": 7.04,
+      "BOD": 4.31,
+      "Nitrate": 3.78,
+      "FecalColiform": 518.64
+    },
+    "forecast": {
+      "DO": 6.98,
+      "BOD": 4.18,
+      "Nitrate": 3.91,
+      "FecalColiform": 522.45
+    }
+  },
+  {
+    "location": "Haridwar",
+    "date": "2025-08-19",
+    "parameters": {
+      "DO": 5.12,
+      "BOD": 2.43,
+      "Nitrate": 7.07,
+      "FecalColiform": 245.89
+    },
+    "forecast": {
+      "DO": 5.37,
+      "BOD": 2.46,
+      "Nitrate": 6.86,
+      "FecalColiform": 251.32
+    }
+  },
+  {
+    "location": "Haridwar",
+    "date": "2025-08-20",
+    "parameters": {
+      "DO": 6.13,
+      "BOD": 4.81,
+      "Nitrate": 4.46,
+      "FecalColiform": 115.72
+    },
+    "forecast": {
+      "DO": 5.83,
+      "BOD": 4.61,
+      "Nitrate": 4.37,
+      "FecalColiform": 111.16
+    }
+  },
+  {
+    "location": "Haridwar",
+    "date": "2025-08-21",
+    "parameters": {
+      "DO": 5.47,
+      "BOD": 2.77,
+      "Nitrate": 7.82,
+      "FecalColiform": 432.38
+    },
+    "forecast": {
+      "DO": 5.53,
+      "BOD": 2.67,
+      "Nitrate": 7.62,
+      "FecalColiform": 446.17
+    }
+  },
+  {
+    "location": "Haridwar",
+    "date": "2025-08-22",
+    "parameters": {
+      "DO": 7.31,
+      "BOD": 4.05,
+      "Nitrate": 9.93,
+      "FecalColiform": 584.7
+    },
+    "forecast": {
+      "DO": 7.3,
+      "BOD": 4.19,
+      "Nitrate": 9.65,
+      "FecalColiform": 600.78
+    }
+  },
+  {
+    "location": "Haridwar",
+    "date": "2025-08-23",
+    "parameters": {
+      "DO": 4.1,
+      "BOD": 2.75,
+      "Nitrate": 7.27,
+      "FecalColiform": 412.62
+    },
+    "forecast": {
+      "DO": 4.05,
+      "BOD": 2.78,
+      "Nitrate": 7.62,
+      "FecalColiform": 412.51
+    }
+  },
+  {
+    "location": "Haridwar",
+    "date": "2025-08-24",
+    "parameters": {
+      "DO": 8.66,
+      "BOD": 2.46,
+      "Nitrate": 2.67,
+      "FecalColiform": 535.17
+    },
+    "forecast": {
+      "DO": 8.96,
+      "BOD": 2.48,
+      "Nitrate": 2.57,
+      "FecalColiform": 520.23
+    }
+  },
+  {
+    "location": "Haridwar",
+    "date": "2025-08-25",
+    "parameters": {
+      "DO": 6.59,
+      "BOD": 4.58,
+      "Nitrate": 9.62,
+      "FecalColiform": 588.46
+    },
+    "forecast": {
+      "DO": 6.7,
+      "BOD": 4.51,
+      "Nitrate": 9.77,
+      "FecalColiform": 609.76
+    }
+  },
+  {
+    "location": "Haridwar",
+    "date": "2025-08-26",
+    "parameters": {
+      "DO": 4.41,
+      "BOD": 5.48,
+      "Nitrate": 3.25,
+      "FecalColiform": 303.86
+    },
+    "forecast": {
+      "DO": 4.61,
+      "BOD": 5.37,
+      "Nitrate": 3.3,
+      "FecalColiform": 316.35
+    }
+  },
+  {
+    "location": "Haridwar",
+    "date": "2025-08-27",
+    "parameters": {
+      "DO": 8.8,
+      "BOD": 3.72,
       "Nitrate": 5.11,
-      "FecalColiform": 328.78
+      "FecalColiform": 143.32
     },
     "forecast": {
-      "DO": 5.36,
-      "BOD": 2.76,
-      "Nitrate": 4.62,
-      "FecalColiform": 279.56
+      "DO": 8.88,
+      "BOD": 3.63,
+      "Nitrate": 5.32,
+      "FecalColiform": 142.26
     }
   },
   {
-    "location": "Kanpur",
-    "date": "2025-09-19",
+    "location": "Haridwar",
+    "date": "2025-08-28",
     "parameters": {
-      "DO": 6.37,
-      "BOD": 4.09,
-      "Nitrate": 9.04,
-      "FecalColiform": 176.03
+      "DO": 5.37,
+      "BOD": 5.82,
+      "Nitrate": 14.97,
+      "FecalColiform": 168.77
     },
     "forecast": {
-      "DO": 6.77,
-      "BOD": 4.17,
-      "Nitrate": 8.82,
-      "FecalColiform": 199.68
+      "DO": 5.31,
+      "BOD": 5.93,
+      "Nitrate": 14.93,
+      "FecalColiform": 169.42
     }
   },
   {
-    "location": "Patna",
-    "date": "2025-08-31",
+    "location": "Haridwar",
+    "date": "2025-08-29",
     "parameters": {
-      "DO": 6.55,
-      "BOD": 4.64,
-      "Nitrate": 8.55,
-      "FecalColiform": 436.14
+      "DO": 5.38,
+      "BOD": 4.1,
+      "Nitrate": 12.73,
+      "FecalColiform": 166.16
     },
     "forecast": {
-      "DO": 6.38,
-      "BOD": 4.68,
-      "Nitrate": 8.8,
-      "FecalColiform": 479.23
-    }
-  },
-  {
-    "location": "Patna",
-    "date": "2025-09-01",
-    "parameters": {
-      "DO": 7.08,
-      "BOD": 2.99,
-      "Nitrate": 6.22,
-      "FecalColiform": 146.71
-    },
-    "forecast": {
-      "DO": 7.01,
-      "BOD": 2.99,
-      "Nitrate": 6.58,
-      "FecalColiform": 180.12
-    }
-  },
-  {
-    "location": "Patna",
-    "date": "2025-09-02",
-    "parameters": {
       "DO": 5.52,
-      "BOD": 4.54,
-      "Nitrate": 6.52,
-      "FecalColiform": 193.12
+      "BOD": 4.03,
+      "Nitrate": 12.8,
+      "FecalColiform": 162.45
+    }
+  },
+  {
+    "location": "Haridwar",
+    "date": "2025-08-30",
+    "parameters": {
+      "DO": 8.85,
+      "BOD": 5.67,
+      "Nitrate": 10.17,
+      "FecalColiform": 495.1
     },
     "forecast": {
-      "DO": 5.57,
-      "BOD": 4.35,
-      "Nitrate": 6.88,
+      "DO": 8.62,
+      "BOD": 5.4,
+      "Nitrate": 10.38,
+      "FecalColiform": 505.39
+    }
+  },
+  {
+    "location": "Kolkata",
+    "date": "2025-07-01",
+    "parameters": {
+      "DO": 4.98,
+      "BOD": 3.91,
+      "Nitrate": 2.31,
+      "FecalColiform": 544.44
+    },
+    "forecast": {
+      "DO": 5.2,
+      "BOD": 3.79,
+      "Nitrate": 2.25,
+      "FecalColiform": 570.81
+    }
+  },
+  {
+    "location": "Kolkata",
+    "date": "2025-07-02",
+    "parameters": {
+      "DO": 7.56,
+      "BOD": 1.57,
+      "Nitrate": 7.07,
+      "FecalColiform": 471.05
+    },
+    "forecast": {
+      "DO": 7.9,
+      "BOD": 1.53,
+      "Nitrate": 6.72,
+      "FecalColiform": 463.09
+    }
+  },
+  {
+    "location": "Kolkata",
+    "date": "2025-07-03",
+    "parameters": {
+      "DO": 4.59,
+      "BOD": 5.96,
+      "Nitrate": 13.63,
+      "FecalColiform": 208.1
+    },
+    "forecast": {
+      "DO": 4.46,
+      "BOD": 5.7,
+      "Nitrate": 13.31,
+      "FecalColiform": 213.05
+    }
+  },
+  {
+    "location": "Kolkata",
+    "date": "2025-07-04",
+    "parameters": {
+      "DO": 5.8,
+      "BOD": 1.92,
+      "Nitrate": 7.02,
+      "FecalColiform": 319.45
+    },
+    "forecast": {
+      "DO": 5.99,
+      "BOD": 1.96,
+      "Nitrate": 7.09,
+      "FecalColiform": 304.42
+    }
+  },
+  {
+    "location": "Kolkata",
+    "date": "2025-07-05",
+    "parameters": {
+      "DO": 8.12,
+      "BOD": 2.8,
+      "Nitrate": 11.4,
+      "FecalColiform": 481.59
+    },
+    "forecast": {
+      "DO": 8.48,
+      "BOD": 2.72,
+      "Nitrate": 10.92,
+      "FecalColiform": 495.18
+    }
+  },
+  {
+    "location": "Kolkata",
+    "date": "2025-07-06",
+    "parameters": {
+      "DO": 8.48,
+      "BOD": 4.77,
+      "Nitrate": 2.29,
+      "FecalColiform": 586.91
+    },
+    "forecast": {
+      "DO": 8.8,
+      "BOD": 4.62,
+      "Nitrate": 2.23,
+      "FecalColiform": 612.01
+    }
+  },
+  {
+    "location": "Kolkata",
+    "date": "2025-07-07",
+    "parameters": {
+      "DO": 4.95,
+      "BOD": 1.94,
+      "Nitrate": 4.29,
+      "FecalColiform": 320.4
+    },
+    "forecast": {
+      "DO": 4.73,
+      "BOD": 2.03,
+      "Nitrate": 4.31,
+      "FecalColiform": 316.6
+    }
+  },
+  {
+    "location": "Kolkata",
+    "date": "2025-07-08",
+    "parameters": {
+      "DO": 5.14,
+      "BOD": 5.49,
+      "Nitrate": 8.65,
+      "FecalColiform": 557.99
+    },
+    "forecast": {
+      "DO": 5.27,
+      "BOD": 5.46,
+      "Nitrate": 8.59,
+      "FecalColiform": 556.08
+    }
+  },
+  {
+    "location": "Kolkata",
+    "date": "2025-07-09",
+    "parameters": {
+      "DO": 6.52,
+      "BOD": 4.31,
+      "Nitrate": 11.63,
+      "FecalColiform": 333.49
+    },
+    "forecast": {
+      "DO": 6.79,
+      "BOD": 4.5,
+      "Nitrate": 11.07,
+      "FecalColiform": 327.71
+    }
+  },
+  {
+    "location": "Kolkata",
+    "date": "2025-07-10",
+    "parameters": {
+      "DO": 8.84,
+      "BOD": 2.12,
+      "Nitrate": 11.31,
+      "FecalColiform": 145.73
+    },
+    "forecast": {
+      "DO": 9.09,
+      "BOD": 2.11,
+      "Nitrate": 11.36,
+      "FecalColiform": 150.0
+    }
+  },
+  {
+    "location": "Kolkata",
+    "date": "2025-07-11",
+    "parameters": {
+      "DO": 6.49,
+      "BOD": 1.85,
+      "Nitrate": 13.68,
+      "FecalColiform": 223.51
+    },
+    "forecast": {
+      "DO": 6.55,
+      "BOD": 1.91,
+      "Nitrate": 14.3,
       "FecalColiform": 212.46
     }
   },
   {
-    "location": "Patna",
-    "date": "2025-09-03",
-    "parameters": {
-      "DO": 6.75,
-      "BOD": 3.73,
-      "Nitrate": 6.11,
-      "FecalColiform": 165.46
-    },
-    "forecast": {
-      "DO": 6.41,
-      "BOD": 3.87,
-      "Nitrate": 6.51,
-      "FecalColiform": 161.84
-    }
-  },
-  {
-    "location": "Patna",
-    "date": "2025-09-04",
-    "parameters": {
-      "DO": 5.69,
-      "BOD": 4.26,
-      "Nitrate": 11.19,
-      "FecalColiform": 511.1
-    },
-    "forecast": {
-      "DO": 6.19,
-      "BOD": 4.31,
-      "Nitrate": 11.55,
-      "FecalColiform": 468.2
-    }
-  },
-  {
-    "location": "Patna",
-    "date": "2025-09-05",
-    "parameters": {
-      "DO": 6.61,
-      "BOD": 3.65,
-      "Nitrate": 7.33,
-      "FecalColiform": 398.25
-    },
-    "forecast": {
-      "DO": 6.5,
-      "BOD": 3.74,
-      "Nitrate": 7.31,
-      "FecalColiform": 410.93
-    }
-  },
-  {
-    "location": "Patna",
-    "date": "2025-09-06",
-    "parameters": {
-      "DO": 5.21,
-      "BOD": 4.36,
-      "Nitrate": 6.78,
-      "FecalColiform": 119.8
-    },
-    "forecast": {
-      "DO": 5.19,
-      "BOD": 4.48,
-      "Nitrate": 7.21,
-      "FecalColiform": 72.69
-    }
-  },
-  {
-    "location": "Patna",
-    "date": "2025-09-07",
-    "parameters": {
-      "DO": 5.45,
-      "BOD": 3.23,
-      "Nitrate": 6.84,
-      "FecalColiform": 476.74
-    },
-    "forecast": {
-      "DO": 5.09,
-      "BOD": 3.05,
-      "Nitrate": 7.1,
-      "FecalColiform": 519.6
-    }
-  },
-  {
-    "location": "Patna",
-    "date": "2025-09-08",
-    "parameters": {
-      "DO": 5.97,
-      "BOD": 2.03,
-      "Nitrate": 11.22,
-      "FecalColiform": 417.87
-    },
-    "forecast": {
-      "DO": 5.71,
-      "BOD": 2.16,
-      "Nitrate": 11.65,
-      "FecalColiform": 451.27
-    }
-  },
-  {
-    "location": "Patna",
-    "date": "2025-09-09",
-    "parameters": {
-      "DO": 6.23,
-      "BOD": 2.03,
-      "Nitrate": 6.62,
-      "FecalColiform": 197.88
-    },
-    "forecast": {
-      "DO": 5.81,
-      "BOD": 1.87,
-      "Nitrate": 6.88,
-      "FecalColiform": 166.92
-    }
-  },
-  {
-    "location": "Patna",
-    "date": "2025-09-10",
-    "parameters": {
-      "DO": 7.67,
-      "BOD": 3.24,
-      "Nitrate": 10.72,
-      "FecalColiform": 170.76
-    },
-    "forecast": {
-      "DO": 7.51,
-      "BOD": 3.1,
-      "Nitrate": 10.39,
-      "FecalColiform": 128.5
-    }
-  },
-  {
-    "location": "Patna",
-    "date": "2025-09-11",
-    "parameters": {
-      "DO": 7.5,
-      "BOD": 4.9,
-      "Nitrate": 11.23,
-      "FecalColiform": 105.05
-    },
-    "forecast": {
-      "DO": 7.29,
-      "BOD": 4.99,
-      "Nitrate": 11.26,
-      "FecalColiform": 139.38
-    }
-  },
-  {
-    "location": "Patna",
-    "date": "2025-09-12",
-    "parameters": {
-      "DO": 6.27,
-      "BOD": 2.43,
-      "Nitrate": 8.77,
-      "FecalColiform": 430.97
-    },
-    "forecast": {
-      "DO": 6.52,
-      "BOD": 2.47,
-      "Nitrate": 8.88,
-      "FecalColiform": 391.06
-    }
-  },
-  {
-    "location": "Patna",
-    "date": "2025-09-13",
-    "parameters": {
-      "DO": 6.99,
-      "BOD": 4.76,
-      "Nitrate": 11.56,
-      "FecalColiform": 454.62
-    },
-    "forecast": {
-      "DO": 6.94,
-      "BOD": 4.66,
-      "Nitrate": 11.32,
-      "FecalColiform": 489.88
-    }
-  },
-  {
-    "location": "Patna",
-    "date": "2025-09-14",
-    "parameters": {
-      "DO": 6.9,
-      "BOD": 2.16,
-      "Nitrate": 8.37,
-      "FecalColiform": 257.23
-    },
-    "forecast": {
-      "DO": 6.76,
-      "BOD": 2.08,
-      "Nitrate": 8.06,
-      "FecalColiform": 265.92
-    }
-  },
-  {
-    "location": "Patna",
-    "date": "2025-09-15",
-    "parameters": {
-      "DO": 6.3,
-      "BOD": 2.02,
-      "Nitrate": 8.66,
-      "FecalColiform": 195.93
-    },
-    "forecast": {
-      "DO": 6.01,
-      "BOD": 2.17,
-      "Nitrate": 8.92,
-      "FecalColiform": 185.18
-    }
-  },
-  {
-    "location": "Patna",
-    "date": "2025-09-16",
-    "parameters": {
-      "DO": 5.75,
-      "BOD": 4.07,
-      "Nitrate": 8.59,
-      "FecalColiform": 359.26
-    },
-    "forecast": {
-      "DO": 5.58,
-      "BOD": 3.96,
-      "Nitrate": 8.17,
-      "FecalColiform": 341.57
-    }
-  },
-  {
-    "location": "Patna",
-    "date": "2025-09-17",
-    "parameters": {
-      "DO": 5.76,
-      "BOD": 2.54,
-      "Nitrate": 5.75,
-      "FecalColiform": 159.18
-    },
-    "forecast": {
-      "DO": 6.19,
-      "BOD": 2.43,
-      "Nitrate": 5.73,
-      "FecalColiform": 202.82
-    }
-  },
-  {
-    "location": "Patna",
-    "date": "2025-09-18",
-    "parameters": {
-      "DO": 6.65,
-      "BOD": 2.61,
-      "Nitrate": 5.39,
-      "FecalColiform": 174.08
-    },
-    "forecast": {
-      "DO": 7.08,
-      "BOD": 2.44,
-      "Nitrate": 4.99,
-      "FecalColiform": 161.99
-    }
-  },
-  {
-    "location": "Patna",
-    "date": "2025-09-19",
-    "parameters": {
-      "DO": 5.65,
-      "BOD": 4.44,
-      "Nitrate": 9.35,
-      "FecalColiform": 555.66
-    },
-    "forecast": {
-      "DO": 5.25,
-      "BOD": 4.39,
-      "Nitrate": 9.72,
-      "FecalColiform": 575.39
-    }
-  },
-  {
     "location": "Kolkata",
-    "date": "2025-08-31",
+    "date": "2025-07-12",
     "parameters": {
-      "DO": 5.98,
-      "BOD": 4.51,
-      "Nitrate": 9.1,
-      "FecalColiform": 179.3
+      "DO": 5.24,
+      "BOD": 1.94,
+      "Nitrate": 3.87,
+      "FecalColiform": 386.48
     },
     "forecast": {
-      "DO": 5.54,
-      "BOD": 4.63,
-      "Nitrate": 9.5,
-      "FecalColiform": 193.4
-    }
-  },
-  {
-    "location": "Kolkata",
-    "date": "2025-09-01",
-    "parameters": {
-      "DO": 5.39,
-      "BOD": 3.41,
-      "Nitrate": 7.47,
-      "FecalColiform": 483.91
-    },
-    "forecast": {
-      "DO": 5.18,
-      "BOD": 3.23,
-      "Nitrate": 6.97,
-      "FecalColiform": 474.97
-    }
-  },
-  {
-    "location": "Kolkata",
-    "date": "2025-09-02",
-    "parameters": {
-      "DO": 7.48,
-      "BOD": 3.31,
-      "Nitrate": 7.79,
-      "FecalColiform": 578.3
-    },
-    "forecast": {
-      "DO": 7.01,
-      "BOD": 3.24,
-      "Nitrate": 8.18,
-      "FecalColiform": 589.62
-    }
-  },
-  {
-    "location": "Kolkata",
-    "date": "2025-09-03",
-    "parameters": {
-      "DO": 6.01,
-      "BOD": 4.1,
-      "Nitrate": 7.18,
-      "FecalColiform": 177.65
-    },
-    "forecast": {
-      "DO": 5.66,
-      "BOD": 4.02,
-      "Nitrate": 7.66,
-      "FecalColiform": 220.01
-    }
-  },
-  {
-    "location": "Kolkata",
-    "date": "2025-09-04",
-    "parameters": {
-      "DO": 7.56,
-      "BOD": 3.07,
-      "Nitrate": 5.36,
-      "FecalColiform": 130.57
-    },
-    "forecast": {
-      "DO": 7.54,
-      "BOD": 3.14,
-      "Nitrate": 5.78,
-      "FecalColiform": 135.67
-    }
-  },
-  {
-    "location": "Kolkata",
-    "date": "2025-09-05",
-    "parameters": {
-      "DO": 7.26,
-      "BOD": 4.55,
-      "Nitrate": 10.09,
-      "FecalColiform": 412.21
-    },
-    "forecast": {
-      "DO": 6.98,
-      "BOD": 4.45,
-      "Nitrate": 9.72,
-      "FecalColiform": 373.37
-    }
-  },
-  {
-    "location": "Kolkata",
-    "date": "2025-09-06",
-    "parameters": {
-      "DO": 6.84,
-      "BOD": 2.77,
-      "Nitrate": 6.37,
-      "FecalColiform": 582.92
-    },
-    "forecast": {
-      "DO": 7.3,
-      "BOD": 2.84,
-      "Nitrate": 6.69,
-      "FecalColiform": 551.63
-    }
-  },
-  {
-    "location": "Kolkata",
-    "date": "2025-09-07",
-    "parameters": {
-      "DO": 6.35,
-      "BOD": 3.95,
-      "Nitrate": 10.61,
-      "FecalColiform": 373.79
-    },
-    "forecast": {
-      "DO": 6.17,
-      "BOD": 4.03,
-      "Nitrate": 10.66,
-      "FecalColiform": 339.49
-    }
-  },
-  {
-    "location": "Kolkata",
-    "date": "2025-09-08",
-    "parameters": {
-      "DO": 6.78,
-      "BOD": 4.05,
-      "Nitrate": 6.7,
-      "FecalColiform": 350.65
-    },
-    "forecast": {
-      "DO": 6.64,
-      "BOD": 4.07,
-      "Nitrate": 6.73,
-      "FecalColiform": 354.44
-    }
-  },
-  {
-    "location": "Kolkata",
-    "date": "2025-09-09",
-    "parameters": {
-      "DO": 7.58,
-      "BOD": 2.99,
-      "Nitrate": 9.44,
-      "FecalColiform": 555.04
-    },
-    "forecast": {
-      "DO": 7.72,
-      "BOD": 3.16,
-      "Nitrate": 9.28,
-      "FecalColiform": 558.12
-    }
-  },
-  {
-    "location": "Kolkata",
-    "date": "2025-09-10",
-    "parameters": {
       "DO": 5.44,
-      "BOD": 2.53,
-      "Nitrate": 5.35,
-      "FecalColiform": 204.35
+      "BOD": 1.99,
+      "Nitrate": 3.79,
+      "FecalColiform": 394.95
+    }
+  },
+  {
+    "location": "Kolkata",
+    "date": "2025-07-13",
+    "parameters": {
+      "DO": 7.33,
+      "BOD": 2.28,
+      "Nitrate": 6.87,
+      "FecalColiform": 303.23
+    },
+    "forecast": {
+      "DO": 7.15,
+      "BOD": 2.32,
+      "Nitrate": 7.02,
+      "FecalColiform": 292.25
+    }
+  },
+  {
+    "location": "Kolkata",
+    "date": "2025-07-14",
+    "parameters": {
+      "DO": 8.2,
+      "BOD": 1.48,
+      "Nitrate": 3.82,
+      "FecalColiform": 164.6
+    },
+    "forecast": {
+      "DO": 7.9,
+      "BOD": 1.49,
+      "Nitrate": 3.82,
+      "FecalColiform": 159.26
+    }
+  },
+  {
+    "location": "Kolkata",
+    "date": "2025-07-15",
+    "parameters": {
+      "DO": 4.61,
+      "BOD": 3.47,
+      "Nitrate": 5.37,
+      "FecalColiform": 331.48
+    },
+    "forecast": {
+      "DO": 4.5,
+      "BOD": 3.59,
+      "Nitrate": 5.11,
+      "FecalColiform": 330.07
+    }
+  },
+  {
+    "location": "Kolkata",
+    "date": "2025-07-16",
+    "parameters": {
+      "DO": 5.81,
+      "BOD": 1.11,
+      "Nitrate": 7.04,
+      "FecalColiform": 333.63
+    },
+    "forecast": {
+      "DO": 5.82,
+      "BOD": 1.09,
+      "Nitrate": 7.29,
+      "FecalColiform": 329.32
+    }
+  },
+  {
+    "location": "Kolkata",
+    "date": "2025-07-17",
+    "parameters": {
+      "DO": 8.63,
+      "BOD": 1.45,
+      "Nitrate": 7.94,
+      "FecalColiform": 430.6
+    },
+    "forecast": {
+      "DO": 8.9,
+      "BOD": 1.47,
+      "Nitrate": 7.84,
+      "FecalColiform": 415.13
+    }
+  },
+  {
+    "location": "Kolkata",
+    "date": "2025-07-18",
+    "parameters": {
+      "DO": 6.32,
+      "BOD": 5.88,
+      "Nitrate": 10.83,
+      "FecalColiform": 129.27
+    },
+    "forecast": {
+      "DO": 6.54,
+      "BOD": 6.07,
+      "Nitrate": 11.3,
+      "FecalColiform": 124.83
+    }
+  },
+  {
+    "location": "Kolkata",
+    "date": "2025-07-19",
+    "parameters": {
+      "DO": 5.08,
+      "BOD": 1.96,
+      "Nitrate": 7.98,
+      "FecalColiform": 543.03
     },
     "forecast": {
       "DO": 5.27,
-      "BOD": 2.4,
-      "Nitrate": 5.45,
-      "FecalColiform": 191.3
+      "BOD": 1.89,
+      "Nitrate": 7.96,
+      "FecalColiform": 570.01
     }
   },
   {
     "location": "Kolkata",
-    "date": "2025-09-11",
-    "parameters": {
-      "DO": 6.04,
-      "BOD": 3.16,
-      "Nitrate": 11.33,
-      "FecalColiform": 406.62
-    },
-    "forecast": {
-      "DO": 6.24,
-      "BOD": 3.18,
-      "Nitrate": 11.41,
-      "FecalColiform": 395.99
-    }
-  },
-  {
-    "location": "Kolkata",
-    "date": "2025-09-12",
-    "parameters": {
-      "DO": 6.12,
-      "BOD": 3.71,
-      "Nitrate": 6.4,
-      "FecalColiform": 435.52
-    },
-    "forecast": {
-      "DO": 6.42,
-      "BOD": 3.62,
-      "Nitrate": 6.73,
-      "FecalColiform": 444.85
-    }
-  },
-  {
-    "location": "Kolkata",
-    "date": "2025-09-13",
-    "parameters": {
-      "DO": 5.59,
-      "BOD": 2.99,
-      "Nitrate": 8.41,
-      "FecalColiform": 273.73
-    },
-    "forecast": {
-      "DO": 5.53,
-      "BOD": 3.11,
-      "Nitrate": 8.81,
-      "FecalColiform": 314.62
-    }
-  },
-  {
-    "location": "Kolkata",
-    "date": "2025-09-14",
+    "date": "2025-07-20",
     "parameters": {
       "DO": 6.39,
-      "BOD": 2.07,
-      "Nitrate": 5.64,
-      "FecalColiform": 128.62
+      "BOD": 4.9,
+      "Nitrate": 12.34,
+      "FecalColiform": 160.15
     },
     "forecast": {
-      "DO": 6.31,
-      "BOD": 1.91,
-      "Nitrate": 5.45,
-      "FecalColiform": 105.9
+      "DO": 6.62,
+      "BOD": 4.9,
+      "Nitrate": 12.77,
+      "FecalColiform": 162.63
     }
   },
   {
     "location": "Kolkata",
-    "date": "2025-09-15",
+    "date": "2025-07-21",
     "parameters": {
-      "DO": 5.52,
-      "BOD": 3.49,
-      "Nitrate": 11.09,
-      "FecalColiform": 149.93
+      "DO": 5.13,
+      "BOD": 4.83,
+      "Nitrate": 2.64,
+      "FecalColiform": 237.62
     },
     "forecast": {
-      "DO": 5.62,
-      "BOD": 3.67,
-      "Nitrate": 10.91,
-      "FecalColiform": 143.34
+      "DO": 5.39,
+      "BOD": 4.87,
+      "Nitrate": 2.68,
+      "FecalColiform": 232.13
     }
   },
   {
     "location": "Kolkata",
-    "date": "2025-09-16",
+    "date": "2025-07-22",
     "parameters": {
-      "DO": 5.85,
+      "DO": 7.82,
+      "BOD": 2.68,
+      "Nitrate": 11.9,
+      "FecalColiform": 491.31
+    },
+    "forecast": {
+      "DO": 8.03,
+      "BOD": 2.65,
+      "Nitrate": 11.92,
+      "FecalColiform": 489.52
+    }
+  },
+  {
+    "location": "Kolkata",
+    "date": "2025-07-23",
+    "parameters": {
+      "DO": 5.64,
+      "BOD": 2.98,
+      "Nitrate": 13.2,
+      "FecalColiform": 155.21
+    },
+    "forecast": {
+      "DO": 5.79,
+      "BOD": 2.86,
+      "Nitrate": 12.68,
+      "FecalColiform": 159.96
+    }
+  },
+  {
+    "location": "Kolkata",
+    "date": "2025-07-24",
+    "parameters": {
+      "DO": 8.69,
+      "BOD": 3.64,
+      "Nitrate": 4.06,
+      "FecalColiform": 465.5
+    },
+    "forecast": {
+      "DO": 8.82,
       "BOD": 3.68,
-      "Nitrate": 10.57,
-      "FecalColiform": 355.73
-    },
-    "forecast": {
-      "DO": 6.29,
-      "BOD": 3.56,
-      "Nitrate": 10.38,
-      "FecalColiform": 380.36
+      "Nitrate": 4.19,
+      "FecalColiform": 459.95
     }
   },
   {
     "location": "Kolkata",
-    "date": "2025-09-17",
+    "date": "2025-07-25",
     "parameters": {
-      "DO": 7.8,
-      "BOD": 3.32,
-      "Nitrate": 9.52,
-      "FecalColiform": 149.04
+      "DO": 7.27,
+      "BOD": 5.86,
+      "Nitrate": 6.03,
+      "FecalColiform": 564.01
+    },
+    "forecast": {
+      "DO": 7.17,
+      "BOD": 6.07,
+      "Nitrate": 5.91,
+      "FecalColiform": 541.96
+    }
+  },
+  {
+    "location": "Kolkata",
+    "date": "2025-07-26",
+    "parameters": {
+      "DO": 6.97,
+      "BOD": 4.98,
+      "Nitrate": 6.5,
+      "FecalColiform": 390.59
+    },
+    "forecast": {
+      "DO": 7.15,
+      "BOD": 4.8,
+      "Nitrate": 6.59,
+      "FecalColiform": 398.8
+    }
+  },
+  {
+    "location": "Kolkata",
+    "date": "2025-07-27",
+    "parameters": {
+      "DO": 8.59,
+      "BOD": 5.37,
+      "Nitrate": 3.85,
+      "FecalColiform": 594.49
+    },
+    "forecast": {
+      "DO": 8.35,
+      "BOD": 5.16,
+      "Nitrate": 3.81,
+      "FecalColiform": 609.98
+    }
+  },
+  {
+    "location": "Kolkata",
+    "date": "2025-07-28",
+    "parameters": {
+      "DO": 5.7,
+      "BOD": 4.14,
+      "Nitrate": 13.95,
+      "FecalColiform": 439.66
+    },
+    "forecast": {
+      "DO": 5.96,
+      "BOD": 4.06,
+      "Nitrate": 14.11,
+      "FecalColiform": 455.26
+    }
+  },
+  {
+    "location": "Kolkata",
+    "date": "2025-07-29",
+    "parameters": {
+      "DO": 5.69,
+      "BOD": 5.17,
+      "Nitrate": 2.0,
+      "FecalColiform": 201.94
+    },
+    "forecast": {
+      "DO": 5.9,
+      "BOD": 5.38,
+      "Nitrate": 1.98,
+      "FecalColiform": 207.45
+    }
+  },
+  {
+    "location": "Kolkata",
+    "date": "2025-07-30",
+    "parameters": {
+      "DO": 5.15,
+      "BOD": 3.6,
+      "Nitrate": 9.46,
+      "FecalColiform": 365.45
+    },
+    "forecast": {
+      "DO": 5.03,
+      "BOD": 3.71,
+      "Nitrate": 9.48,
+      "FecalColiform": 351.14
+    }
+  },
+  {
+    "location": "Kolkata",
+    "date": "2025-07-31",
+    "parameters": {
+      "DO": 7.5,
+      "BOD": 2.72,
+      "Nitrate": 8.69,
+      "FecalColiform": 174.95
+    },
+    "forecast": {
+      "DO": 7.48,
+      "BOD": 2.6,
+      "Nitrate": 8.71,
+      "FecalColiform": 170.05
+    }
+  },
+  {
+    "location": "Kolkata",
+    "date": "2025-08-01",
+    "parameters": {
+      "DO": 4.72,
+      "BOD": 2.36,
+      "Nitrate": 14.5,
+      "FecalColiform": 536.29
+    },
+    "forecast": {
+      "DO": 4.61,
+      "BOD": 2.34,
+      "Nitrate": 15.2,
+      "FecalColiform": 549.72
+    }
+  },
+  {
+    "location": "Kolkata",
+    "date": "2025-08-02",
+    "parameters": {
+      "DO": 5.82,
+      "BOD": 2.63,
+      "Nitrate": 3.61,
+      "FecalColiform": 187.44
+    },
+    "forecast": {
+      "DO": 5.56,
+      "BOD": 2.6,
+      "Nitrate": 3.61,
+      "FecalColiform": 191.39
+    }
+  },
+  {
+    "location": "Kolkata",
+    "date": "2025-08-03",
+    "parameters": {
+      "DO": 5.38,
+      "BOD": 5.0,
+      "Nitrate": 14.07,
+      "FecalColiform": 559.51
+    },
+    "forecast": {
+      "DO": 5.41,
+      "BOD": 4.78,
+      "Nitrate": 14.12,
+      "FecalColiform": 545.48
+    }
+  },
+  {
+    "location": "Kolkata",
+    "date": "2025-08-04",
+    "parameters": {
+      "DO": 8.0,
+      "BOD": 4.19,
+      "Nitrate": 5.3,
+      "FecalColiform": 526.03
+    },
+    "forecast": {
+      "DO": 8.38,
+      "BOD": 4.05,
+      "Nitrate": 5.35,
+      "FecalColiform": 530.47
+    }
+  },
+  {
+    "location": "Kolkata",
+    "date": "2025-08-05",
+    "parameters": {
+      "DO": 6.48,
+      "BOD": 5.96,
+      "Nitrate": 5.22,
+      "FecalColiform": 542.79
+    },
+    "forecast": {
+      "DO": 6.74,
+      "BOD": 5.71,
+      "Nitrate": 5.15,
+      "FecalColiform": 520.61
+    }
+  },
+  {
+    "location": "Kolkata",
+    "date": "2025-08-06",
+    "parameters": {
+      "DO": 8.9,
+      "BOD": 2.2,
+      "Nitrate": 14.89,
+      "FecalColiform": 167.46
+    },
+    "forecast": {
+      "DO": 8.46,
+      "BOD": 2.11,
+      "Nitrate": 15.31,
+      "FecalColiform": 164.53
+    }
+  },
+  {
+    "location": "Kolkata",
+    "date": "2025-08-07",
+    "parameters": {
+      "DO": 6.14,
+      "BOD": 2.53,
+      "Nitrate": 9.6,
+      "FecalColiform": 266.52
+    },
+    "forecast": {
+      "DO": 5.84,
+      "BOD": 2.55,
+      "Nitrate": 9.33,
+      "FecalColiform": 273.62
+    }
+  },
+  {
+    "location": "Kolkata",
+    "date": "2025-08-08",
+    "parameters": {
+      "DO": 6.26,
+      "BOD": 2.64,
+      "Nitrate": 12.78,
+      "FecalColiform": 123.37
+    },
+    "forecast": {
+      "DO": 6.34,
+      "BOD": 2.59,
+      "Nitrate": 13.36,
+      "FecalColiform": 126.22
+    }
+  },
+  {
+    "location": "Kolkata",
+    "date": "2025-08-09",
+    "parameters": {
+      "DO": 4.27,
+      "BOD": 4.05,
+      "Nitrate": 3.83,
+      "FecalColiform": 543.94
+    },
+    "forecast": {
+      "DO": 4.22,
+      "BOD": 4.2,
+      "Nitrate": 3.92,
+      "FecalColiform": 542.75
+    }
+  },
+  {
+    "location": "Kolkata",
+    "date": "2025-08-10",
+    "parameters": {
+      "DO": 7.78,
+      "BOD": 4.94,
+      "Nitrate": 6.83,
+      "FecalColiform": 414.91
+    },
+    "forecast": {
+      "DO": 7.68,
+      "BOD": 4.79,
+      "Nitrate": 6.67,
+      "FecalColiform": 411.32
+    }
+  },
+  {
+    "location": "Kolkata",
+    "date": "2025-08-11",
+    "parameters": {
+      "DO": 7.6,
+      "BOD": 1.54,
+      "Nitrate": 2.15,
+      "FecalColiform": 599.39
+    },
+    "forecast": {
+      "DO": 7.49,
+      "BOD": 1.5,
+      "Nitrate": 2.23,
+      "FecalColiform": 625.84
+    }
+  },
+  {
+    "location": "Kolkata",
+    "date": "2025-08-12",
+    "parameters": {
+      "DO": 8.12,
+      "BOD": 2.16,
+      "Nitrate": 10.19,
+      "FecalColiform": 190.41
     },
     "forecast": {
       "DO": 7.87,
-      "BOD": 3.2,
-      "Nitrate": 9.28,
-      "FecalColiform": 197.5
+      "BOD": 2.17,
+      "Nitrate": 10.68,
+      "FecalColiform": 183.83
     }
   },
   {
     "location": "Kolkata",
-    "date": "2025-09-18",
+    "date": "2025-08-13",
     "parameters": {
-      "DO": 6.61,
-      "BOD": 2.7,
-      "Nitrate": 6.13,
-      "FecalColiform": 350.17
+      "DO": 4.77,
+      "BOD": 1.09,
+      "Nitrate": 11.45,
+      "FecalColiform": 361.16
     },
     "forecast": {
-      "DO": 6.29,
-      "BOD": 2.69,
-      "Nitrate": 6.23,
-      "FecalColiform": 361.52
+      "DO": 4.55,
+      "BOD": 1.1,
+      "Nitrate": 10.93,
+      "FecalColiform": 361.85
     }
   },
   {
     "location": "Kolkata",
-    "date": "2025-09-19",
+    "date": "2025-08-14",
     "parameters": {
+      "DO": 7.1,
+      "BOD": 4.63,
+      "Nitrate": 11.68,
+      "FecalColiform": 518.6
+    },
+    "forecast": {
+      "DO": 6.78,
+      "BOD": 4.84,
+      "Nitrate": 11.51,
+      "FecalColiform": 516.63
+    }
+  },
+  {
+    "location": "Kolkata",
+    "date": "2025-08-15",
+    "parameters": {
+      "DO": 5.95,
+      "BOD": 5.22,
+      "Nitrate": 9.59,
+      "FecalColiform": 489.39
+    },
+    "forecast": {
+      "DO": 5.84,
+      "BOD": 5.05,
+      "Nitrate": 9.65,
+      "FecalColiform": 485.64
+    }
+  },
+  {
+    "location": "Kolkata",
+    "date": "2025-08-16",
+    "parameters": {
+      "DO": 5.21,
+      "BOD": 4.63,
+      "Nitrate": 13.09,
+      "FecalColiform": 176.87
+    },
+    "forecast": {
+      "DO": 5.3,
+      "BOD": 4.75,
+      "Nitrate": 12.62,
+      "FecalColiform": 169.22
+    }
+  },
+  {
+    "location": "Kolkata",
+    "date": "2025-08-17",
+    "parameters": {
+      "DO": 7.29,
+      "BOD": 4.56,
+      "Nitrate": 11.7,
+      "FecalColiform": 110.59
+    },
+    "forecast": {
+      "DO": 7.56,
+      "BOD": 4.7,
+      "Nitrate": 11.41,
+      "FecalColiform": 105.88
+    }
+  },
+  {
+    "location": "Kolkata",
+    "date": "2025-08-18",
+    "parameters": {
+      "DO": 6.95,
+      "BOD": 5.04,
+      "Nitrate": 7.82,
+      "FecalColiform": 376.6
+    },
+    "forecast": {
+      "DO": 6.84,
+      "BOD": 4.84,
+      "Nitrate": 8.13,
+      "FecalColiform": 364.28
+    }
+  },
+  {
+    "location": "Kolkata",
+    "date": "2025-08-19",
+    "parameters": {
+      "DO": 4.49,
+      "BOD": 3.85,
+      "Nitrate": 2.23,
+      "FecalColiform": 85.55
+    },
+    "forecast": {
+      "DO": 4.48,
+      "BOD": 4.03,
+      "Nitrate": 2.34,
+      "FecalColiform": 89.79
+    }
+  },
+  {
+    "location": "Kolkata",
+    "date": "2025-08-20",
+    "parameters": {
+      "DO": 7.19,
+      "BOD": 2.01,
+      "Nitrate": 14.98,
+      "FecalColiform": 126.95
+    },
+    "forecast": {
+      "DO": 7.03,
+      "BOD": 2.01,
+      "Nitrate": 15.28,
+      "FecalColiform": 132.57
+    }
+  },
+  {
+    "location": "Kolkata",
+    "date": "2025-08-21",
+    "parameters": {
+      "DO": 4.31,
+      "BOD": 5.38,
+      "Nitrate": 7.34,
+      "FecalColiform": 265.36
+    },
+    "forecast": {
+      "DO": 4.52,
+      "BOD": 5.52,
+      "Nitrate": 7.07,
+      "FecalColiform": 257.47
+    }
+  },
+  {
+    "location": "Kolkata",
+    "date": "2025-08-22",
+    "parameters": {
+      "DO": 6.42,
+      "BOD": 4.3,
+      "Nitrate": 13.09,
+      "FecalColiform": 594.14
+    },
+    "forecast": {
+      "DO": 6.7,
+      "BOD": 4.37,
+      "Nitrate": 12.77,
+      "FecalColiform": 573.12
+    }
+  },
+  {
+    "location": "Kolkata",
+    "date": "2025-08-23",
+    "parameters": {
+      "DO": 5.88,
+      "BOD": 3.99,
+      "Nitrate": 2.24,
+      "FecalColiform": 108.51
+    },
+    "forecast": {
       "DO": 6.15,
-      "BOD": 2.9,
-      "Nitrate": 8.72,
-      "FecalColiform": 124.4
+      "BOD": 3.81,
+      "Nitrate": 2.26,
+      "FecalColiform": 107.47
+    }
+  },
+  {
+    "location": "Kolkata",
+    "date": "2025-08-24",
+    "parameters": {
+      "DO": 5.5,
+      "BOD": 4.74,
+      "Nitrate": 5.13,
+      "FecalColiform": 168.88
+    },
+    "forecast": {
+      "DO": 5.36,
+      "BOD": 4.89,
+      "Nitrate": 5.29,
+      "FecalColiform": 169.51
+    }
+  },
+  {
+    "location": "Kolkata",
+    "date": "2025-08-25",
+    "parameters": {
+      "DO": 7.21,
+      "BOD": 3.21,
+      "Nitrate": 6.26,
+      "FecalColiform": 120.71
+    },
+    "forecast": {
+      "DO": 6.86,
+      "BOD": 3.28,
+      "Nitrate": 6.25,
+      "FecalColiform": 116.73
+    }
+  },
+  {
+    "location": "Kolkata",
+    "date": "2025-08-26",
+    "parameters": {
+      "DO": 6.28,
+      "BOD": 1.6,
+      "Nitrate": 2.1,
+      "FecalColiform": 577.45
+    },
+    "forecast": {
+      "DO": 6.12,
+      "BOD": 1.58,
+      "Nitrate": 2.05,
+      "FecalColiform": 565.48
+    }
+  },
+  {
+    "location": "Kolkata",
+    "date": "2025-08-27",
+    "parameters": {
+      "DO": 4.61,
+      "BOD": 4.27,
+      "Nitrate": 4.9,
+      "FecalColiform": 438.47
+    },
+    "forecast": {
+      "DO": 4.4,
+      "BOD": 4.09,
+      "Nitrate": 4.79,
+      "FecalColiform": 441.06
+    }
+  },
+  {
+    "location": "Kolkata",
+    "date": "2025-08-28",
+    "parameters": {
+      "DO": 4.88,
+      "BOD": 3.96,
+      "Nitrate": 7.32,
+      "FecalColiform": 143.41
+    },
+    "forecast": {
+      "DO": 4.7,
+      "BOD": 3.99,
+      "Nitrate": 7.57,
+      "FecalColiform": 145.97
+    }
+  },
+  {
+    "location": "Kolkata",
+    "date": "2025-08-29",
+    "parameters": {
+      "DO": 4.3,
+      "BOD": 1.53,
+      "Nitrate": 7.89,
+      "FecalColiform": 106.8
+    },
+    "forecast": {
+      "DO": 4.42,
+      "BOD": 1.52,
+      "Nitrate": 8.0,
+      "FecalColiform": 101.84
+    }
+  },
+  {
+    "location": "Kolkata",
+    "date": "2025-08-30",
+    "parameters": {
+      "DO": 5.33,
+      "BOD": 4.92,
+      "Nitrate": 7.38,
+      "FecalColiform": 92.51
+    },
+    "forecast": {
+      "DO": 5.13,
+      "BOD": 5.09,
+      "Nitrate": 7.54,
+      "FecalColiform": 95.03
+    }
+  },
+  {
+    "location": "Patna",
+    "date": "2025-07-01",
+    "parameters": {
+      "DO": 5.22,
+      "BOD": 2.12,
+      "Nitrate": 12.35,
+      "FecalColiform": 399.08
+    },
+    "forecast": {
+      "DO": 5.32,
+      "BOD": 2.05,
+      "Nitrate": 12.22,
+      "FecalColiform": 392.4
+    }
+  },
+  {
+    "location": "Patna",
+    "date": "2025-07-02",
+    "parameters": {
+      "DO": 8.24,
+      "BOD": 2.44,
+      "Nitrate": 5.81,
+      "FecalColiform": 177.55
+    },
+    "forecast": {
+      "DO": 8.16,
+      "BOD": 2.35,
+      "Nitrate": 5.58,
+      "FecalColiform": 172.08
+    }
+  },
+  {
+    "location": "Patna",
+    "date": "2025-07-03",
+    "parameters": {
+      "DO": 8.77,
+      "BOD": 2.31,
+      "Nitrate": 13.22,
+      "FecalColiform": 138.9
+    },
+    "forecast": {
+      "DO": 8.52,
+      "BOD": 2.23,
+      "Nitrate": 12.58,
+      "FecalColiform": 143.14
+    }
+  },
+  {
+    "location": "Patna",
+    "date": "2025-07-04",
+    "parameters": {
+      "DO": 5.66,
+      "BOD": 1.35,
+      "Nitrate": 6.59,
+      "FecalColiform": 178.39
+    },
+    "forecast": {
+      "DO": 5.41,
+      "BOD": 1.36,
+      "Nitrate": 6.56,
+      "FecalColiform": 179.95
+    }
+  },
+  {
+    "location": "Patna",
+    "date": "2025-07-05",
+    "parameters": {
+      "DO": 5.16,
+      "BOD": 1.31,
+      "Nitrate": 8.52,
+      "FecalColiform": 120.19
+    },
+    "forecast": {
+      "DO": 4.92,
+      "BOD": 1.24,
+      "Nitrate": 8.44,
+      "FecalColiform": 115.66
+    }
+  },
+  {
+    "location": "Patna",
+    "date": "2025-07-06",
+    "parameters": {
+      "DO": 8.92,
+      "BOD": 5.59,
+      "Nitrate": 6.22,
+      "FecalColiform": 95.62
+    },
+    "forecast": {
+      "DO": 9.21,
+      "BOD": 5.36,
+      "Nitrate": 6.44,
+      "FecalColiform": 90.88
+    }
+  },
+  {
+    "location": "Patna",
+    "date": "2025-07-07",
+    "parameters": {
+      "DO": 5.58,
+      "BOD": 5.63,
+      "Nitrate": 3.59,
+      "FecalColiform": 87.93
+    },
+    "forecast": {
+      "DO": 5.31,
+      "BOD": 5.73,
+      "Nitrate": 3.41,
+      "FecalColiform": 87.11
+    }
+  },
+  {
+    "location": "Patna",
+    "date": "2025-07-08",
+    "parameters": {
+      "DO": 6.44,
+      "BOD": 4.02,
+      "Nitrate": 13.58,
+      "FecalColiform": 260.68
+    },
+    "forecast": {
+      "DO": 6.43,
+      "BOD": 3.88,
+      "Nitrate": 13.56,
+      "FecalColiform": 269.87
+    }
+  },
+  {
+    "location": "Patna",
+    "date": "2025-07-09",
+    "parameters": {
+      "DO": 7.21,
+      "BOD": 1.99,
+      "Nitrate": 5.15,
+      "FecalColiform": 210.84
+    },
+    "forecast": {
+      "DO": 7.17,
+      "BOD": 1.98,
+      "Nitrate": 5.19,
+      "FecalColiform": 200.48
+    }
+  },
+  {
+    "location": "Patna",
+    "date": "2025-07-10",
+    "parameters": {
+      "DO": 4.93,
+      "BOD": 4.28,
+      "Nitrate": 3.72,
+      "FecalColiform": 301.2
+    },
+    "forecast": {
+      "DO": 5.15,
+      "BOD": 4.21,
+      "Nitrate": 3.66,
+      "FecalColiform": 313.74
+    }
+  },
+  {
+    "location": "Patna",
+    "date": "2025-07-11",
+    "parameters": {
+      "DO": 4.33,
+      "BOD": 4.72,
+      "Nitrate": 13.12,
+      "FecalColiform": 340.56
+    },
+    "forecast": {
+      "DO": 4.49,
+      "BOD": 4.9,
+      "Nitrate": 12.79,
+      "FecalColiform": 341.07
+    }
+  },
+  {
+    "location": "Patna",
+    "date": "2025-07-12",
+    "parameters": {
+      "DO": 8.78,
+      "BOD": 5.87,
+      "Nitrate": 12.1,
+      "FecalColiform": 210.97
+    },
+    "forecast": {
+      "DO": 8.5,
+      "BOD": 5.66,
+      "Nitrate": 12.27,
+      "FecalColiform": 217.81
+    }
+  },
+  {
+    "location": "Patna",
+    "date": "2025-07-13",
+    "parameters": {
+      "DO": 5.31,
+      "BOD": 5.57,
+      "Nitrate": 9.79,
+      "FecalColiform": 263.21
+    },
+    "forecast": {
+      "DO": 5.34,
+      "BOD": 5.45,
+      "Nitrate": 9.64,
+      "FecalColiform": 267.41
+    }
+  },
+  {
+    "location": "Patna",
+    "date": "2025-07-14",
+    "parameters": {
+      "DO": 4.55,
+      "BOD": 3.13,
+      "Nitrate": 5.0,
+      "FecalColiform": 399.17
+    },
+    "forecast": {
+      "DO": 4.58,
+      "BOD": 3.19,
+      "Nitrate": 4.86,
+      "FecalColiform": 400.25
+    }
+  },
+  {
+    "location": "Patna",
+    "date": "2025-07-15",
+    "parameters": {
+      "DO": 5.17,
+      "BOD": 1.05,
+      "Nitrate": 11.35,
+      "FecalColiform": 106.86
+    },
+    "forecast": {
+      "DO": 5.4,
+      "BOD": 1.01,
+      "Nitrate": 11.9,
+      "FecalColiform": 109.77
+    }
+  },
+  {
+    "location": "Patna",
+    "date": "2025-07-16",
+    "parameters": {
+      "DO": 5.63,
+      "BOD": 3.47,
+      "Nitrate": 11.84,
+      "FecalColiform": 117.0
+    },
+    "forecast": {
+      "DO": 5.43,
+      "BOD": 3.59,
+      "Nitrate": 12.07,
+      "FecalColiform": 119.02
+    }
+  },
+  {
+    "location": "Patna",
+    "date": "2025-07-17",
+    "parameters": {
+      "DO": 5.1,
+      "BOD": 5.86,
+      "Nitrate": 8.52,
+      "FecalColiform": 119.56
+    },
+    "forecast": {
+      "DO": 5.35,
+      "BOD": 5.73,
+      "Nitrate": 8.32,
+      "FecalColiform": 118.58
+    }
+  },
+  {
+    "location": "Patna",
+    "date": "2025-07-18",
+    "parameters": {
+      "DO": 7.47,
+      "BOD": 1.65,
+      "Nitrate": 2.1,
+      "FecalColiform": 278.43
+    },
+    "forecast": {
+      "DO": 7.41,
+      "BOD": 1.66,
+      "Nitrate": 2.09,
+      "FecalColiform": 287.11
+    }
+  },
+  {
+    "location": "Patna",
+    "date": "2025-07-19",
+    "parameters": {
+      "DO": 4.01,
+      "BOD": 1.49,
+      "Nitrate": 5.83,
+      "FecalColiform": 416.36
+    },
+    "forecast": {
+      "DO": 3.99,
+      "BOD": 1.49,
+      "Nitrate": 5.95,
+      "FecalColiform": 420.35
+    }
+  },
+  {
+    "location": "Patna",
+    "date": "2025-07-20",
+    "parameters": {
+      "DO": 7.91,
+      "BOD": 5.06,
+      "Nitrate": 5.04,
+      "FecalColiform": 301.39
+    },
+    "forecast": {
+      "DO": 8.25,
+      "BOD": 5.21,
+      "Nitrate": 5.12,
+      "FecalColiform": 308.39
+    }
+  },
+  {
+    "location": "Patna",
+    "date": "2025-07-21",
+    "parameters": {
+      "DO": 8.92,
+      "BOD": 4.09,
+      "Nitrate": 13.35,
+      "FecalColiform": 294.85
+    },
+    "forecast": {
+      "DO": 8.6,
+      "BOD": 4.26,
+      "Nitrate": 12.94,
+      "FecalColiform": 280.89
+    }
+  },
+  {
+    "location": "Patna",
+    "date": "2025-07-22",
+    "parameters": {
+      "DO": 4.08,
+      "BOD": 2.95,
+      "Nitrate": 13.67,
+      "FecalColiform": 449.17
+    },
+    "forecast": {
+      "DO": 4.02,
+      "BOD": 3.02,
+      "Nitrate": 13.99,
+      "FecalColiform": 441.79
+    }
+  },
+  {
+    "location": "Patna",
+    "date": "2025-07-23",
+    "parameters": {
+      "DO": 4.73,
+      "BOD": 2.19,
+      "Nitrate": 13.69,
+      "FecalColiform": 479.76
+    },
+    "forecast": {
+      "DO": 4.61,
+      "BOD": 2.1,
+      "Nitrate": 14.21,
+      "FecalColiform": 480.88
+    }
+  },
+  {
+    "location": "Patna",
+    "date": "2025-07-24",
+    "parameters": {
+      "DO": 6.22,
+      "BOD": 3.7,
+      "Nitrate": 12.5,
+      "FecalColiform": 444.87
+    },
+    "forecast": {
+      "DO": 6.21,
+      "BOD": 3.58,
+      "Nitrate": 11.91,
+      "FecalColiform": 425.25
+    }
+  },
+  {
+    "location": "Patna",
+    "date": "2025-07-25",
+    "parameters": {
+      "DO": 6.39,
+      "BOD": 3.69,
+      "Nitrate": 7.62,
+      "FecalColiform": 127.08
+    },
+    "forecast": {
+      "DO": 6.1,
+      "BOD": 3.64,
+      "Nitrate": 7.38,
+      "FecalColiform": 131.22
+    }
+  },
+  {
+    "location": "Patna",
+    "date": "2025-07-26",
+    "parameters": {
+      "DO": 5.32,
+      "BOD": 3.25,
+      "Nitrate": 12.76,
+      "FecalColiform": 114.64
+    },
+    "forecast": {
+      "DO": 5.26,
+      "BOD": 3.23,
+      "Nitrate": 12.48,
+      "FecalColiform": 112.86
+    }
+  },
+  {
+    "location": "Patna",
+    "date": "2025-07-27",
+    "parameters": {
+      "DO": 7.38,
+      "BOD": 2.42,
+      "Nitrate": 13.51,
+      "FecalColiform": 459.5
+    },
+    "forecast": {
+      "DO": 7.06,
+      "BOD": 2.51,
+      "Nitrate": 13.66,
+      "FecalColiform": 441.87
+    }
+  },
+  {
+    "location": "Patna",
+    "date": "2025-07-28",
+    "parameters": {
+      "DO": 7.37,
+      "BOD": 5.18,
+      "Nitrate": 5.1,
+      "FecalColiform": 69.62
+    },
+    "forecast": {
+      "DO": 7.64,
+      "BOD": 4.92,
+      "Nitrate": 4.94,
+      "FecalColiform": 66.19
+    }
+  },
+  {
+    "location": "Patna",
+    "date": "2025-07-29",
+    "parameters": {
+      "DO": 6.09,
+      "BOD": 4.83,
+      "Nitrate": 12.36,
+      "FecalColiform": 324.52
+    },
+    "forecast": {
+      "DO": 6.01,
+      "BOD": 4.98,
+      "Nitrate": 12.88,
+      "FecalColiform": 338.46
+    }
+  },
+  {
+    "location": "Patna",
+    "date": "2025-07-30",
+    "parameters": {
+      "DO": 6.69,
+      "BOD": 2.45,
+      "Nitrate": 14.32,
+      "FecalColiform": 158.02
+    },
+    "forecast": {
+      "DO": 6.78,
+      "BOD": 2.34,
+      "Nitrate": 14.72,
+      "FecalColiform": 151.8
+    }
+  },
+  {
+    "location": "Patna",
+    "date": "2025-07-31",
+    "parameters": {
+      "DO": 8.28,
+      "BOD": 4.83,
+      "Nitrate": 4.26,
+      "FecalColiform": 105.79
+    },
+    "forecast": {
+      "DO": 7.97,
+      "BOD": 4.61,
+      "Nitrate": 4.37,
+      "FecalColiform": 110.29
+    }
+  },
+  {
+    "location": "Patna",
+    "date": "2025-08-01",
+    "parameters": {
+      "DO": 6.36,
+      "BOD": 3.07,
+      "Nitrate": 2.78,
+      "FecalColiform": 491.05
+    },
+    "forecast": {
+      "DO": 6.4,
+      "BOD": 3.22,
+      "Nitrate": 2.68,
+      "FecalColiform": 469.54
+    }
+  },
+  {
+    "location": "Patna",
+    "date": "2025-08-02",
+    "parameters": {
+      "DO": 6.98,
+      "BOD": 5.58,
+      "Nitrate": 14.95,
+      "FecalColiform": 569.07
+    },
+    "forecast": {
+      "DO": 6.69,
+      "BOD": 5.69,
+      "Nitrate": 15.39,
+      "FecalColiform": 554.85
+    }
+  },
+  {
+    "location": "Patna",
+    "date": "2025-08-03",
+    "parameters": {
+      "DO": 8.85,
+      "BOD": 2.41,
+      "Nitrate": 9.29,
+      "FecalColiform": 254.27
+    },
+    "forecast": {
+      "DO": 8.58,
+      "BOD": 2.52,
+      "Nitrate": 9.69,
+      "FecalColiform": 242.06
+    }
+  },
+  {
+    "location": "Patna",
+    "date": "2025-08-04",
+    "parameters": {
+      "DO": 8.54,
+      "BOD": 1.99,
+      "Nitrate": 11.75,
+      "FecalColiform": 343.1
+    },
+    "forecast": {
+      "DO": 8.13,
+      "BOD": 2.0,
+      "Nitrate": 11.55,
+      "FecalColiform": 356.24
+    }
+  },
+  {
+    "location": "Patna",
+    "date": "2025-08-05",
+    "parameters": {
+      "DO": 7.8,
+      "BOD": 3.89,
+      "Nitrate": 12.76,
+      "FecalColiform": 423.19
+    },
+    "forecast": {
+      "DO": 7.9,
+      "BOD": 4.07,
+      "Nitrate": 13.08,
+      "FecalColiform": 419.68
+    }
+  },
+  {
+    "location": "Patna",
+    "date": "2025-08-06",
+    "parameters": {
+      "DO": 4.32,
+      "BOD": 3.28,
+      "Nitrate": 14.36,
+      "FecalColiform": 65.8
+    },
+    "forecast": {
+      "DO": 4.33,
+      "BOD": 3.41,
+      "Nitrate": 14.03,
+      "FecalColiform": 65.97
+    }
+  },
+  {
+    "location": "Patna",
+    "date": "2025-08-07",
+    "parameters": {
+      "DO": 5.02,
+      "BOD": 5.18,
+      "Nitrate": 14.63,
+      "FecalColiform": 380.81
+    },
+    "forecast": {
+      "DO": 5.12,
+      "BOD": 5.11,
+      "Nitrate": 14.73,
+      "FecalColiform": 376.06
+    }
+  },
+  {
+    "location": "Patna",
+    "date": "2025-08-08",
+    "parameters": {
+      "DO": 4.76,
+      "BOD": 3.28,
+      "Nitrate": 2.69,
+      "FecalColiform": 156.31
+    },
+    "forecast": {
+      "DO": 4.82,
+      "BOD": 3.2,
+      "Nitrate": 2.64,
+      "FecalColiform": 163.26
+    }
+  },
+  {
+    "location": "Patna",
+    "date": "2025-08-09",
+    "parameters": {
+      "DO": 5.93,
+      "BOD": 2.05,
+      "Nitrate": 9.22,
+      "FecalColiform": 469.14
+    },
+    "forecast": {
+      "DO": 5.96,
+      "BOD": 2.13,
+      "Nitrate": 9.66,
+      "FecalColiform": 483.98
+    }
+  },
+  {
+    "location": "Patna",
+    "date": "2025-08-10",
+    "parameters": {
+      "DO": 6.26,
+      "BOD": 4.89,
+      "Nitrate": 2.18,
+      "FecalColiform": 326.89
+    },
+    "forecast": {
+      "DO": 6.21,
+      "BOD": 4.71,
+      "Nitrate": 2.19,
+      "FecalColiform": 319.41
+    }
+  },
+  {
+    "location": "Patna",
+    "date": "2025-08-11",
+    "parameters": {
+      "DO": 5.4,
+      "BOD": 3.02,
+      "Nitrate": 8.59,
+      "FecalColiform": 98.24
+    },
+    "forecast": {
+      "DO": 5.45,
+      "BOD": 3.11,
+      "Nitrate": 8.42,
+      "FecalColiform": 101.07
+    }
+  },
+  {
+    "location": "Patna",
+    "date": "2025-08-12",
+    "parameters": {
+      "DO": 7.54,
+      "BOD": 4.8,
+      "Nitrate": 8.39,
+      "FecalColiform": 91.58
+    },
+    "forecast": {
+      "DO": 7.67,
+      "BOD": 5.0,
+      "Nitrate": 8.57,
+      "FecalColiform": 90.16
+    }
+  },
+  {
+    "location": "Patna",
+    "date": "2025-08-13",
+    "parameters": {
+      "DO": 8.47,
+      "BOD": 3.34,
+      "Nitrate": 11.2,
+      "FecalColiform": 536.05
+    },
+    "forecast": {
+      "DO": 8.51,
+      "BOD": 3.4,
+      "Nitrate": 10.78,
+      "FecalColiform": 516.06
+    }
+  },
+  {
+    "location": "Patna",
+    "date": "2025-08-14",
+    "parameters": {
+      "DO": 5.02,
+      "BOD": 4.12,
+      "Nitrate": 14.15,
+      "FecalColiform": 557.43
+    },
+    "forecast": {
+      "DO": 5.2,
+      "BOD": 4.02,
+      "Nitrate": 14.5,
+      "FecalColiform": 551.35
+    }
+  },
+  {
+    "location": "Patna",
+    "date": "2025-08-15",
+    "parameters": {
+      "DO": 4.89,
+      "BOD": 5.41,
+      "Nitrate": 11.61,
+      "FecalColiform": 179.98
+    },
+    "forecast": {
+      "DO": 4.7,
+      "BOD": 5.29,
+      "Nitrate": 11.76,
+      "FecalColiform": 184.61
+    }
+  },
+  {
+    "location": "Patna",
+    "date": "2025-08-16",
+    "parameters": {
+      "DO": 5.89,
+      "BOD": 5.8,
+      "Nitrate": 8.05,
+      "FecalColiform": 504.23
+    },
+    "forecast": {
+      "DO": 6.09,
+      "BOD": 5.62,
+      "Nitrate": 7.9,
+      "FecalColiform": 506.0
+    }
+  },
+  {
+    "location": "Patna",
+    "date": "2025-08-17",
+    "parameters": {
+      "DO": 4.05,
+      "BOD": 3.42,
+      "Nitrate": 9.75,
+      "FecalColiform": 484.4
+    },
+    "forecast": {
+      "DO": 4.09,
+      "BOD": 3.27,
+      "Nitrate": 10.21,
+      "FecalColiform": 491.18
+    }
+  },
+  {
+    "location": "Patna",
+    "date": "2025-08-18",
+    "parameters": {
+      "DO": 4.64,
+      "BOD": 1.44,
+      "Nitrate": 5.5,
+      "FecalColiform": 59.12
+    },
+    "forecast": {
+      "DO": 4.76,
+      "BOD": 1.47,
+      "Nitrate": 5.66,
+      "FecalColiform": 59.79
+    }
+  },
+  {
+    "location": "Patna",
+    "date": "2025-08-19",
+    "parameters": {
+      "DO": 4.55,
+      "BOD": 1.81,
+      "Nitrate": 2.04,
+      "FecalColiform": 524.02
+    },
+    "forecast": {
+      "DO": 4.45,
+      "BOD": 1.86,
+      "Nitrate": 2.08,
+      "FecalColiform": 543.49
+    }
+  },
+  {
+    "location": "Patna",
+    "date": "2025-08-20",
+    "parameters": {
+      "DO": 4.95,
+      "BOD": 4.77,
+      "Nitrate": 11.42,
+      "FecalColiform": 306.96
+    },
+    "forecast": {
+      "DO": 4.72,
+      "BOD": 4.9,
+      "Nitrate": 10.99,
+      "FecalColiform": 301.46
+    }
+  },
+  {
+    "location": "Patna",
+    "date": "2025-08-21",
+    "parameters": {
+      "DO": 5.38,
+      "BOD": 4.88,
+      "Nitrate": 10.79,
+      "FecalColiform": 377.26
+    },
+    "forecast": {
+      "DO": 5.45,
+      "BOD": 4.85,
+      "Nitrate": 10.66,
+      "FecalColiform": 391.72
+    }
+  },
+  {
+    "location": "Patna",
+    "date": "2025-08-22",
+    "parameters": {
+      "DO": 5.28,
+      "BOD": 1.75,
+      "Nitrate": 2.76,
+      "FecalColiform": 505.93
+    },
+    "forecast": {
+      "DO": 5.29,
+      "BOD": 1.7,
+      "Nitrate": 2.83,
+      "FecalColiform": 526.23
+    }
+  },
+  {
+    "location": "Patna",
+    "date": "2025-08-23",
+    "parameters": {
+      "DO": 8.06,
+      "BOD": 1.63,
+      "Nitrate": 6.59,
+      "FecalColiform": 592.07
+    },
+    "forecast": {
+      "DO": 8.42,
+      "BOD": 1.59,
+      "Nitrate": 6.32,
+      "FecalColiform": 601.12
+    }
+  },
+  {
+    "location": "Patna",
+    "date": "2025-08-24",
+    "parameters": {
+      "DO": 6.78,
+      "BOD": 1.21,
+      "Nitrate": 14.57,
+      "FecalColiform": 320.15
+    },
+    "forecast": {
+      "DO": 6.97,
+      "BOD": 1.2,
+      "Nitrate": 15.22,
+      "FecalColiform": 308.37
+    }
+  },
+  {
+    "location": "Patna",
+    "date": "2025-08-25",
+    "parameters": {
+      "DO": 8.75,
+      "BOD": 1.52,
+      "Nitrate": 2.63,
+      "FecalColiform": 111.03
+    },
+    "forecast": {
+      "DO": 8.65,
+      "BOD": 1.57,
+      "Nitrate": 2.51,
+      "FecalColiform": 115.49
+    }
+  },
+  {
+    "location": "Patna",
+    "date": "2025-08-26",
+    "parameters": {
+      "DO": 8.45,
+      "BOD": 5.4,
+      "Nitrate": 14.14,
+      "FecalColiform": 141.05
+    },
+    "forecast": {
+      "DO": 8.78,
+      "BOD": 5.28,
+      "Nitrate": 14.01,
+      "FecalColiform": 144.87
+    }
+  },
+  {
+    "location": "Patna",
+    "date": "2025-08-27",
+    "parameters": {
+      "DO": 6.66,
+      "BOD": 3.96,
+      "Nitrate": 9.58,
+      "FecalColiform": 230.92
+    },
+    "forecast": {
+      "DO": 6.51,
+      "BOD": 4.09,
+      "Nitrate": 9.39,
+      "FecalColiform": 224.49
+    }
+  },
+  {
+    "location": "Patna",
+    "date": "2025-08-28",
+    "parameters": {
+      "DO": 6.46,
+      "BOD": 1.5,
+      "Nitrate": 8.97,
+      "FecalColiform": 132.86
+    },
+    "forecast": {
+      "DO": 6.44,
+      "BOD": 1.44,
+      "Nitrate": 9.2,
+      "FecalColiform": 130.66
+    }
+  },
+  {
+    "location": "Patna",
+    "date": "2025-08-29",
+    "parameters": {
+      "DO": 5.59,
+      "BOD": 5.67,
+      "Nitrate": 8.41,
+      "FecalColiform": 329.76
+    },
+    "forecast": {
+      "DO": 5.58,
+      "BOD": 5.41,
+      "Nitrate": 8.04,
+      "FecalColiform": 331.36
+    }
+  },
+  {
+    "location": "Patna",
+    "date": "2025-08-30",
+    "parameters": {
+      "DO": 6.99,
+      "BOD": 3.81,
+      "Nitrate": 6.25,
+      "FecalColiform": 290.94
+    },
+    "forecast": {
+      "DO": 7.32,
+      "BOD": 3.74,
+      "Nitrate": 6.29,
+      "FecalColiform": 296.97
+    }
+  },
+  {
+    "location": "Kanpur",
+    "date": "2025-07-01",
+    "parameters": {
+      "DO": 6.27,
+      "BOD": 2.8,
+      "Nitrate": 3.5,
+      "FecalColiform": 368.05
+    },
+    "forecast": {
+      "DO": 6.24,
+      "BOD": 2.89,
+      "Nitrate": 3.4,
+      "FecalColiform": 367.12
+    }
+  },
+  {
+    "location": "Kanpur",
+    "date": "2025-07-02",
+    "parameters": {
+      "DO": 7.4,
+      "BOD": 5.9,
+      "Nitrate": 8.73,
+      "FecalColiform": 437.39
+    },
+    "forecast": {
+      "DO": 7.64,
+      "BOD": 5.92,
+      "Nitrate": 8.98,
+      "FecalColiform": 415.79
+    }
+  },
+  {
+    "location": "Kanpur",
+    "date": "2025-07-03",
+    "parameters": {
+      "DO": 4.5,
+      "BOD": 3.44,
+      "Nitrate": 7.71,
+      "FecalColiform": 571.14
+    },
+    "forecast": {
+      "DO": 4.49,
+      "BOD": 3.3,
+      "Nitrate": 7.9,
+      "FecalColiform": 555.85
+    }
+  },
+  {
+    "location": "Kanpur",
+    "date": "2025-07-04",
+    "parameters": {
+      "DO": 7.37,
+      "BOD": 2.62,
+      "Nitrate": 7.57,
+      "FecalColiform": 216.56
+    },
+    "forecast": {
+      "DO": 7.26,
+      "BOD": 2.7,
+      "Nitrate": 7.33,
+      "FecalColiform": 210.37
+    }
+  },
+  {
+    "location": "Kanpur",
+    "date": "2025-07-05",
+    "parameters": {
+      "DO": 8.51,
+      "BOD": 1.5,
+      "Nitrate": 11.27,
+      "FecalColiform": 532.69
+    },
+    "forecast": {
+      "DO": 8.8,
+      "BOD": 1.43,
+      "Nitrate": 10.97,
+      "FecalColiform": 537.16
+    }
+  },
+  {
+    "location": "Kanpur",
+    "date": "2025-07-06",
+    "parameters": {
+      "DO": 4.06,
+      "BOD": 3.59,
+      "Nitrate": 4.34,
+      "FecalColiform": 324.85
+    },
+    "forecast": {
+      "DO": 4.22,
+      "BOD": 3.55,
+      "Nitrate": 4.3,
+      "FecalColiform": 333.41
+    }
+  },
+  {
+    "location": "Kanpur",
+    "date": "2025-07-07",
+    "parameters": {
+      "DO": 4.75,
+      "BOD": 4.99,
+      "Nitrate": 4.25,
+      "FecalColiform": 592.35
+    },
+    "forecast": {
+      "DO": 4.76,
+      "BOD": 5.02,
+      "Nitrate": 4.17,
+      "FecalColiform": 608.38
+    }
+  },
+  {
+    "location": "Kanpur",
+    "date": "2025-07-08",
+    "parameters": {
+      "DO": 4.54,
+      "BOD": 2.58,
+      "Nitrate": 11.87,
+      "FecalColiform": 412.72
+    },
+    "forecast": {
+      "DO": 4.32,
+      "BOD": 2.67,
+      "Nitrate": 12.23,
+      "FecalColiform": 407.47
+    }
+  },
+  {
+    "location": "Kanpur",
+    "date": "2025-07-09",
+    "parameters": {
+      "DO": 6.53,
+      "BOD": 4.17,
+      "Nitrate": 12.11,
+      "FecalColiform": 164.64
+    },
+    "forecast": {
+      "DO": 6.3,
+      "BOD": 4.2,
+      "Nitrate": 12.24,
+      "FecalColiform": 164.22
+    }
+  },
+  {
+    "location": "Kanpur",
+    "date": "2025-07-10",
+    "parameters": {
+      "DO": 5.01,
+      "BOD": 2.07,
+      "Nitrate": 11.15,
+      "FecalColiform": 205.26
+    },
+    "forecast": {
+      "DO": 4.8,
+      "BOD": 2.03,
+      "Nitrate": 11.54,
+      "FecalColiform": 213.69
+    }
+  },
+  {
+    "location": "Kanpur",
+    "date": "2025-07-11",
+    "parameters": {
+      "DO": 6.79,
+      "BOD": 5.69,
+      "Nitrate": 12.5,
+      "FecalColiform": 180.78
+    },
+    "forecast": {
+      "DO": 7.12,
+      "BOD": 5.48,
+      "Nitrate": 12.62,
+      "FecalColiform": 188.08
+    }
+  },
+  {
+    "location": "Kanpur",
+    "date": "2025-07-12",
+    "parameters": {
+      "DO": 5.13,
+      "BOD": 5.88,
+      "Nitrate": 3.32,
+      "FecalColiform": 129.36
+    },
+    "forecast": {
+      "DO": 5.09,
+      "BOD": 6.13,
+      "Nitrate": 3.46,
+      "FecalColiform": 126.94
+    }
+  },
+  {
+    "location": "Kanpur",
+    "date": "2025-07-13",
+    "parameters": {
+      "DO": 5.76,
+      "BOD": 5.91,
+      "Nitrate": 5.69,
+      "FecalColiform": 62.43
+    },
+    "forecast": {
+      "DO": 5.88,
+      "BOD": 5.66,
+      "Nitrate": 5.55,
+      "FecalColiform": 59.65
+    }
+  },
+  {
+    "location": "Kanpur",
+    "date": "2025-07-14",
+    "parameters": {
+      "DO": 6.1,
+      "BOD": 5.52,
+      "Nitrate": 10.34,
+      "FecalColiform": 52.5
+    },
+    "forecast": {
+      "DO": 6.36,
+      "BOD": 5.55,
+      "Nitrate": 10.85,
+      "FecalColiform": 50.27
+    }
+  },
+  {
+    "location": "Kanpur",
+    "date": "2025-07-15",
+    "parameters": {
+      "DO": 7.2,
+      "BOD": 1.02,
+      "Nitrate": 5.07,
+      "FecalColiform": 229.89
+    },
+    "forecast": {
+      "DO": 7.08,
+      "BOD": 0.99,
+      "Nitrate": 4.88,
+      "FecalColiform": 239.67
+    }
+  },
+  {
+    "location": "Kanpur",
+    "date": "2025-07-16",
+    "parameters": {
+      "DO": 6.99,
+      "BOD": 1.71,
+      "Nitrate": 9.63,
+      "FecalColiform": 168.6
+    },
+    "forecast": {
+      "DO": 7.09,
+      "BOD": 1.71,
+      "Nitrate": 9.88,
+      "FecalColiform": 162.65
+    }
+  },
+  {
+    "location": "Kanpur",
+    "date": "2025-07-17",
+    "parameters": {
+      "DO": 8.03,
+      "BOD": 4.12,
+      "Nitrate": 10.25,
+      "FecalColiform": 473.44
+    },
+    "forecast": {
+      "DO": 8.12,
+      "BOD": 4.28,
+      "Nitrate": 9.95,
+      "FecalColiform": 464.72
+    }
+  },
+  {
+    "location": "Kanpur",
+    "date": "2025-07-18",
+    "parameters": {
+      "DO": 5.72,
+      "BOD": 4.08,
+      "Nitrate": 13.26,
+      "FecalColiform": 144.34
+    },
+    "forecast": {
+      "DO": 5.58,
+      "BOD": 3.99,
+      "Nitrate": 13.83,
+      "FecalColiform": 147.15
+    }
+  },
+  {
+    "location": "Kanpur",
+    "date": "2025-07-19",
+    "parameters": {
+      "DO": 7.07,
+      "BOD": 4.89,
+      "Nitrate": 6.53,
+      "FecalColiform": 161.75
+    },
+    "forecast": {
+      "DO": 7.32,
+      "BOD": 5.08,
+      "Nitrate": 6.51,
+      "FecalColiform": 157.59
+    }
+  },
+  {
+    "location": "Kanpur",
+    "date": "2025-07-20",
+    "parameters": {
+      "DO": 4.24,
+      "BOD": 5.75,
+      "Nitrate": 6.76,
+      "FecalColiform": 389.81
+    },
+    "forecast": {
+      "DO": 4.28,
+      "BOD": 5.95,
+      "Nitrate": 6.77,
+      "FecalColiform": 402.75
+    }
+  },
+  {
+    "location": "Kanpur",
+    "date": "2025-07-21",
+    "parameters": {
+      "DO": 6.79,
+      "BOD": 4.56,
+      "Nitrate": 2.31,
+      "FecalColiform": 326.19
+    },
+    "forecast": {
+      "DO": 6.91,
+      "BOD": 4.78,
+      "Nitrate": 2.28,
+      "FecalColiform": 318.85
+    }
+  },
+  {
+    "location": "Kanpur",
+    "date": "2025-07-22",
+    "parameters": {
+      "DO": 4.26,
+      "BOD": 2.69,
+      "Nitrate": 12.29,
+      "FecalColiform": 523.17
+    },
+    "forecast": {
+      "DO": 4.13,
+      "BOD": 2.74,
+      "Nitrate": 12.0,
+      "FecalColiform": 505.47
+    }
+  },
+  {
+    "location": "Kanpur",
+    "date": "2025-07-23",
+    "parameters": {
+      "DO": 8.68,
+      "BOD": 5.6,
+      "Nitrate": 3.65,
+      "FecalColiform": 478.56
+    },
+    "forecast": {
+      "DO": 8.54,
+      "BOD": 5.36,
+      "Nitrate": 3.77,
+      "FecalColiform": 479.16
+    }
+  },
+  {
+    "location": "Kanpur",
+    "date": "2025-07-24",
+    "parameters": {
+      "DO": 6.06,
+      "BOD": 5.43,
+      "Nitrate": 11.22,
+      "FecalColiform": 189.72
+    },
+    "forecast": {
+      "DO": 6.22,
+      "BOD": 5.41,
+      "Nitrate": 11.24,
+      "FecalColiform": 199.09
+    }
+  },
+  {
+    "location": "Kanpur",
+    "date": "2025-07-25",
+    "parameters": {
+      "DO": 6.38,
+      "BOD": 2.66,
+      "Nitrate": 8.15,
+      "FecalColiform": 364.91
+    },
+    "forecast": {
+      "DO": 6.19,
+      "BOD": 2.77,
+      "Nitrate": 8.41,
+      "FecalColiform": 353.23
+    }
+  },
+  {
+    "location": "Kanpur",
+    "date": "2025-07-26",
+    "parameters": {
+      "DO": 8.73,
+      "BOD": 5.32,
+      "Nitrate": 2.68,
+      "FecalColiform": 142.62
+    },
+    "forecast": {
+      "DO": 8.73,
+      "BOD": 5.19,
+      "Nitrate": 2.6,
+      "FecalColiform": 146.39
+    }
+  },
+  {
+    "location": "Kanpur",
+    "date": "2025-07-27",
+    "parameters": {
+      "DO": 4.13,
+      "BOD": 3.15,
+      "Nitrate": 11.4,
+      "FecalColiform": 543.18
+    },
+    "forecast": {
+      "DO": 4.15,
+      "BOD": 3.14,
+      "Nitrate": 11.5,
+      "FecalColiform": 536.21
+    }
+  },
+  {
+    "location": "Kanpur",
+    "date": "2025-07-28",
+    "parameters": {
+      "DO": 4.35,
+      "BOD": 1.3,
+      "Nitrate": 9.83,
+      "FecalColiform": 301.04
+    },
+    "forecast": {
+      "DO": 4.13,
+      "BOD": 1.33,
+      "Nitrate": 9.62,
+      "FecalColiform": 291.76
+    }
+  },
+  {
+    "location": "Kanpur",
+    "date": "2025-07-29",
+    "parameters": {
+      "DO": 8.87,
+      "BOD": 1.36,
+      "Nitrate": 13.88,
+      "FecalColiform": 183.38
+    },
+    "forecast": {
+      "DO": 9.11,
+      "BOD": 1.39,
+      "Nitrate": 13.92,
+      "FecalColiform": 183.83
+    }
+  },
+  {
+    "location": "Kanpur",
+    "date": "2025-07-30",
+    "parameters": {
+      "DO": 7.36,
+      "BOD": 4.37,
+      "Nitrate": 6.18,
+      "FecalColiform": 147.14
+    },
+    "forecast": {
+      "DO": 7.61,
+      "BOD": 4.44,
+      "Nitrate": 5.97,
+      "FecalColiform": 141.12
+    }
+  },
+  {
+    "location": "Kanpur",
+    "date": "2025-07-31",
+    "parameters": {
+      "DO": 6.32,
+      "BOD": 5.9,
+      "Nitrate": 4.22,
+      "FecalColiform": 457.6
     },
     "forecast": {
       "DO": 6.04,
-      "BOD": 2.93,
-      "Nitrate": 9.05,
-      "FecalColiform": 116.6
+      "BOD": 6.11,
+      "Nitrate": 4.32,
+      "FecalColiform": 454.78
+    }
+  },
+  {
+    "location": "Kanpur",
+    "date": "2025-08-01",
+    "parameters": {
+      "DO": 8.89,
+      "BOD": 2.98,
+      "Nitrate": 2.51,
+      "FecalColiform": 433.1
+    },
+    "forecast": {
+      "DO": 9.25,
+      "BOD": 3.11,
+      "Nitrate": 2.56,
+      "FecalColiform": 439.66
+    }
+  },
+  {
+    "location": "Kanpur",
+    "date": "2025-08-02",
+    "parameters": {
+      "DO": 7.43,
+      "BOD": 5.6,
+      "Nitrate": 5.29,
+      "FecalColiform": 141.55
+    },
+    "forecast": {
+      "DO": 7.78,
+      "BOD": 5.42,
+      "Nitrate": 5.44,
+      "FecalColiform": 137.02
+    }
+  },
+  {
+    "location": "Kanpur",
+    "date": "2025-08-03",
+    "parameters": {
+      "DO": 8.2,
+      "BOD": 2.41,
+      "Nitrate": 7.0,
+      "FecalColiform": 130.06
+    },
+    "forecast": {
+      "DO": 7.92,
+      "BOD": 2.38,
+      "Nitrate": 6.96,
+      "FecalColiform": 133.06
+    }
+  },
+  {
+    "location": "Kanpur",
+    "date": "2025-08-04",
+    "parameters": {
+      "DO": 7.73,
+      "BOD": 2.52,
+      "Nitrate": 10.84,
+      "FecalColiform": 560.88
+    },
+    "forecast": {
+      "DO": 7.47,
+      "BOD": 2.64,
+      "Nitrate": 10.77,
+      "FecalColiform": 571.55
+    }
+  },
+  {
+    "location": "Kanpur",
+    "date": "2025-08-05",
+    "parameters": {
+      "DO": 4.27,
+      "BOD": 4.01,
+      "Nitrate": 10.1,
+      "FecalColiform": 144.08
+    },
+    "forecast": {
+      "DO": 4.45,
+      "BOD": 4.09,
+      "Nitrate": 9.93,
+      "FecalColiform": 141.45
+    }
+  },
+  {
+    "location": "Kanpur",
+    "date": "2025-08-06",
+    "parameters": {
+      "DO": 5.82,
+      "BOD": 5.28,
+      "Nitrate": 8.19,
+      "FecalColiform": 81.45
+    },
+    "forecast": {
+      "DO": 5.97,
+      "BOD": 5.52,
+      "Nitrate": 8.16,
+      "FecalColiform": 78.2
+    }
+  },
+  {
+    "location": "Kanpur",
+    "date": "2025-08-07",
+    "parameters": {
+      "DO": 5.06,
+      "BOD": 4.33,
+      "Nitrate": 12.87,
+      "FecalColiform": 381.96
+    },
+    "forecast": {
+      "DO": 5.07,
+      "BOD": 4.23,
+      "Nitrate": 12.76,
+      "FecalColiform": 369.76
+    }
+  },
+  {
+    "location": "Kanpur",
+    "date": "2025-08-08",
+    "parameters": {
+      "DO": 4.32,
+      "BOD": 1.3,
+      "Nitrate": 9.87,
+      "FecalColiform": 511.76
+    },
+    "forecast": {
+      "DO": 4.14,
+      "BOD": 1.29,
+      "Nitrate": 10.07,
+      "FecalColiform": 521.78
+    }
+  },
+  {
+    "location": "Kanpur",
+    "date": "2025-08-09",
+    "parameters": {
+      "DO": 5.48,
+      "BOD": 1.95,
+      "Nitrate": 8.28,
+      "FecalColiform": 495.64
+    },
+    "forecast": {
+      "DO": 5.66,
+      "BOD": 1.99,
+      "Nitrate": 8.65,
+      "FecalColiform": 497.03
+    }
+  },
+  {
+    "location": "Kanpur",
+    "date": "2025-08-10",
+    "parameters": {
+      "DO": 6.86,
+      "BOD": 2.19,
+      "Nitrate": 7.76,
+      "FecalColiform": 540.98
+    },
+    "forecast": {
+      "DO": 6.88,
+      "BOD": 2.11,
+      "Nitrate": 7.42,
+      "FecalColiform": 559.8
+    }
+  },
+  {
+    "location": "Kanpur",
+    "date": "2025-08-11",
+    "parameters": {
+      "DO": 8.67,
+      "BOD": 2.76,
+      "Nitrate": 6.56,
+      "FecalColiform": 395.7
+    },
+    "forecast": {
+      "DO": 9.01,
+      "BOD": 2.71,
+      "Nitrate": 6.39,
+      "FecalColiform": 383.53
+    }
+  },
+  {
+    "location": "Kanpur",
+    "date": "2025-08-12",
+    "parameters": {
+      "DO": 7.24,
+      "BOD": 3.09,
+      "Nitrate": 14.17,
+      "FecalColiform": 114.51
+    },
+    "forecast": {
+      "DO": 7.42,
+      "BOD": 3.02,
+      "Nitrate": 14.55,
+      "FecalColiform": 118.03
+    }
+  },
+  {
+    "location": "Kanpur",
+    "date": "2025-08-13",
+    "parameters": {
+      "DO": 8.48,
+      "BOD": 4.21,
+      "Nitrate": 5.06,
+      "FecalColiform": 397.91
+    },
+    "forecast": {
+      "DO": 8.9,
+      "BOD": 4.27,
+      "Nitrate": 5.06,
+      "FecalColiform": 380.73
+    }
+  },
+  {
+    "location": "Kanpur",
+    "date": "2025-08-14",
+    "parameters": {
+      "DO": 4.44,
+      "BOD": 3.24,
+      "Nitrate": 11.41,
+      "FecalColiform": 467.02
+    },
+    "forecast": {
+      "DO": 4.26,
+      "BOD": 3.34,
+      "Nitrate": 11.95,
+      "FecalColiform": 469.4
+    }
+  },
+  {
+    "location": "Kanpur",
+    "date": "2025-08-15",
+    "parameters": {
+      "DO": 8.6,
+      "BOD": 2.47,
+      "Nitrate": 3.99,
+      "FecalColiform": 382.52
+    },
+    "forecast": {
+      "DO": 8.59,
+      "BOD": 2.39,
+      "Nitrate": 3.97,
+      "FecalColiform": 382.24
+    }
+  },
+  {
+    "location": "Kanpur",
+    "date": "2025-08-16",
+    "parameters": {
+      "DO": 4.84,
+      "BOD": 4.34,
+      "Nitrate": 2.86,
+      "FecalColiform": 461.25
+    },
+    "forecast": {
+      "DO": 5.0,
+      "BOD": 4.15,
+      "Nitrate": 2.82,
+      "FecalColiform": 439.29
+    }
+  },
+  {
+    "location": "Kanpur",
+    "date": "2025-08-17",
+    "parameters": {
+      "DO": 7.79,
+      "BOD": 4.15,
+      "Nitrate": 3.87,
+      "FecalColiform": 155.88
+    },
+    "forecast": {
+      "DO": 7.92,
+      "BOD": 4.23,
+      "Nitrate": 3.9,
+      "FecalColiform": 153.69
+    }
+  },
+  {
+    "location": "Kanpur",
+    "date": "2025-08-18",
+    "parameters": {
+      "DO": 4.57,
+      "BOD": 4.99,
+      "Nitrate": 14.94,
+      "FecalColiform": 121.53
+    },
+    "forecast": {
+      "DO": 4.48,
+      "BOD": 5.19,
+      "Nitrate": 14.4,
+      "FecalColiform": 117.15
+    }
+  },
+  {
+    "location": "Kanpur",
+    "date": "2025-08-19",
+    "parameters": {
+      "DO": 6.63,
+      "BOD": 3.44,
+      "Nitrate": 12.46,
+      "FecalColiform": 229.89
+    },
+    "forecast": {
+      "DO": 6.72,
+      "BOD": 3.39,
+      "Nitrate": 13.02,
+      "FecalColiform": 239.33
+    }
+  },
+  {
+    "location": "Kanpur",
+    "date": "2025-08-20",
+    "parameters": {
+      "DO": 6.0,
+      "BOD": 1.9,
+      "Nitrate": 5.16,
+      "FecalColiform": 573.81
+    },
+    "forecast": {
+      "DO": 5.92,
+      "BOD": 1.81,
+      "Nitrate": 5.4,
+      "FecalColiform": 546.16
+    }
+  },
+  {
+    "location": "Kanpur",
+    "date": "2025-08-21",
+    "parameters": {
+      "DO": 6.11,
+      "BOD": 4.58,
+      "Nitrate": 10.12,
+      "FecalColiform": 576.96
+    },
+    "forecast": {
+      "DO": 6.32,
+      "BOD": 4.48,
+      "Nitrate": 10.14,
+      "FecalColiform": 577.33
+    }
+  },
+  {
+    "location": "Kanpur",
+    "date": "2025-08-22",
+    "parameters": {
+      "DO": 8.23,
+      "BOD": 2.54,
+      "Nitrate": 10.0,
+      "FecalColiform": 319.9
+    },
+    "forecast": {
+      "DO": 8.36,
+      "BOD": 2.61,
+      "Nitrate": 9.68,
+      "FecalColiform": 312.69
+    }
+  },
+  {
+    "location": "Kanpur",
+    "date": "2025-08-23",
+    "parameters": {
+      "DO": 6.8,
+      "BOD": 4.06,
+      "Nitrate": 8.39,
+      "FecalColiform": 315.05
+    },
+    "forecast": {
+      "DO": 6.63,
+      "BOD": 4.01,
+      "Nitrate": 8.03,
+      "FecalColiform": 299.58
+    }
+  },
+  {
+    "location": "Kanpur",
+    "date": "2025-08-24",
+    "parameters": {
+      "DO": 6.48,
+      "BOD": 2.37,
+      "Nitrate": 5.67,
+      "FecalColiform": 266.32
+    },
+    "forecast": {
+      "DO": 6.19,
+      "BOD": 2.42,
+      "Nitrate": 5.85,
+      "FecalColiform": 269.51
+    }
+  },
+  {
+    "location": "Kanpur",
+    "date": "2025-08-25",
+    "parameters": {
+      "DO": 6.88,
+      "BOD": 4.32,
+      "Nitrate": 12.29,
+      "FecalColiform": 180.9
+    },
+    "forecast": {
+      "DO": 6.81,
+      "BOD": 4.38,
+      "Nitrate": 11.7,
+      "FecalColiform": 189.3
+    }
+  },
+  {
+    "location": "Kanpur",
+    "date": "2025-08-26",
+    "parameters": {
+      "DO": 5.54,
+      "BOD": 5.37,
+      "Nitrate": 13.1,
+      "FecalColiform": 411.55
+    },
+    "forecast": {
+      "DO": 5.53,
+      "BOD": 5.49,
+      "Nitrate": 12.86,
+      "FecalColiform": 412.9
+    }
+  },
+  {
+    "location": "Kanpur",
+    "date": "2025-08-27",
+    "parameters": {
+      "DO": 6.48,
+      "BOD": 2.86,
+      "Nitrate": 5.45,
+      "FecalColiform": 273.97
+    },
+    "forecast": {
+      "DO": 6.7,
+      "BOD": 2.94,
+      "Nitrate": 5.19,
+      "FecalColiform": 272.0
+    }
+  },
+  {
+    "location": "Kanpur",
+    "date": "2025-08-28",
+    "parameters": {
+      "DO": 6.15,
+      "BOD": 5.03,
+      "Nitrate": 13.28,
+      "FecalColiform": 345.3
+    },
+    "forecast": {
+      "DO": 6.32,
+      "BOD": 5.2,
+      "Nitrate": 13.73,
+      "FecalColiform": 336.65
+    }
+  },
+  {
+    "location": "Kanpur",
+    "date": "2025-08-29",
+    "parameters": {
+      "DO": 8.8,
+      "BOD": 5.58,
+      "Nitrate": 12.0,
+      "FecalColiform": 308.58
+    },
+    "forecast": {
+      "DO": 8.47,
+      "BOD": 5.39,
+      "Nitrate": 11.51,
+      "FecalColiform": 316.13
+    }
+  },
+  {
+    "location": "Kanpur",
+    "date": "2025-08-30",
+    "parameters": {
+      "DO": 5.65,
+      "BOD": 1.79,
+      "Nitrate": 14.02,
+      "FecalColiform": 363.29
+    },
+    "forecast": {
+      "DO": 5.8,
+      "BOD": 1.74,
+      "Nitrate": 14.2,
+      "FecalColiform": 372.83
     }
   }
 ]

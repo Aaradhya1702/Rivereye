@@ -20,3 +20,6 @@ export const getSummary = (location) =>
 export const getAlertCounts = async () => {
   return axios.get(`${API_URL}/alerts-count`);
 };
+
+export const getMonthlyComparison = (location) =>
+  axios.get(`${API_URL}/water/monthly-comparison/${location}`);

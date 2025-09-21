@@ -5,6 +5,64 @@ const fs = require("fs");
 const WaterQuality = require("../models/WaterQuality");
 const MLR = require("ml-regression").SimpleLinearRegression;
 
+// GET monthly comparison for a city
+// Route: /api/water/monthly-comparison/:location
+router.get("/monthly-comparison/:location", async (req, res) => {
+  try {
+    const { location } = req.params;
+
+    // Fetch last 60 days of data for the city
+    const records = await WaterQuality.find({ location }).sort({ date: 1 });
+
+    if (!records.length) {
+      return res.status(404).json({ message: "No data found" });
+    }
+
+    // Group data by month
+    const monthlyData = {};
+    records.forEach((r) => {
+      const month = new Date(r.date).toLocaleString("default", {
+        month: "long",
+        year: "numeric",
+      });
+
+      if (!monthlyData[month]) {
+        monthlyData[month] = {
+          count: 0,
+          DO: 0,
+          BOD: 0,
+          Nitrate: 0,
+          FecalColiform: 0,
+        };
+      }
+
+      monthlyData[month].count += 1;
+      monthlyData[month].DO += r.parameters.DO;
+      monthlyData[month].BOD += r.parameters.BOD;
+      monthlyData[month].Nitrate += r.parameters.Nitrate;
+      monthlyData[month].FecalColiform += r.parameters.FecalColiform;
+    });
+
+    // Calculate averages
+    const result = Object.keys(monthlyData).map((month) => ({
+      month,
+      DO: (monthlyData[month].DO / monthlyData[month].count).toFixed(2),
+      BOD: (monthlyData[month].BOD / monthlyData[month].count).toFixed(2),
+      Nitrate: (monthlyData[month].Nitrate / monthlyData[month].count).toFixed(
+        2
+      ),
+      FecalColiform: (
+        monthlyData[month].FecalColiform / monthlyData[month].count
+      ).toFixed(2),
+    }));
+
+    res.json({ location, comparison: result });
+  } catch (err) {
+    console.error(err.message);
+    res.status(500).send("Server Error");
+  }
+});
+
 // Forecast next 3 days
 router.get("/forecast/:location/:parameter", async (req, res) => {
   try {

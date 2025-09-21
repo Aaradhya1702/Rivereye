@@ -7,6 +7,7 @@ import ParameterCards from "../components/ParameterCard";
 import Heatmap from "../components/Heatmap";
 import ExportButton from "../components/Export";
 import ForecastPanel from "../components/ForecastPanel";
+import MonthlyComparison from "../components/MonthlyComparison";
 
 function Dashboard() {
   const cities = ["Varanasi", "Haridwar", "Kolkata", "Patna", "Kanpur"];
@@ -42,7 +43,7 @@ function Dashboard() {
               onChange={(e) => setParameter(e.target.value)}
               className="px-2 py-1 rounded-md border border-gray-300 text-sm focus:ring-2 focus:ring-sky-400"
             >
-              {Object.keys(data[0].parameters).map((p) => (
+              {Object.keys(data[0]?.parameters??[]).map((p) => (
                 <option key={p} value={p}>
                   {p}
                 </option>
@@ -95,6 +96,12 @@ function Dashboard() {
       <div className="grid md:grid-cols-2 gap-6 mt-6">
         <ForecastPanel location={selectedCity} parameter={parameter} />
         <Heatmap data={data} />
+      </div>
+
+      {/* Monthly Comparison */}
+      <div className="mt-6 bg-red-50 border border-red-200 rounded-xl p-4 shadow-sm">
+        <h3 className="text-red-600 font-semibold mb-3">📊 Monthly Comparison</h3>
+        <MonthlyComparison location={selectedCity} />
       </div>
 
       {/* Alerts */}
