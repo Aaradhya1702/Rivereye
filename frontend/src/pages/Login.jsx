@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { login } from '../authService';
-
+import { motion } from 'framer-motion';
 
 
 const Login = () => {

@@ -63,7 +63,7 @@ const Navbar = ({ locations = [], selected, onChange }) => {
             Login
           </Link>
         )}
-       {!user && <button
+       {user!==null && <button
           onClick={handleLogout}
           style={{
             ...linkStyle,

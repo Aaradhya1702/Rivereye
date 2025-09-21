@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { signup } from '../authService';
 import Lottie from "lottie-react";
+import { motion } from "framer-motion";
 import waterAnimation from "../images/Water Animation.json"; // ⬅️ make sure the JSON is in this path
 
 
