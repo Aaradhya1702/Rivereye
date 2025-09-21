@@ -1,34 +1,57 @@
-// backend/seed.js
 require("dotenv").config();
 const path = require("path");
 const fs = require("fs");
 const connectDB = require("./config/db");
+const WaterLevel = require("./models/WaterLevel");
 const WaterQuality = require("./models/WaterQuality");
 
 async function seed() {
   try {
-    // connect to DB
+    // Connect to DB
     await connectDB();
 
-    // clear existing collection (optional)
+    // Clear existing collections
+    await WaterLevel.deleteMany({});
     await WaterQuality.deleteMany({});
-    console.log("Cleared WaterQuality collection");
+    console.log("Cleared WaterLevel and WaterQuality collections");
 
-    // load JSON
-    const filePath = path.join(__dirname, "data", "mockData.json");
-    const raw = fs.readFileSync(filePath, "utf8");
-    const arr = JSON.parse(raw);
+    // ---- Seed WaterQuality ----
+    const qualityPath = path.join(__dirname, "data", "mockData.json");
+    const qualityRaw = fs.readFileSync(qualityPath, "utf8");
+    const qualityArr = JSON.parse(qualityRaw);
 
-    // convert date strings to Date objects (important)
-    const docs = arr.map((item) => ({
+    const qualityDocs = qualityArr.map((item) => ({
       location: item.location,
       date: item.date ? new Date(item.date) : new Date(),
       parameters: item.parameters || {},
       forecast: item.forecast || {},
     }));
 
-    const inserted = await WaterQuality.insertMany(docs);
-    console.log(`Inserted ${inserted.length} documents into WaterQuality`);
+    const qualityInserted = await WaterQuality.insertMany(qualityDocs);
+    console.log(
+      `Inserted ${qualityInserted.length} documents into WaterQuality`
+    );
+
+    // ---- Seed WaterLevel ----
+    const levelPath = path.join(__dirname, "data", "level.json");
+    const levelRaw = fs.readFileSync(levelPath, "utf8");
+    const levelArr = JSON.parse(levelRaw);
+
+    // Map `waterLevel` to `WaterLevel` in parameters and forecast
+    const levelDocs = levelArr.map((item) => ({
+      location: item.location,
+      date: item.date ? new Date(item.date) : new Date(),
+      parameters: {
+        WaterLevel: Number(item.parameters?.waterLevel || 0),
+      },
+      forecast: {
+        WaterLevel: Number(item.forecast?.waterLevel || 0),
+      },
+    }));
+
+    const levelInserted = await WaterLevel.insertMany(levelDocs);
+    console.log(`Inserted ${levelInserted.length} documents into WaterLevel`);
+
     process.exit(0);
   } catch (err) {
     console.error("Seed error", err);

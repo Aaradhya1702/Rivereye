@@ -13,6 +13,7 @@ import audioFile from "../images/stream-3.mp3";
 import ForecastMultiPanel from "../components/ForecastMultiPanel";
 import { useRef } from "react";
 import CityComparisonPanel from "../components/CityComparisonPanel";
+import CityLevelComparison from "../components/CityComparison";
 
 function Dashboard() {
   const audioRef = useRef(null);
@@ -158,6 +159,11 @@ function Dashboard() {
           <ForecastMultiPanel location={selectedCity} />
         </div>
       </div>
+
+       <div className="mt-6 bg-red-50 border border-red-200 rounded-xl p-4 shadow-sm">
+          <h3 className="text-red-600 font-semibold mb-3">📊 City Level Comparison</h3>
+          <CityLevelComparison  />
+        </div>
 
       {/* Alerts */}
       <div className="mt-6 bg-red-50 border border-red-200 rounded-xl p-4 shadow-sm">

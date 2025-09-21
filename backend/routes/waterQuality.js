@@ -3,6 +3,7 @@ const router = express.Router();
 const PDFDocument = require("pdfkit");
 const fs = require("fs");
 const WaterQuality = require("../models/WaterQuality");
+const WaterLevel = require("../models/WaterLevel");
 const MLR = require("ml-regression").SimpleLinearRegression;
 
 // RHI (River Health Index) = composite score 0–100
@@ -115,6 +116,40 @@ router.get("/monthly-comparison/:location", async (req, res) => {
     res.json({ location, comparison: result });
   } catch (err) {
     console.error(err.message);
+    res.status(500).send("Server Error");
+  }
+});
+
+router.get("/level-comparison", async (req, res) => {
+  try {
+    const records = await WaterLevel.find().sort({ date: 1 });
+
+    if (!records.length)
+      return res.status(404).json({ message: "No data found" });
+
+    const cityData = {};
+
+    records.forEach((r) => {
+      const city = r.location || "Unknown";
+      const params = r.parameters || {};
+      const level = Number(params.WaterLevel ?? params.waterLevel ?? 0);
+
+      if (!cityData[city]) {
+        cityData[city] = { count: 0, WaterLevel: 0 };
+      }
+
+      cityData[city].count += 1;
+      cityData[city].WaterLevel += level;
+    });
+
+    const result = Object.keys(cityData).map((city) => ({
+      city,
+      WaterLevel: (cityData[city].WaterLevel / cityData[city].count).toFixed(2),
+    }));
+
+    res.json({ comparison: result });
+  } catch (err) {
+    console.error(err);
     res.status(500).send("Server Error");
   }
 });

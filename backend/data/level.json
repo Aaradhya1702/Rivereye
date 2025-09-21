@@ -1,0 +1,153 @@
+[
+  {
+    "location": "Kanpur",
+    "date": "2025-07-01",
+    "parameters": { "waterLevel": 6.12 },
+    "forecast": { "waterLevel": 6.25 }
+  },
+  {
+    "location": "Kanpur",
+    "date": "2025-07-02",
+    "parameters": { "waterLevel": 6.15 },
+    "forecast": { "waterLevel": 6.28 }
+  },
+  {
+    "location": "Kanpur",
+    "date": "2025-07-03",
+    "parameters": { "waterLevel": 6.18 },
+    "forecast": { "waterLevel": 6.32 }
+  },
+  {
+    "location": "Varanasi",
+    "date": "2025-07-01",
+    "parameters": { "waterLevel": 4.55 },
+    "forecast": { "waterLevel": 4.60 }
+  },
+  {
+    "location": "Varanasi",
+    "date": "2025-07-02",
+    "parameters": { "waterLevel": 4.58 },
+    "forecast": { "waterLevel": 4.62 }
+  },
+  {
+    "location": "Varanasi",
+    "date": "2025-07-03",
+    "parameters": { "waterLevel": 4.60 },
+    "forecast": { "waterLevel": 4.65 }
+  },
+  {
+    "location": "Haridwar",
+    "date": "2025-07-01",
+    "parameters": { "waterLevel": 5.20 },
+    "forecast": { "waterLevel": 5.25 }
+  },
+  {
+    "location": "Haridwar",
+    "date": "2025-07-02",
+    "parameters": { "waterLevel": 5.22 },
+    "forecast": { "waterLevel": 5.28 }
+  },
+  {
+    "location": "Haridwar",
+    "date": "2025-07-03",
+    "parameters": { "waterLevel": 5.25 },
+    "forecast": { "waterLevel": 5.30 }
+  },
+  {
+    "location": "Kolkata",
+    "date": "2025-07-01",
+    "parameters": { "waterLevel": 3.88 },
+    "forecast": { "waterLevel": 3.92 }
+  },
+  {
+    "location": "Kolkata",
+    "date": "2025-07-02",
+    "parameters": { "waterLevel": 3.90 },
+    "forecast": { "waterLevel": 3.95 }
+  },
+  {
+    "location": "Kolkata",
+    "date": "2025-07-03",
+    "parameters": { "waterLevel": 3.92 },
+    "forecast": { "waterLevel": 3.97 }
+  },
+  {
+    "location": "Patna",
+    "date": "2025-07-01",
+    "parameters": { "waterLevel": 4.72 },
+    "forecast": { "waterLevel": 4.75 }
+  },
+  {
+    "location": "Patna",
+    "date": "2025-07-02",
+    "parameters": { "waterLevel": 4.75 },
+    "forecast": { "waterLevel": 4.78 }
+  },
+  {
+    "location": "Patna",
+    "date": "2025-07-03",
+    "parameters": { "waterLevel": 4.78 },
+    "forecast": { "waterLevel": 4.80 }
+  },
+
+  {
+    "location": "Kanpur",
+    "date": "2025-08-01",
+    "parameters": { "waterLevel": 6.50 },
+    "forecast": { "waterLevel": 6.60 }
+  },
+  {
+    "location": "Kanpur",
+    "date": "2025-08-02",
+    "parameters": { "waterLevel": 6.52 },
+    "forecast": { "waterLevel": 6.62 }
+  },
+  {
+    "location": "Varanasi",
+    "date": "2025-08-01",
+    "parameters": { "waterLevel": 4.80 },
+    "forecast": { "waterLevel": 4.85 }
+  },
+  {
+    "location": "Varanasi",
+    "date": "2025-08-02",
+    "parameters": { "waterLevel": 4.82 },
+    "forecast": { "waterLevel": 4.88 }
+  },
+  {
+    "location": "Haridwar",
+    "date": "2025-08-01",
+    "parameters": { "waterLevel": 5.35 },
+    "forecast": { "waterLevel": 5.40 }
+  },
+  {
+    "location": "Haridwar",
+    "date": "2025-08-02",
+    "parameters": { "waterLevel": 5.38 },
+    "forecast": { "waterLevel": 5.42 }
+  },
+  {
+    "location": "Kolkata",
+    "date": "2025-08-01",
+    "parameters": { "waterLevel": 3.95 },
+    "forecast": { "waterLevel": 4.00 }
+  },
+  {
+    "location": "Kolkata",
+    "date": "2025-08-02",
+    "parameters": { "waterLevel": 3.98 },
+    "forecast": { "waterLevel": 4.02 }
+  },
+  {
+    "location": "Patna",
+    "date": "2025-08-01",
+    "parameters": { "waterLevel": 4.85 },
+    "forecast": { "waterLevel": 4.88 }
+  },
+  {
+    "location": "Patna",
+    "date": "2025-08-02",
+    "parameters": { "waterLevel": 4.88 },
+    "forecast": { "waterLevel": 4.92 }
+  }
+]
