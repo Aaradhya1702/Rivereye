@@ -12,6 +12,7 @@ import RHIGauge from "../components/RHIGauge";
 import audioFile from "../images/stream-3.mp3";
 import ForecastMultiPanel from "../components/ForecastMultiPanel";
 import { useRef } from "react";
+import CityComparisonPanel from "../components/CityComparisonPanel";
 
 function Dashboard() {
   const audioRef = useRef(null);
@@ -144,11 +145,18 @@ function Dashboard() {
         </div>
       </div>
 
+      <div className="grid md:grid-cols-2 gap-6 mt-6">
+        {/* City Comparison Panel */}
+        <div className="mt-6 bg-red-50 border border-red-200 rounded-xl p-4 shadow-sm">
+          <h3 className="text-red-600 font-semibold mb-3">📊 City Comparison</h3>
+          <CityComparisonPanel />
+        </div>
 
-      {/* Forecast Multi Panel */}
-      <div className="mt-6 bg-red-50 border border-red-200 rounded-xl p-4 shadow-sm">
-        <h3 className="text-red-600 font-semibold mb-3">📊 Forecast Multi Panel</h3>
-        <ForecastMultiPanel location={selectedCity} />
+        {/* Forecast Multi Panel */}
+        <div className="mt-6 bg-red-50 border border-red-200 rounded-xl p-4 shadow-sm">
+          <h3 className="text-red-600 font-semibold mb-3">📊 Forecast Multi Panel</h3>
+          <ForecastMultiPanel location={selectedCity} />
+        </div>
       </div>
 
       {/* Alerts */}

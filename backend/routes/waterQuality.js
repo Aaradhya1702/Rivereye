@@ -119,6 +119,52 @@ router.get("/monthly-comparison/:location", async (req, res) => {
   }
 });
 
+router.get("/city-comparison", async (req, res) => {
+  try {
+    const records = await WaterQuality.find().sort({ date: 1 });
+
+    if (!records.length) {
+      return res.status(404).json({ message: "No data found" });
+    }
+
+    const cityData = {};
+
+    records.forEach((r) => {
+      const city = r.location || "Unknown";
+      const params = r.parameters || {};
+      if (!cityData[city]) {
+        cityData[city] = {
+          count: 0,
+          DO: 0,
+          BOD: 0,
+          Nitrate: 0,
+          FecalColiform: 0,
+        };
+      }
+      cityData[city].count += 1;
+      cityData[city].DO += Number(params.DO || 0);
+      cityData[city].BOD += Number(params.BOD || 0);
+      cityData[city].Nitrate += Number(params.Nitrate || 0);
+      cityData[city].FecalColiform += Number(params.FecalColiform || 0);
+    });
+
+    const result = Object.keys(cityData).map((city) => ({
+      city,
+      DO: (cityData[city].DO / cityData[city].count).toFixed(2),
+      BOD: (cityData[city].BOD / cityData[city].count).toFixed(2),
+      Nitrate: (cityData[city].Nitrate / cityData[city].count).toFixed(2),
+      FecalColiform: (
+        cityData[city].FecalColiform / cityData[city].count
+      ).toFixed(2),
+    }));
+
+    res.json({ comparison: result });
+  } catch (err) {
+    console.error(err);
+    res.status(500).send("Server Error");
+  }
+});
+
 // Forecast next 3 days for all parameters
 router.get("/forecast-multi/:location", async (req, res) => {
   try {
@@ -233,8 +279,10 @@ router.get("/export/:location", async (req, res) => {
     doc
       .fontSize(12)
       .text(
-        `${r.date.toISOString().slice(0, 10)} | DO: ${r.parameters.DO} | BOD: ${r.parameters.BOD
-        } | Nitrate: ${r.parameters.Nitrate} | Fecal Coliform: ${r.parameters.FecalColiform
+        `${r.date.toISOString().slice(0, 10)} | DO: ${r.parameters.DO} | BOD: ${
+          r.parameters.BOD
+        } | Nitrate: ${r.parameters.Nitrate} | Fecal Coliform: ${
+          r.parameters.FecalColiform
         }`
       );
     doc.moveDown(0.5);
