@@ -1,89 +1,105 @@
-import React, { useState, useEffect } from 'react';
-import { getLocationData, getAlerts } from '../api/api';
-import MapView from '../components/MapView';
-import ChartView from '../components/ChartView';
-import AlertsPanel from '../components/AlertsPanel';
-import ParameterCards from '../components/ParameterCard';
-import Heatmap from '../components/Heatmap';
-import { Select } from 'antd';
-import ExportButton from '../components/Export';
-import ForecastPanel from '../components/ForecastPanel';
-
-const { Option } = Select;
+import React, { useState, useEffect } from "react";
+import { getLocationData, getAlerts } from "../api/api";
+import MapView from "../components/MapView";
+import ChartView from "../components/ChartView";
+import AlertsPanel from "../components/AlertsPanel";
+import ParameterCards from "../components/ParameterCard";
+import Heatmap from "../components/Heatmap";
+import ExportButton from "../components/Export";
+import ForecastPanel from "../components/ForecastPanel";
 
 function Dashboard() {
-  const cities = ['Varanasi', 'Haridwar', 'Kolkata', 'Patna', 'Kanpur'];
+  const cities = ["Varanasi", "Haridwar", "Kolkata", "Patna", "Kanpur"];
   const [selectedCity, setSelectedCity] = useState(cities[0]);
   const [data, setData] = useState([]);
   const [alerts, setAlerts] = useState([]);
-  const [parameter, setParameter] = useState('DO');
+  const [parameter, setParameter] = useState("DO");
 
   useEffect(() => {
     if (selectedCity) {
-      getLocationData(selectedCity).then(res => setData(res.data));
-      getAlerts().then(res => setAlerts(res.data));
+      getLocationData(selectedCity).then((res) => setData(res.data));
+      getAlerts().then((res) => setAlerts(res.data));
     }
   }, [selectedCity]);
 
   return (
-    <div style={{ padding: '20px', maxWidth: '1300px', margin: '80px auto 0 auto' }}>
-      
-      {/* City Selector */}
-      <div style={{ marginBottom: '20px', width:"100%", alignItems:"center", display: 'flex', justifyContent: 'space-between' }}>
-        <h4>Water Quality Dashboard</h4>
-        <div style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
-          <ExportButton city={selectedCity} />
-        <select
-          value={selectedCity}
-          onChange={e => setSelectedCity(e.target.value)}
-          style={{
-            borderRadius: "6px",
-            minWidth: "150px",
-            height: "35px",
-            border: "1px solid #ccc",
-          }}
-          placeholder="Select City"
-        >
-          {cities.map(city => (
-            <option key={city} value={city}>
-              {city}
-            </option>
-          ))}
-        </select>
+    <div className="max-w-[1400px] mx-auto mt-20 px-6">
+      {/* Header */}
+      <div className="flex justify-between items-center mb-6">
+        <h2 className="text-2xl font-bold text-sky-700">
+          🌊 Water Quality Dashboard
+        </h2>
+        <div className="flex gap-3 items-end">
+          <div className="flex items-center">
+            <label></label>
+            <ExportButton city={selectedCity} />
+          </div>
+          <div className="flex flex-col gap-1">
+            <label>Select Parameter</label>
+            <select
+              id="parameter"
+              value={parameter}
+              onChange={(e) => setParameter(e.target.value)}
+              className="px-2 py-1 rounded-md border border-gray-300 text-sm focus:ring-2 focus:ring-sky-400"
+            >
+              {Object.keys(data[0].parameters).map((p) => (
+                <option key={p} value={p}>
+                  {p}
+                </option>
+              ))}
+            </select>
+          </div>
+          <div className="flex flex-col gap-1">
+            <label>Select City</label>
+            <select
+              value={selectedCity}
+              onChange={(e) => setSelectedCity(e.target.value)}
+              className="px-2 py-1 rounded-md border border-gray-300 text-sm focus:ring-2 focus:ring-sky-400"
+            >
+              {cities.map((city) => (
+                <option key={city} value={city}>
+                  {city}
+                </option>
+              ))}
+            </select>
+          </div>
         </div>
       </div>
 
       {/* Parameter Summary Cards */}
       <ParameterCards location={selectedCity} />
 
-      {/* Map, Chart & Heatmap */}
-      <div style={{ display: 'flex', gap: 20, flexWrap: 'wrap', margin: '20px 0px' }}>
-        <div style={{ flex: 1, minWidth: '400px', background: '#f1f1f1', borderRadius: '10px', padding: '10px' }}>
-          <h3 style={{ textAlign: 'center' }}>Water Quality Map</h3>
+      {/* Main Grid */}
+      <div className="grid md:grid-cols-2 gap-6 mt-6">
+        {/* Map */}
+        <div className="bg-white rounded-xl shadow-md p-4 hover:shadow-lg transition">
+          <h3 className="text-lg font-semibold text-gray-700 text-center mb-3">
+            Water Quality Map
+          </h3>
           <MapView data={data} />
         </div>
-        <div style={{ flex: 1, minWidth: '400px', background: '#f1f1f1', borderRadius: '10px', padding: '10px' }}>
-          <h3 style={{ textAlign: 'center' }}>Parameter Trends</h3>
-          <ChartView data={data} parameter={parameter} onParameterChange={setParameter} />
+
+        {/* Trends */}
+        <div className="bg-white rounded-xl shadow-md p-4 hover:shadow-lg transition">
+          <h3 className="text-lg font-semibold text-gray-700 text-center mb-3">
+            Parameter Trends
+          </h3>
+          <ChartView
+            data={data}
+            parameter={parameter}
+          />
         </div>
       </div>
-      <div style={{ flex: 1, minWidth: '400px', background: '#f1f1f1', borderRadius: '10px',margin:"20px 0", padding: '10px' }}>
-          <h3 style={{ textAlign: 'center' }}>Forecast</h3>
-          <ForecastPanel location={selectedCity} parameter={parameter} />
-        </div>
-        <div style={{ flex: 1, minWidth: '400px', background: '#f1f1f1', borderRadius: '10px', padding: '10px' }}>
-          <h3 style={{ textAlign: 'center' }}>Heatmap</h3>
-          <Heatmap data={data} />
-        </div>
 
-      {/* Alerts Panel */}
-      <div style={{
-        background: '#fff3f3',
-        padding: '15px',
-        borderRadius: '10px',
-        boxShadow: '0 2px 6px rgba(0,0,0,0.1)'
-      }}>
-        <h3 style={{ color: 'red', marginBottom: '10px' }}>Alerts</h3>
+      {/* Forecast + Heatmap */}
+      <div className="grid md:grid-cols-2 gap-6 mt-6">
+        <ForecastPanel location={selectedCity} parameter={parameter} />
+        <Heatmap data={data} />
+      </div>
+
+      {/* Alerts */}
+      <div className="mt-6 bg-red-50 border border-red-200 rounded-xl p-4 shadow-sm">
+        <h3 className="text-red-600 font-semibold mb-3">🚨 Alerts</h3>
         <AlertsPanel alerts={alerts} />
       </div>
     </div>

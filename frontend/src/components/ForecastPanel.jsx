@@ -68,22 +68,25 @@ const ForecastPanel = ({ location, parameter }) => {
   };
 
   return (
-    <div style={{ background: "#f1f1f1", display:'flex', alignItems:'center', flexDirection:"column", padding: "15px", borderRadius: "10px", marginBottom: "20px" }}>
-      <h3 style={{ textAlign: "center" }}>
-        {parameter} Forecast for {location}
+    <div className="bg-white rounded-xl shadow-md p-4 hover:shadow-lg transition flex flex-col">
+      <h3 className="text-lg font-semibold text-gray-700 mb-3 text-center">
+        {parameter} Forecast – {location}
       </h3>
-      <div style={{ height: "400px" }}>
-        <Line  data={chartData} />
+      <div className="h-[350px]">
+        <Line data={chartData} />
       </div>
-      <div style={{ display: "flex", gap:"15px", justifyContent: "space-around", marginTop: "15px" }}>
-        <div style={{ padding: "10px", background: "#fff", borderRadius: "8px", boxShadow: "0 1px 4px rgba(0,0,0,0.1)" }}>
-          <strong>Min Predicted:</strong> {Math.min(...forecast.map((f) => f.predicted)).toFixed(2)}
+      <div className="flex justify-center gap-6 mt-4">
+        <div className="px-4 py-2 bg-sky-50 border border-sky-200 rounded-lg">
+          <strong>Min:</strong>{" "}
+          {Math.min(...forecast.map((f) => f.predicted)).toFixed(2)}
         </div>
-        <div style={{ padding: "10px", background: "#fff", borderRadius: "8px", boxShadow: "0 1px 4px rgba(0,0,0,0.1)" }}>
-          <strong>Max Predicted:</strong> {Math.max(...forecast.map((f) => f.predicted)).toFixed(2)}
+        <div className="px-4 py-2 bg-sky-50 border border-sky-200 rounded-lg">
+          <strong>Max:</strong>{" "}
+          {Math.max(...forecast.map((f) => f.predicted)).toFixed(2)}
         </div>
       </div>
     </div>
+
   );
 };
 

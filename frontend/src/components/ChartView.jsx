@@ -21,7 +21,7 @@ ChartJS.register(
   Legend
 );
 
-function ChartView({ data, parameter, onParameterChange }) {
+function ChartView({ data, parameter }) {
   if (!data || data.length === 0) return null;
 
   const labels = data.map((d) => new Date(d.date).toLocaleDateString());
@@ -83,45 +83,18 @@ function ChartView({ data, parameter, onParameterChange }) {
   };
 
   return (
-    <div
-      style={{
-        background: "#fff",
-        borderRadius: "12px",
-        boxShadow: "0 2px 8px rgba(0,0,0,0.1)",
-        padding: "20px",
-        margin: "20px auto",
-        maxWidth: "800px",
-      }}
-    >
-      <div style={{ marginBottom: "15px" }}>
-        <label
-          htmlFor="parameter"
-          style={{ fontWeight: "600", marginRight: "10px" }}
-        >
-          Select Parameter:
-        </label>
-        <select
-          id="parameter"
-          value={parameter}
-          onChange={(e) => onParameterChange(e.target.value)}
-          style={{
-            padding: "8px 12px",
-            borderRadius: "6px",
-            border: "1px solid #ccc",
-          }}
-        >
-          {Object.keys(data[0].parameters).map((p) => (
-            <option key={p} value={p}>
-              {p}
-            </option>
-          ))}
-        </select>
+    <div className="bg-white rounded-xl shadow-md p-4 hover:shadow-lg transition">
+      <div className="flex justify-between items-center mb-3">
+        <h3 className="text-lg font-semibold text-gray-700">
+          Water Quality Trend – {parameter}
+        </h3>
+       
       </div>
-
-      <div style={{ height: "400px" }}>
+      <div className="h-[350px]">
         <Line data={chartData} options={options} />
       </div>
     </div>
+
   );
 }
 
