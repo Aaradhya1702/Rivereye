@@ -1,8 +1,7 @@
-import React from 'react';
 import { InfoSec, InfoRow, InfoColumn, TextWrapper, TopLine, Heading, Subtitle, ImgWrapper, Img } from './InfoSection.elements';
 import { Container, Button } from '../../globalStyles';
-import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const InfoSection = ({
   primary,
