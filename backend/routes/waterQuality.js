@@ -233,10 +233,8 @@ router.get("/export/:location", async (req, res) => {
     doc
       .fontSize(12)
       .text(
-        `${r.date.toISOString().slice(0, 10)} | DO: ${r.parameters.DO} | BOD: ${
-          r.parameters.BOD
-        } | Nitrate: ${r.parameters.Nitrate} | Fecal Coliform: ${
-          r.parameters.FecalColiform
+        `${r.date.toISOString().slice(0, 10)} | DO: ${r.parameters.DO} | BOD: ${r.parameters.BOD
+        } | Nitrate: ${r.parameters.Nitrate} | Fecal Coliform: ${r.parameters.FecalColiform
         }`
       );
     doc.moveDown(0.5);
@@ -277,32 +275,23 @@ router.get("/alerts", async (req, res) => {
   try {
     res.set("Cache-Control", "no-store"); // disable caching completely
 
-    const threshold = {
-      DO: 5,
-      BOD: 3,
-      Nitrate: 10,
-      FecalColiform: 500,
-    };
+    const threshold = { DO: 5, BOD: 3, Nitrate: 10, FecalColiform: 500 };
+    console.log("Fetching alerts for thresholds:", threshold);
 
-    console.log("Fetching latest 50 records...");
-    const records = await WaterQuality.find().sort({ date: -1 });
-    console.log("Records fetched:", records.length);
-
-    const alerts = await WaterQuality.find({
-      $or: [
-        { "parameters.DO": { $lt: 5 } },
-        { "parameters.BOD": { $gt: 3 } },
-        { "parameters.Nitrate": { $gt: 10 } },
-        { "parameters.FecalColiform": { $gt: 500 } },
-      ],
-    })
-      .sort({ date: -1 })
-      .limit(50);
-
-    console.log("Total alerts:", alerts.length);
-    res.json(alerts);
+    const alerts = await WaterQuality.find().sort({ date: -1 }).limit(50);
+    const filtered = alerts.filter((r) => {
+      const p = r.parameters || {};
+      return (
+        Number(p.DO) < threshold.DO ||
+        Number(p.BOD) > threshold.BOD ||
+        Number(p.Nitrate) > threshold.Nitrate ||
+        Number(p.FecalColiform) > threshold.FecalColiform
+      );
+    });
+    console.log("Filtered alerts count:", filtered.length);
+    res.json(filtered);
   } catch (err) {
-    console.error(err.message);
+    console.error("Error in /alerts:", err.message);
     res.status(500).send("Server Error");
   }
 });
@@ -319,29 +308,6 @@ router.get("/latest", async (req, res) => {
       })
     );
     res.json(result);
-  } catch (err) {
-    console.error(err);
-    res.status(500).send("Server Error");
-  }
-});
-
-// Route: /api/water/alerts-count
-router.get("/alerts-count", async (req, res) => {
-  try {
-    const threshold = { DO: 5, BOD: 3, Nitrate: 10, FecalColiform: 500 };
-    const alerts = await WaterQuality.find({
-      $or: [
-        { "parameters.DO": { $lt: threshold.DO } },
-        { "parameters.BOD": { $gt: threshold.BOD } },
-        { "parameters.Nitrate": { $gt: threshold.Nitrate } },
-        { "parameters.FecalColiform": { $gt: threshold.FecalColiform } },
-      ],
-    });
-    const counts = alerts.reduce((acc, alert) => {
-      acc[alert.location] = (acc[alert.location] || 0) + 1;
-      return acc;
-    }, {});
-    res.json(counts);
   } catch (err) {
     console.error(err);
     res.status(500).send("Server Error");

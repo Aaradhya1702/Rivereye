@@ -13,7 +13,7 @@ function MapView({ data }) {
     <MapContainer
       center={[25.3176, 82.9739]}
       zoom={6}
-      style={{ height: "400px", width: "100%" }}
+      style={{ height: "400px", backgroundColor:"white", width: "100%" }}
     >
       <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
       {Object.values(latestData).map((d, idx) => (

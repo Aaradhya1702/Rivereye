@@ -9,11 +9,15 @@ import ExportButton from "../components/Export";
 import ForecastPanel from "../components/ForecastPanel";
 import MonthlyComparison from "../components/MonthlyComparison";
 import RHIGauge from "../components/RHIGauge";
+import audioFile from "../images/stream-3.mp3";
 import ForecastMultiPanel from "../components/ForecastMultiPanel";
+import { useRef } from "react";
 
 function Dashboard() {
+  const audioRef = useRef(null);
   const cities = ["Varanasi", "Haridwar", "Kolkata", "Patna", "Kanpur"];
   const [selectedCity, setSelectedCity] = useState(cities[0]);
+  const [soundEnabled, setSoundEnabled] = useState(false);
   const [data, setData] = useState([]);
   const [alerts, setAlerts] = useState([]);
   const [parameter, setParameter] = useState("DO");
@@ -25,8 +29,27 @@ function Dashboard() {
     }
   }, [selectedCity]);
 
+  // play sound after user interaction
+  useEffect(() => {
+    if (soundEnabled && audioRef.current) {
+      audioRef.current.volume = 0.2; // subtle background sound
+      audioRef.current.play().catch(() => console.log("Autoplay blocked"));
+    }
+  }, [soundEnabled]);
+
   return (
-    <div className="max-w-[1400px] mx-auto mt-20 px-6">
+    <div className="relative p-4 overflow-hidden">
+      <audio ref={audioRef} src={audioFile} loop />
+
+      {/* Mute/Play button */}
+      <div className="fixed bottom-4 right-4 z-50">
+        <button
+          onClick={() => setSoundEnabled(!soundEnabled)}
+          className="px-4 py-2 bg-sky-500 text-white rounded-xl shadow-md hover:bg-sky-600 transition"
+        >
+          {soundEnabled ? "🔊 Mute" : "🎵 Play Sound"}
+        </button>
+      </div>
       {/* Header */}
       <div className="flex justify-between items-center mb-6">
         <h2 className="text-2xl font-bold text-sky-700">
@@ -75,7 +98,7 @@ function Dashboard() {
       {/* Main Grid */}
       <div className="grid md:grid-cols-2 gap-6 mt-6">
         {/* Map */}
-        <div className="bg-white rounded-xl shadow-md p-4 hover:shadow-lg transition">
+        <div className="mt-6 bg-red-50 border border-red-200 rounded-xl p-4 shadow-sm">
           <h3 className="text-lg font-semibold text-gray-700 text-center mb-3">
             Water Quality Map
           </h3>
@@ -83,7 +106,7 @@ function Dashboard() {
         </div>
 
         {/* Trends */}
-        <div className="bg-white rounded-xl shadow-md p-4 hover:shadow-lg transition">
+        <div className="mt-6 bg-red-50 border border-red-200 rounded-xl p-4 shadow-sm">
           <h3 className="text-lg font-semibold text-gray-700 text-center mb-3">
             Parameter Trends
           </h3>
@@ -94,10 +117,17 @@ function Dashboard() {
         </div>
       </div>
 
-      {/* Forecast + Heatmap */}
+      {/* Main Grid */}
       <div className="grid md:grid-cols-2 gap-6 mt-6">
-        <ForecastPanel location={selectedCity} parameter={parameter} />
-        <Heatmap data={data} />
+        {/* Map */}
+        <div className="mt-6 bg-red-50 border border-red-200 rounded-xl p-4 shadow-sm">
+          <ForecastPanel location={selectedCity} parameter={parameter} />
+        </div>
+
+        {/* Trends */}
+        <div className="mt-6 bg-red-50 border border-red-200 rounded-xl p-4 shadow-sm">
+          <Heatmap data={data} />
+        </div>
       </div>
 
       <div className="grid md:grid-cols-2 gap-6 mt-6">
