@@ -79,7 +79,7 @@ const Navbar = ({ locations = [], selected, onChange }) => {
       {user && (
         <>
           <button
-            onClick={() => navigate("/dashboard")}
+            onClick={() => navigate(user.email === "admin@mail.com" ? "/admin" : "/dashboard")}
             style={{
               ...linkStyle,
               backgroundColor: "#1976d2",
