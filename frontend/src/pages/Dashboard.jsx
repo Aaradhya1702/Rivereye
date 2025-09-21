@@ -12,6 +12,7 @@ import RHIGauge from "../components/RHIGauge";
 import ForecastMultiPanel from "../components/ForecastMultiPanel";
 import CityComparisonPanel from "../components/CityComparisonPanel";
 import CityLevelComparison from "../components/CityComparison";
+import TrendingSchemes from "../components/Scheme";
 
 function Dashboard() {
   const cities = ["Varanasi", "Haridwar", "Kolkata", "Patna", "Kanpur"];
@@ -74,6 +75,7 @@ function Dashboard() {
 
       {/* Parameter Summary Cards */}
       <ParameterCards location={selectedCity} />
+      <TrendingSchemes />
 
       {/* Main Grid */}
       <div className="grid md:grid-cols-2 gap-6 mt-6">
@@ -138,10 +140,10 @@ function Dashboard() {
         </div>
       </div>
 
-       <div className="mt-6 bg-red-50 border border-red-200 rounded-xl p-4 shadow-sm">
-          <h3 className="text-red-600 font-semibold mb-3">📊 City Level Comparison</h3>
-          <CityLevelComparison  />
-        </div>
+      <div className="mt-6 bg-red-50 border border-red-200 rounded-xl p-4 shadow-sm">
+        <h3 className="text-red-600 font-semibold mb-3">📊 City Level Comparison</h3>
+        <CityLevelComparison />
+      </div>
 
       {/* Alerts */}
       <div className="mt-6 bg-red-50 border border-red-200 rounded-xl p-4 shadow-sm">
