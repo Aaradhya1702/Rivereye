@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FiUsers, FiBell, FiSettings, FiDownload, FiMap } from "react-icons/fi";
+import { FiUsers, FiBell, FiSettings, FiDownload, FiMap, FiUpload, FiPlus } from "react-icons/fi";
 import CityComparisonPanel from "../components/CityComparisonPanel";
 import ForecastMultiPanel from "../components/ForecastMultiPanel";
 import AlertsPanel from "../components/AlertsPanel";
@@ -13,9 +13,11 @@ const DashboardAdminModern = () => {
   const users = [
     { id: 1, name: "Admin", role: "Super Admin" },
     { id: 2, name: "User1", role: "Analyst" },
-  ]
+  ];
   const [exportFormat, setExportFormat] = useState("CSV");
-  const [soundEnabled, setSoundEnabled] = useState(false);
+  const [bulkFile, setBulkFile] = useState(null);
+  const [schemaView, setSchemaView] = useState(false);
+  const [addDataOpen, setAddDataOpen] = useState(false);
 
   const cities = ["Varanasi", "Haridwar", "Kolkata", "Patna", "Kanpur"];
 
@@ -23,6 +25,13 @@ const DashboardAdminModern = () => {
     setNotifications((prev) =>
       prev.map((n) => (n.id === id ? { ...n, read: !n.read } : n))
     );
+  };
+
+  const handleFileUpload = (e) => {
+    const file = e.target.files[0];
+    setBulkFile(file);
+    // TODO: Parse Excel/CSV and preview
+    console.log("File uploaded:", file.name);
   };
 
   return (
@@ -59,6 +68,8 @@ const DashboardAdminModern = () => {
               ))
             )}
           </select>
+
+          {/* Users */}
           <button className="flex items-center gap-1 px-3 py-2 bg-white rounded-xl shadow hover:bg-gray-100 transition">
             <FiUsers /> Users
           </button>
@@ -100,36 +111,84 @@ const DashboardAdminModern = () => {
         </select>
       </div>
 
+      {/* Advanced Configurations */}
+      <div className="mb-6 flex flex-col gap-4">
+        <div className="flex gap-4 items-center">
+          {/* Add New Data */}
+          <button
+            className="flex items-center gap-2 px-3 py-2 bg-white rounded-xl shadow hover:bg-gray-100 transition"
+            onClick={() => setAddDataOpen(!addDataOpen)}
+          >
+            <FiPlus /> Add New Data
+          </button>
+
+          {/* Bulk Upload */}
+          <label className="flex items-center gap-2 px-3 py-2 bg-white rounded-xl shadow hover:bg-gray-100 transition cursor-pointer">
+            <FiUpload /> Bulk Upload
+            <input
+              type="file"
+              accept=".csv, .xlsx"
+              className="hidden"
+              onChange={handleFileUpload}
+            />
+          </label>
+
+          {/* Schema View */}
+          <button
+            className="flex items-center gap-2 px-3 py-2 bg-white rounded-xl shadow hover:bg-gray-100 transition"
+            onClick={() => setSchemaView(!schemaView)}
+          >
+            Schema Format
+          </button>
+        </div>
+
+        {/* Conditional Panels */}
+        {addDataOpen && (
+          <div className="bg-white p-4 rounded-2xl shadow transition">
+            <h3 className="font-semibold mb-3">Add New Data</h3>
+            {/* Input fields for city/date/parameter */}
+            <div className="grid md:grid-cols-4 gap-4">
+              <select className="border p-2 rounded">
+                {cities.map((c) => (
+                  <option key={c} value={c}>{c}</option>
+                ))}
+              </select>
+              <input type="date" className="border p-2 rounded" />
+              <input type="number" placeholder="DO / Water Level" className="border p-2 rounded" />
+              <button className="bg-sky-500 text-white px-4 py-2 rounded">Add</button>
+            </div>
+          </div>
+        )}
+
+        {schemaView && (
+          <div className="bg-white p-4 rounded-2xl shadow transition">
+            <h3 className="font-semibold mb-3">Expected Schema</h3>
+            <ul className="list-disc pl-5 text-gray-700">
+              <li>location (string)</li>
+              <li>date (YYYY-MM-DD)</li>
+              <li>parameters: DO, BOD, Nitrate, FecalColiform / waterLevel</li>
+              <li>forecast (optional)</li>
+            </ul>
+          </div>
+        )}
+      </div>
+
       {/* Main Panels */}
       <div className="grid md:grid-cols-2 gap-6">
-        {/* City Comparison */}
         <div className="bg-white rounded-2xl p-4 shadow hover:shadow-lg transition">
           <CityComparisonPanel />
         </div>
-
-        {/* Forecast Multi Panel */}
         <div className="bg-white rounded-2xl p-4 shadow hover:shadow-lg transition">
           <ForecastMultiPanel location={selectedCity} />
         </div>
-
-        {/* Alerts */}
         <div className="bg-white rounded-2xl p-4 shadow hover:shadow-lg transition md:col-span-2">
           <h3 className="text-red-600 font-semibold mb-3">🚨 Alerts</h3>
           <AlertsPanel alerts={[]} />
         </div>
       </div>
 
-      {/* Footer / Config */}
+      {/* Footer */}
       <div className="mt-6 flex justify-between items-center bg-white p-4 rounded-2xl shadow">
-        <div>
-          <p className="text-gray-600">Sound:</p>
-          <button
-            className="px-3 py-1 bg-sky-500 text-white rounded-xl shadow hover:bg-sky-600 transition"
-            onClick={() => setSoundEnabled(!soundEnabled)}
-          >
-            {soundEnabled ? "🔊 Enabled" : "🔇 Disabled"}
-          </button>
-        </div>
         <div>
           <p className="text-gray-600">Total Users: {users.length}</p>
         </div>
