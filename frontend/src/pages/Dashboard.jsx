@@ -9,6 +9,7 @@ import ExportButton from "../components/Export";
 import ForecastPanel from "../components/ForecastPanel";
 import MonthlyComparison from "../components/MonthlyComparison";
 import RHIGauge from "../components/RHIGauge";
+import ForecastMultiPanel from "../components/ForecastMultiPanel";
 
 function Dashboard() {
   const cities = ["Varanasi", "Haridwar", "Kolkata", "Patna", "Kanpur"];
@@ -114,6 +115,11 @@ function Dashboard() {
       </div>
 
 
+      {/* Forecast Multi Panel */}
+      <div className="mt-6 bg-red-50 border border-red-200 rounded-xl p-4 shadow-sm">
+        <h3 className="text-red-600 font-semibold mb-3">📊 Forecast Multi Panel</h3>
+        <ForecastMultiPanel location={selectedCity} />
+      </div>
 
       {/* Alerts */}
       <div className="mt-6 bg-red-50 border border-red-200 rounded-xl p-4 shadow-sm">

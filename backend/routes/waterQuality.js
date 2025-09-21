@@ -119,6 +119,52 @@ router.get("/monthly-comparison/:location", async (req, res) => {
   }
 });
 
+// Forecast next 3 days for all parameters
+router.get("/forecast-multi/:location", async (req, res) => {
+  try {
+    const { location } = req.params;
+
+    // Fetch last 15 days of data
+    const data = await WaterQuality.find({ location })
+      .sort({ date: -1 })
+      .limit(15);
+
+    if (!data || data.length === 0) {
+      return res
+        .status(404)
+        .json({ message: "No data found for this location" });
+    }
+
+    const parameters = ["DO", "BOD", "Nitrate", "FecalColiform"];
+
+    // Prepare forecast object
+    const forecast = {};
+    parameters.forEach((param) => {
+      const x = data.map((d, i) => i + 1); // day index
+      const y = data.map((d) => Number(d.parameters[param] ?? 0));
+
+      const regression = new MLR(x, y);
+
+      forecast[param] = [];
+      for (let i = x.length + 1; i <= x.length + 3; i++) {
+        forecast[param].push({
+          day: i,
+          predicted: Number(regression.predict(i).toFixed(2)),
+        });
+      }
+    });
+
+    res.json({
+      location,
+      forecast,
+      lastData: data.reverse(), // chronological order
+    });
+  } catch (err) {
+    console.error(err);
+    res.status(500).send("Server Error");
+  }
+});
+
 // Forecast next 3 days
 router.get("/forecast/:location/:parameter", async (req, res) => {
   try {

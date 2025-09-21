@@ -77,27 +77,27 @@ const Navbar = ({ locations = [], selected, onChange }) => {
         </button>
       </div>
       {user && (
-          <>
-            <button
-              onClick={() => navigate("/dashboard")}
-              style={{
-                ...linkStyle,
-                backgroundColor: "#1976d2",
-                color: "#fff",
-                border: "none",
-                borderRadius: "6px",
-                padding: "8px 18px",
-                marginLeft: "15px",
-                fontWeight: "600",
-                boxShadow: "0 2px 8px rgba(25, 118, 210, 0.15)",
-                cursor: "pointer",
-                transition: "background 0.2s",
-              }}
-            >
-              Dashboard
-            </button>
-          </>
-        )}
+        <>
+          <button
+            onClick={() => navigate("/dashboard")}
+            style={{
+              ...linkStyle,
+              backgroundColor: "#1976d2",
+              color: "#fff",
+              border: "none",
+              borderRadius: "6px",
+              padding: "8px 18px",
+              marginLeft: "15px",
+              fontWeight: "600",
+              boxShadow: "0 2px 8px rgba(25, 118, 210, 0.15)",
+              cursor: "pointer",
+              transition: "background 0.2s",
+            }}
+          >
+            Dashboard
+          </button>
+        </>
+      )}
     </nav>
   );
 };
