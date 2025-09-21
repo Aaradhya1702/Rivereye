@@ -1,19 +1,15 @@
 import { InfoSec, InfoRow, InfoColumn, TextWrapper, TopLine, Heading, Subtitle, ImgWrapper, Img } from './InfoSection.elements';
 import { Container, Button } from '../../globalStyles';
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
 
 const InfoSection = ({
-  primary,
   lightBg,
   topLine,
   lightTopLine,
   lightText,
   lightTextDesc,
   headline,
-  index,
   description,
-  buttonLabel,
   img,
   alt,
   imgStart,
@@ -56,10 +52,10 @@ const InfoSection = ({
                 }}>
                   {headline}
                 </Heading>
-                <Subtitle lightTextDesc={lightTextDesc} style={{ color: '#333', fontWeight: '500', lineHeight: '1.6em' }}>
+                <Subtitle lightTextDesc={lightTextDesc} style={{  fontWeight: '500', lineHeight: '1.6em' }}>
                   {description}
                 </Subtitle>
-                {index === 1 && (
+                {/* {index === 1 && (
                   <Link to='/dashboard'>
                     <Button big fontBig primary={primary} style={{
                       marginTop: '25px',
@@ -71,7 +67,7 @@ const InfoSection = ({
                       {buttonLabel}
                     </Button>
                   </Link>
-                )}
+                )} */}
               </motion.div>
             </TextWrapper>
           </InfoColumn>
