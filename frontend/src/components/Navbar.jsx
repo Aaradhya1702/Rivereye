@@ -63,7 +63,7 @@ const Navbar = ({ locations = [], selected, onChange }) => {
             Login
           </Link>
         )}
-        <button
+       {!user && <button
           onClick={handleLogout}
           style={{
             ...linkStyle,
@@ -74,7 +74,7 @@ const Navbar = ({ locations = [], selected, onChange }) => {
           }}
         >
           Logout
-        </button>
+        </button>}
       </div>
       {user && (
         <>
