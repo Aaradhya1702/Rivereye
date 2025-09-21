@@ -38,7 +38,7 @@ function Dashboard() {
   }, [soundEnabled]);
 
   return (
-    <div className="relative p-4 overflow-hidden">
+    <div className="relative mt-24 p-4 overflow-hidden">
       <audio ref={audioRef} src={audioFile} loop />
 
       {/* Mute/Play button */}
