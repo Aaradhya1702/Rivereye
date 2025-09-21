@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { login } from '../authService';
 
+
+
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -20,32 +22,62 @@ const Login = () => {
 
   return (
     <div style={containerStyle}>
-      <div style={cardStyle}>
-        <h2 style={{ marginBottom: '20px', color: '#0077b6' }}>Login</h2>
+      {/* Background design elements */}
+      <div style={bgCircle1}></div>
+      <div style={bgCircle2}></div>
+
+      <motion.div
+        style={cardStyle}
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+      >
+        <motion.h2
+          style={{ marginBottom: '20px', color: '#0077b6' }}
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.3 }}
+        >
+          Welcome Back 👋
+        </motion.h2>
+
         <form onSubmit={handleSubmit} style={formStyle}>
-          <input 
-            type="email" 
-            placeholder="Email" 
-            value={email} 
-            onChange={e => setEmail(e.target.value)} 
-            required 
+          <motion.input
+            type="email"
+            placeholder="Email"
+            value={email}
+            onChange={e => setEmail(e.target.value)}
+            required
             style={inputStyle}
+            whileFocus={{ scale: 1.02, borderColor: '#0077b6' }}
           />
-          <input 
-            type="password" 
-            placeholder="Password" 
-            value={password} 
-            onChange={e => setPassword(e.target.value)} 
-            required 
+          <motion.input
+            type="password"
+            placeholder="Password"
+            value={password}
+            onChange={e => setPassword(e.target.value)}
+            required
             style={inputStyle}
+            whileFocus={{ scale: 1.02, borderColor: '#0077b6' }}
           />
-          <button type="submit" style={buttonStyle}>Login</button>
+          <motion.button
+            type="submit"
+            style={buttonStyle}
+            whileHover={{ scale: 1.05, backgroundColor: '#005f8c' }}
+            whileTap={{ scale: 0.95 }}
+          >
+            Login
+          </motion.button>
           {error && <p style={{ color: 'red', marginTop: '10px' }}>{error}</p>}
         </form>
-        <p style={{ marginTop: '15px' }}>
-          Don't have an account? <Link to="/signup" style={linkStyle}>Sign Up</Link>
+
+        <p style={{ marginTop: '15px', color: '#333' }}>
+          Don’t have an account?{' '}
+          <Link to="/signup" style={linkStyle}>
+            Sign Up
+          </Link>
         </p>
-      </div>
+      </motion.div>
     </div>
   );
 };
@@ -55,21 +87,72 @@ const containerStyle = {
   justifyContent: 'center',
   alignItems: 'center',
   height: '100vh',
-  background: 'linear-gradient(to right, #caf0f8, #ade8f4)'
+  background: 'linear-gradient(135deg, #03045e, #023e8a, #0077b6)',
+  position: 'relative',
+  overflow: 'hidden',
+};
+
+const bgCircle1 = {
+  position: 'absolute',
+  top: '-100px',
+  left: '-100px',
+  width: '300px',
+  height: '300px',
+  background: 'rgba(144, 224, 239, 0.15)',
+  borderRadius: '50%',
+  filter: 'blur(80px)',
+};
+
+const bgCircle2 = {
+  position: 'absolute',
+  bottom: '-120px',
+  right: '-100px',
+  width: '350px',
+  height: '350px',
+  background: 'rgba(0, 119, 182, 0.2)',
+  borderRadius: '50%',
+  filter: 'blur(100px)',
 };
 
 const cardStyle = {
-  background: 'white',
+  background: '#ffffff',
   padding: '40px',
-  borderRadius: '12px',
-  boxShadow: '0 8px 20px rgba(0,0,0,0.1)',
-  width: '350px',
-  textAlign: 'center'
+  borderRadius: '16px',
+  boxShadow: '0 8px 30px rgba(0,0,0,0.2)',
+  width: '360px',
+  textAlign: 'center',
+  zIndex: 1,
 };
 
 const formStyle = { display: 'flex', flexDirection: 'column', gap: '15px' };
-const inputStyle = { padding: '10px', borderRadius: '6px', border: '1px solid #ccc', fontSize: '16px' };
-const buttonStyle = { padding: '12px', background: '#0077b6', color: 'white', border: 'none', borderRadius: '6px', cursor: 'pointer', fontSize: '16px' };
-const linkStyle = { color: '#0077b6', textDecoration: 'none', fontWeight: 'bold' };
+
+const inputStyle = {
+  padding: '12px',
+  borderRadius: '8px',
+  border: '1px solid #ccc',
+  background: '#f9f9f9',
+  color: '#000',
+  fontSize: '16px',
+  outline: 'none',
+  transition: 'all 0.3s ease',
+};
+
+const buttonStyle = {
+  padding: '12px',
+  background: '#0077b6',
+  color: '#fff',
+  border: 'none',
+  borderRadius: '8px',
+  cursor: 'pointer',
+  fontSize: '16px',
+  fontWeight: 'bold',
+  transition: '0.3s',
+};
+
+const linkStyle = {
+  color: '#0077b6',
+  textDecoration: 'none',
+  fontWeight: 'bold',
+};
 
 export default Login;
