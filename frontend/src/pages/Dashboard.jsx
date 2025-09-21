@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { getLocationData, getAlerts } from "../api/api";
+import { getLocationData, getAlerts } from "../authService";
 import MapView from "../components/MapView";
 import ChartView from "../components/ChartView";
 import AlertsPanel from "../components/AlertsPanel";
@@ -8,6 +8,7 @@ import Heatmap from "../components/Heatmap";
 import ExportButton from "../components/Export";
 import ForecastPanel from "../components/ForecastPanel";
 import MonthlyComparison from "../components/MonthlyComparison";
+import RHIGauge from "../components/RHIGauge";
 
 function Dashboard() {
   const cities = ["Varanasi", "Haridwar", "Kolkata", "Patna", "Kanpur"];
@@ -43,7 +44,7 @@ function Dashboard() {
               onChange={(e) => setParameter(e.target.value)}
               className="px-2 py-1 rounded-md border border-gray-300 text-sm focus:ring-2 focus:ring-sky-400"
             >
-              {Object.keys(data[0]?.parameters??[]).map((p) => (
+              {Object.keys(data[0]?.parameters ?? []).map((p) => (
                 <option key={p} value={p}>
                   {p}
                 </option>
@@ -98,11 +99,21 @@ function Dashboard() {
         <Heatmap data={data} />
       </div>
 
-      {/* Monthly Comparison */}
-      <div className="mt-6 bg-red-50 border border-red-200 rounded-xl p-4 shadow-sm">
-        <h3 className="text-red-600 font-semibold mb-3">📊 Monthly Comparison</h3>
-        <MonthlyComparison location={selectedCity} />
+      <div className="grid md:grid-cols-2 gap-6 mt-6">
+        {/* RHI Gauge */}
+        <div className="mt-6 bg-red-50 border border-red-200 rounded-xl p-4 shadow-sm">
+          <h3 className="text-red-600 font-semibold mb-3">📊 River Health Index</h3>
+          <RHIGauge location={selectedCity} />
+        </div>
+
+        {/* Monthly Comparison */}
+        <div className="mt-6 bg-red-50 border border-red-200 rounded-xl p-4 shadow-sm">
+          <h3 className="text-red-600 font-semibold mb-3">📊 Monthly Comparison</h3>
+          <MonthlyComparison location={selectedCity} />
+        </div>
       </div>
+
+
 
       {/* Alerts */}
       <div className="mt-6 bg-red-50 border border-red-200 rounded-xl p-4 shadow-sm">

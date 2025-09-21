@@ -5,6 +5,62 @@ const fs = require("fs");
 const WaterQuality = require("../models/WaterQuality");
 const MLR = require("ml-regression").SimpleLinearRegression;
 
+// RHI (River Health Index) = composite score 0–100
+router.get("/rhi/:location", async (req, res) => {
+  try {
+    const { location } = req.params;
+
+    // Get latest record
+    const latest = await WaterQuality.find({ location })
+      .sort({ date: -1 })
+      .limit(1);
+
+    if (!latest || latest.length === 0) {
+      return res.status(404).json({ message: "No data for this location" });
+    }
+
+    const params = latest[0].parameters;
+
+    // Normalized scoring (basic example, tweak as you like)
+    let score = 0;
+
+    // Dissolved Oxygen (higher is better)
+    score += Math.min((params.DO / 10) * 25, 25); // up to 25 points
+
+    // BOD (lower is better)
+    score += Math.max(
+      0,
+      (3 / params.BOD) * 25 > 25 ? 25 : (3 / params.BOD) * 25
+    );
+
+    // Nitrate (lower is better)
+    score += Math.max(
+      0,
+      (10 / params.Nitrate) * 25 > 25 ? 25 : (10 / params.Nitrate) * 25
+    );
+
+    // Fecal Coliform (lower is better)
+    score += Math.max(
+      0,
+      (500 / params.FecalColiform) * 25 > 25
+        ? 25
+        : (500 / params.FecalColiform) * 25
+    );
+
+    const RHI = Math.round(score);
+
+    res.json({
+      location,
+      RHI,
+      parameters: params,
+      status: RHI >= 70 ? "Good" : RHI >= 40 ? "Moderate" : "Poor",
+    });
+  } catch (err) {
+    console.error(err.message);
+    res.status(500).send("Server Error");
+  }
+});
+
 // GET monthly comparison for a city
 // Route: /api/water/monthly-comparison/:location
 router.get("/monthly-comparison/:location", async (req, res) => {
@@ -171,9 +227,10 @@ router.get("/:location", async (req, res) => {
 });
 
 // 3. GET alerts if any parameter crosses thresholds
-// /api/water/alerts
 router.get("/alerts", async (req, res) => {
   try {
+    res.set("Cache-Control", "no-store"); // disable caching completely
+
     const threshold = {
       DO: 5,
       BOD: 3,
@@ -181,24 +238,22 @@ router.get("/alerts", async (req, res) => {
       FecalColiform: 500,
     };
 
-    // get latest 50 records (enough to test)
-    const records = await WaterQuality.find().sort({ date: -1 }).limit(50);
+    console.log("Fetching latest 50 records...");
+    const records = await WaterQuality.find().sort({ date: -1 });
+    console.log("Records fetched:", records.length);
 
-    // filter manually in JS
-    const alerts = records.filter((r) => {
-      const DO = Number(r.parameters.DO);
-      const BOD = Number(r.parameters.BOD);
-      const Nitrate = Number(r.parameters.Nitrate);
-      const FecalColiform = Number(r.parameters.FecalColiform);
+    const alerts = await WaterQuality.find({
+      $or: [
+        { "parameters.DO": { $lt: 5 } },
+        { "parameters.BOD": { $gt: 3 } },
+        { "parameters.Nitrate": { $gt: 10 } },
+        { "parameters.FecalColiform": { $gt: 500 } },
+      ],
+    })
+      .sort({ date: -1 })
+      .limit(50);
 
-      return (
-        DO < threshold.DO ||
-        BOD > threshold.BOD ||
-        Nitrate > threshold.Nitrate ||
-        FecalColiform > threshold.FecalColiform
-      );
-    });
-
+    console.log("Total alerts:", alerts.length);
     res.json(alerts);
   } catch (err) {
     console.error(err.message);

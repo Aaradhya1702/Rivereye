@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { getSummary } from "../api/api";
+import { getSummary } from "../authService";
 
 const safeThresholds = {
   DO: 5,

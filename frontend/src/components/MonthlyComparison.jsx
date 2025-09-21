@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { getMonthlyComparison } from "../api/api";
+import { getMonthlyComparison } from "../authService";
 import { Bar } from "react-chartjs-2";
 import {
   Chart as ChartJS,
