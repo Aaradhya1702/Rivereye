@@ -37,7 +37,7 @@ const Landing = () => {
             animate={{ scale: 1 }}
             transition={{ duration: 1, ease: "easeOut" }}
           >
-            🌊 Smarter Water. Safer Future.
+            <p className="p-0 m-0">Smarter Water, <br /> 🌊 Safer Future.</p>
           </motion.h1>
           <motion.p
             className="mt-6 text-lg md:text-2xl text-gray-200"
@@ -49,7 +49,7 @@ const Landing = () => {
           </motion.p>
 
           {/* CTA Buttons */}
-          <motion.div
+          {/* <motion.div
             className="mt-8 flex justify-center gap-4"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -61,7 +61,7 @@ const Landing = () => {
             <button className="px-6 py-3 bg-white/80 hover:bg-white text-gray-900 rounded-full text-lg font-semibold shadow-lg transition">
               Watch Demo
             </button>
-          </motion.div>
+          </motion.div> */}
         </motion.div>
       </section>
       <RiverEyeLanding />
